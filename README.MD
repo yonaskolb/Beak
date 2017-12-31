@@ -3,11 +3,11 @@
 [![SPM](https://img.shields.io/badge/Swift_PM-compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager)
 [![Git Version](https://img.shields.io/github/release/yonaskolb/Beak.svg)](https://github.com/yonaskolb/Beak/releases)
 [![Build Status](https://img.shields.io/travis/yonaskolb/Beak/master.svg?style=flat)](https://travis-ci.org/yonaskolb/Beak)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/yonaskolb/Mint/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/yonaskolb/Beak/blob/master/LICENSE)
 
 > Peck into your Swift files from the command line
 
-Beak can take a standard Swift file and run any public global functions in it.
+Beak can take a standard Swift file and run any public global functions in it via a command line interface.
 This is useful for scripting and for make-like files written in Swift.
 
 An example script:
