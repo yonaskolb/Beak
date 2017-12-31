@@ -109,7 +109,7 @@ class BeakTests: XCTestCase {
 
                 let file = """
                 // beak: name/repo@4.2.0
-                // beak: https://github.com/name/repo2.git [lib1, lib2] @ branch:v4
+                // beak: https://github.com/name/repo2.git lib1 lib2 @ branch:v4
                 // beak: name2/repo3 @ exact:4.3.0
                 // other comment in beak file
                 """

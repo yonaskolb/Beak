@@ -12,19 +12,13 @@ public struct Dependency: Equatable {
             .map { String($0)
                 .trimmingCharacters(in: .whitespaces) }
         let packageAndLibraries = versionSplit[0]
-        var package = packageAndLibraries
-        var libraries: [String]?
-        if packageAndLibraries.contains("[") && packageAndLibraries.contains("]") {
-            package = String(
-                packageAndLibraries
-                    .split(separator: "[").first!
-            ).trimmingCharacters(in: .whitespaces)
+            .split(separator: " ",  omittingEmptySubsequences: true)
+            .map(String.init)
+        let package = packageAndLibraries[0]
 
-            libraries = packageAndLibraries
-                .split(separator: "[").last!
-                .split(separator: "]").first!
-                .split(separator: ",")
-                .map { String($0).trimmingCharacters(in: .whitespaces) }
+        var libraries: [String]?
+        if packageAndLibraries.count > 1 {
+            libraries = Array(packageAndLibraries.dropFirst())
         }
         let version = versionSplit[1]
         self.init(package: package, version: version, libraries: libraries)
