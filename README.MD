@@ -33,7 +33,16 @@ Beak analyzes your Swift file via SourceKit and finds all public and global func
 
 It also parses special comments so the script can pull in dependencies via the Swift Package Manager.
 
-By default Beak looks for a file called `beak.swift` in your current directory, otherwise you can pass a path to a different swift file with `--path`
+By default Beak looks for a file called `beak.swift` in your current directory, otherwise you can pass a path to a different swift file with `--path`.
+This repo itself has a Beak file for running build scripts.
+
+## Installing
+Make sure Xcode 9 is installed first.
+
+### [Mint](https://github.com/yonaskolb/mint)
+```sh
+$ mint run yonaskolb/beak
+```
 
 ## Usage
 
