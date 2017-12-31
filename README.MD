@@ -84,6 +84,12 @@ Some examples:
 ```
 // beak: JohnSundell/ShellOut @ 2.0.0
 // beak: kylef/PathKit @ branch:master
+// beak: apple/swift-package-manager Utility @ exact:0.1.0
+
+import Foundation
+import Pathkit
+import Shellout
+import Utility
 ```
 
 ## License
