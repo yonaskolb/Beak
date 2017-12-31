@@ -5,33 +5,33 @@
 [![Build Status](https://img.shields.io/travis/yonaskolb/Beak/master.svg?style=flat)](https://travis-ci.org/yonaskolb/Beak)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/yonaskolb/Beak/blob/master/LICENSE)
 
-> Peck into your Swift files from the command line
+*Peck into your Swift files from the command line*
 
 Beak can take a standard Swift file and run any public global functions in it via a command line interface.
 This is useful for scripting and for make-like files written in Swift.
 
-An example script:
+An example Swift script:
 
 ```swift
 /// Releases the product
 /// - Parameters:
 ///   - version: the version to release
-public func release(version: String) {
+public func release(version: String) throws {
 	// implementation here
 	print("version \(version) released!")
 }
 
 /// Installs the product
-public func install() {
+public func install() throws {
 	// implementation here
 	print("installed")
 }
 ```
 
 ## How does it work?
-Beak analyzes your Swift file via SourceKit and finds all public and global functions. It uses information about the parameter names, types and default values to build up a command line interface. It also uses the comment docs to build up descriptive help.
+Beak analyzes your Swift file via SourceKit and finds all public and global functions. It uses information about the function and parameter names, types and default values to build up a command line interface. It also uses the comment docs to build up descriptive help.
 
-It also parses special comments so the script can pull in dependencies via the Swift Package Manager.
+Beak can parse special comments at the top of your script so it can pull in dependencies via the Swift Package Manager.
 
 By default Beak looks for a file called `beak.swift` in your current directory, otherwise you can pass a path to a different swift file with `--path`.
 This repo itself has a Beak file for running build scripts.
@@ -66,13 +66,18 @@ version 1.2.0 released
 
 You can always use `--help` to get more information about a command or a function.
 
-### Parameters
-Any parameters without default values will be required. 
+### Functions
+For function to be accessible they must be global and declared public. Any non-public functions can be as helper functions, but won't be seen by Beak.
 
-Param types of Int, Bool, and String are nativelly supported. All other types will be passed exactly as they are, so if the final string compiles you can pass in anything. For example an enum value`--buildType .debug`
+Functions can be throwing, with any errors thrown printed using `CustomStringConvertible`. This makes it easy to fail your tasks
+
+### Parameters
+Any parameters without default values will be required.
+
+Param types of `Int`, `Bool`, and `String` are natively supported. All other types will be passed exactly as they are as raw values, so if it compiles you can pass in anything, for example an enum value`--buildType .debug`
 
 ### Dependencies
-Sometimes it's useful to be able to pull in other Swift packages as dependencies to use in your script. This can be done by adding some special comments at the top of your file. It must take the form: 
+Sometimes it's useful to be able to pull in other Swift packages as dependencies to use in your script. This can be done by adding some special comments at the top of your file. It must take the form:
 
 ```
 // beak: {repo} {library} {library} ... @ {version}`
@@ -81,7 +86,7 @@ where items in `{}` are:
 
 - **repo**: is the git repo where a Swift package resides. This can take a short form of `user/repo` or an extended form `https://github.com/user/repo.git`
 - **library**: a space delimited list of libraries to include from this package. This defaults to the repo name, which is usually what you want.
-- **version**: the version of this package to include. This can either be a simple version string, or any of the types allowed by the Swift Package Manager `Requirement` static members eg 
+- **version**: the version of this package to include. This can either be a simple version string, or any of the types allowed by the Swift Package Manager `Requirement` static members eg
 	- `branch:develop` or `.branch("develop")`
 	- `revision:ab794ebb` or `.revision("ab794ebb")`
 	- `exact:1.2.0` or `.exact("1.2.0")`
