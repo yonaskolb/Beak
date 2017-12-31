@@ -29,7 +29,7 @@ public func install() {
 ```
 
 ## How does it work?
-Beak analyzes your swift file via SourceKit and finds all public and global functions. It uses information about the parameter names, types and default values to build up a command line interface. It also uses the comment docs to build up descriptive help.
+Beak analyzes your Swift file via SourceKit and finds all public and global functions. It uses information about the parameter names, types and default values to build up a command line interface. It also uses the comment docs to build up descriptive help.
 
 It also parses special comments so the script can pull in dependencies via the Swift Package Manager.
 
@@ -56,6 +56,35 @@ version 1.2.0 released
 ```
 
 You can always use `--help` to get more information about a command or a function.
+
+### Parameters
+Any parameters without default values will be required. 
+
+Param types of Int, Bool, and String are nativelly supported. All other types will be passed exactly as they are, so if the final string compiles you can pass in anything. For example an enum value`--buildType .debug`
+
+### Dependencies
+Sometimes it's useful to be able to pull in other Swift packages as dependencies to use in your script. This can be done by adding some special comments at the top of your file. It must take the form: 
+
+```
+// beak: {repo} {library} {library} ... @ {version}`
+```
+where items in `{}` are:
+
+- **repo**: is the git repo where a Swift package resides. This can take a short form of `user/repo` or an extended form `https://github.com/user/repo.git`
+- **library**: a space delimited list of libraries to include from this package. This defaults to the repo name, which is usually what you want.
+- **version**: the version of this package to include. This can either be a simple version string, or any of the types allowed by the Swift Package Manager `Requirement` static members eg 
+	- `branch:develop` or `.branch("develop")`
+	- `revision:ab794ebb` or `.revision("ab794ebb")`
+	- `exact:1.2.0` or `.exact("1.2.0")`
+	- `.upToNextMajor(from: "1.2.0")`
+	- `.upToNextMinor(from: "1.2.3")`
+
+Some examples:
+
+```
+// beak: JohnSundell/ShellOut @ 2.0.0
+// beak: kylef/PathKit @ branch:master
+```
 
 ## License
 
