@@ -7,8 +7,9 @@
 
 *Peck into your Swift files from the command line*
 
-Beak can take a standard Swift file and run any public global functions in it via a command line interface.
-This is useful for scripting and for make-like files written in Swift.
+Beak can take a standard Swift file and then list and run any public global functions in it via a command line interface.
+
+This is useful for scripting and for make-like files written in Swift. You can replace `make` or `rake` files with code written in Swift!
 
 An example Swift script:
 
@@ -37,11 +38,20 @@ By default Beak looks for a file called `beak.swift` in your current directory, 
 This repo itself has a Beak file for running build scripts.
 
 ## Installing
-Make sure Xcode 9 is installed first.
+Make sure Xcode 9+ is installed first.
 
-### [Mint](https://github.com/yonaskolb/mint)
+### [Mint](https://github.com/yonaskolb/mint) 🌱
 ```sh
 $ mint run yonaskolb/beak
+```
+
+### Swift PM and Beak 🐦
+This uses Swift PM to build and run **beak** from this repo, which then runs the `install` function inside the `Beak.swift` file also incuded in this repo. So meta!
+
+```sh
+$ git clone https://github.com/yonaskolb/Beak.git
+$ cd Beak
+$ swift run beak run install
 ```
 
 ## Usage
@@ -97,8 +107,8 @@ Some examples:
 
 ```
 // beak: JohnSundell/ShellOut @ 2.0.0
-// beak: kylef/PathKit @ branch:master
-// beak: apple/swift-package-manager Utility @ exact:0.1.0
+// beak: kylef/PathKit @ upToNextMajor:0.9.0
+// beak: apple/swift-package-manager Utility @ branch:master
 
 import Foundation
 import Pathkit
