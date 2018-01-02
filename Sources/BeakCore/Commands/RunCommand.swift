@@ -22,7 +22,7 @@ class RunCommand: BeakCommand {
         let functionName = functionArguments[0]
         functionArguments = Array(functionArguments.dropFirst())
         
-        let directory = path.parent()
+        let directory = path.absolute().parent()
         guard let function = beakFile.functions.first(where: { $0.name == functionName }) else {
             throw BeakError.invalidFunction(functionName)
         }
