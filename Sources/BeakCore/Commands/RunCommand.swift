@@ -41,6 +41,8 @@ class RunCommand: BeakCommand {
         buildContext.currentdirectory = packagePath.string
         let buildOutput = buildContext.run(bash: "swift build --disable-sandbox")
         if let error = buildOutput.error {
+            print(buildOutput.stdout)
+            print(buildOutput.stderror)
             throw error
         }
 

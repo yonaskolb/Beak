@@ -7,14 +7,7 @@ func tryCommand(_ closure: () throws -> Void) {
     do {
         try closure()
     } catch {
-        if let error = error as? BeakError {
-            print(error.description)
-        }
-        if let error = error as? ArgumentParserError {
-            print(error.description)
-        } else {
-            print(error.localizedDescription)
-        }
+        print("⚠️  \(error)")
         exit(1)
     }
 }
