@@ -17,19 +17,19 @@ An example Swift script:
 /// - Parameters:
 ///   - version: the version to release
 public func release(version: String) throws {
-	// implementation here
-	print("version \(version) released!")
+    // implementation here
+    print("version \(version) released!")
 }
 
 /// Installs the product
 public func install() throws {
-	// implementation here
-	print("installed")
+    // implementation here
+    print("installed")
 }
 ```
 
 ## How does it work?
-Beak analyzes your Swift file via SourceKit and finds all public and global functions. It uses information about the function and parameter names, types and default values to build up a command line interface. It also uses the comment docs to build up descriptive help.
+Beak analyzes your Swift file via SourceKit and finds all public and global functions. It uses information about the function and parameter names, types and default values to build up a command line interface. It also uses standard comment docs to build up descriptive help.
 
 Beak can parse special comments at the top of your script so it can pull in dependencies via the Swift Package Manager.
 
@@ -64,7 +64,7 @@ $ beak run release --version 1.2.0
 version 1.2.0 released
 ```
 
-You can always use `--help` to get more information about a command or a function.
+You can always use `--help` to get more information about a command or a function. This will use information from the doc comments.
 
 ### Functions
 For function to be accessible they must be global and declared public. Any non-public functions can be as helper functions, but won't be seen by Beak.
