@@ -28,7 +28,15 @@ public struct FunctionParser {
 
         for param in function.params {
             func getOption<T: ArgumentKind>() -> OptionArgument<T> {
-                return parser.add(option: "--" + param.name, kind: T.self, usage: param.description)
+                var description = param.description
+                if let defaultValue = param.defaultValue {
+                    if let desc = description {
+                        description = "\(desc) (default: \(defaultValue))"
+                    } else {
+                        description = "default: \(defaultValue)"
+                    }
+                }
+                return parser.add(option: "--" + param.name, kind: T.self, usage: description)
             }
             switch param.type {
             case .bool:
