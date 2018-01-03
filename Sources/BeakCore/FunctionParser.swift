@@ -20,7 +20,7 @@ public struct FunctionParser {
     }
 
     static func getParams(function: Function, arguments: [String]) throws -> [String] {
-        let parser = ArgumentParser(commandName: function.name, usage: "", overview: function.description ?? "")
+        let parser = ArgumentParser(commandName: function.name, usage: "", overview: function.docsDescription ?? "")
 
         for param in function.params {
             func getOption<T: ArgumentKind>(type: T.Type) {

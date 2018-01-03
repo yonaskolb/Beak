@@ -1,17 +1,24 @@
 import Foundation
 
-public struct Function: Equatable {
+public struct Function: Equatable, CustomStringConvertible {
 
     public let name: String
     public let params: [Param]
     public let throwing: Bool
-    public let description: String?
+    public let docsDescription: String?
 
-    public init(name: String, params: [Param] = [], throwing: Bool = false, description: String? = nil) {
+    public init(name: String, params: [Param] = [], throwing: Bool = false, docsDescription: String? = nil) {
         self.name = name
         self.params = params
         self.throwing = throwing
-        self.description = description
+        self.docsDescription = docsDescription
+    }
+
+    public var description: String {
+        let paramString = params.map { param in
+            "\(param.unnamed ? "_ " : "")\(param.name): \(param.optionalType)\(param.defaultValue != nil ? " = \(param.defaultValue!)" : "")"
+            }.joined(separator: ", ")
+        return "\(name)(\(paramString))\(throwing ? " throws" : "")"
     }
 
     public struct Param: Equatable {

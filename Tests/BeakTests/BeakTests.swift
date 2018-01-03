@@ -60,7 +60,7 @@ class BeakTests: XCTestCase {
                     """, parsedTo: Function(name: "described", params: [
                         .init(name: "myInt", type: .int, optional: false, description: "the int value"),
                         .init(name: "myString", type: .string, optional: true, description: "the string value"),
-                    ], description: "My description on multiple lines"))
+                    ], docsDescription: "My description on multiple lines"))
 
                     try expectFunction("public func unnamed(_ noName: String)", parsedTo: Function(name: "unnamed", params: [
                         .init(name: "noName", type: .string, optional: false, unnamed: true),

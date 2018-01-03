@@ -100,6 +100,6 @@ public struct SwiftParser {
         } else {
             throwing = false
         }
-        return Function(name: name, params: params, throwing: throwing, description: description)
+        return Function(name: name, params: params, throwing: throwing, docsDescription: description)
     }
 }

@@ -15,7 +15,7 @@ class ListCommand: BeakCommand {
 
     override func execute(path: Path, beakFile: BeakFile, parsedArguments: ArgumentParser.Result) throws {
         let functions = beakFile.functions.map { function in
-            "\(function.name): \(function.description ?? "")"
+            "\(function.name): \(function.docsDescription ?? "")"
         }
         print("Functions:\n\n  \(functions.joined(separator: "\n  "))\n")
     }

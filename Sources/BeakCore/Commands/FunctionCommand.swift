@@ -24,7 +24,7 @@ class FunctionCommand: BeakCommand {
         let params = function.params.map { param in
             "\(param.name): \(param.optionalType)\(param.defaultValue != nil ? " = \(param.defaultValue!)" : "")\(param.description != nil ? "  - \(param.description!)" : "")"
         }
-        print("\(function.name):\(function.description != nil ? " \(function.description!)" : "")\n  \(params.joined(separator: "\n  "))")
+        print("\(function.name):\(function.docsDescription != nil ? " \(function.docsDescription!)" : "")\n  \(params.joined(separator: "\n  "))")
     }
 }
 
