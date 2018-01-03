@@ -29,6 +29,7 @@ public struct SwiftParser {
         let docs = structure.string(.documentationComment)
         var paramDescriptions: [String: String] = [:]
         var description: String?
+
         if let docs = docs {
             let docsSplit = docs.split(around: "- Parameters:")
             description = docsSplit.0.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -58,20 +59,23 @@ public struct SwiftParser {
         let publicNames = functionSignature.split(separator: "(").last!.split(separator: ":")
         var index = 0
         let params: [Function.Param] = structure.substructure.filter { $0.kind == .varParameter }.map { structure in
+            let paramName = structure.string(.name) ?? ""
             var name = String(publicNames[index])
+            var unnamed = false
             if name == "_" {
-                name = ""
+                name = paramName
+                unnamed = true
             }
             index += 1
 
-            func getDefaultValue() -> String? {
-                guard let nameSuffix = Substring.nameSuffixUpToBody.extract(from: structure, contents: contents) else {
-                    return nil
-                }
-                guard nameSuffix.contains("=") else { return nil }
-                return nameSuffix.split(separator: "=").last?.trimmingCharacters(in: .whitespacesAndNewlines)
-            }
-            let defaultValue = getDefaultValue()
+            // get default value
+            let paramDeclaration = Substring.key.extract(from: structure, contents: contents)!
+            let expressionSplit = paramDeclaration.split(separator: "=")
+                .map(String.init)
+                .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+
+            let defaultValue = expressionSplit.count > 1 ? expressionSplit[1] : nil
+
             let typeName = structure.string(.typeName)!
             let optional: Bool
             let type: String
@@ -82,7 +86,12 @@ public struct SwiftParser {
                 optional = false
                 type = typeName
             }
-            return Function.Param(name: name, type: Function.Param.ParamType(string: type), optional: optional, defaultValue: defaultValue, description: paramDescriptions[name])
+            return Function.Param(name: name,
+                                  type: Function.Param.ParamType(string: type),
+                                  optional: optional,
+                                  defaultValue: defaultValue,
+                                  unnamed: unnamed,
+                                  description: paramDescriptions[name])
         }
         let throwing: Bool
         if let nameSuffix = Substring.nameSuffix.extract(from: structure, contents: contents),

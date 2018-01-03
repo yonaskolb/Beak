@@ -12,7 +12,7 @@ class BeakTests: XCTestCase {
 
                 $0.it("parses functions") {
                     func expectFunction(_ function: String, parsedTo expectedFunction: Function) throws {
-                        let functions = try SwiftParser.parseFunctions(file: function + "{ }")
+                        let functions = try SwiftParser.parseFunctions(file: "// = : ? \n\(function){ }")
                         guard let parsedFunction = functions.first else {
                             throw failure("Could not find function")
                         }
@@ -63,12 +63,16 @@ class BeakTests: XCTestCase {
                     ], description: "My description on multiple lines"))
 
                     try expectFunction("public func unnamed(_ noName: String)", parsedTo: Function(name: "unnamed", params: [
-                        .init(name: "", type: .string, optional: false),
+                        .init(name: "noName", type: .string, optional: false, unnamed: true),
                     ]))
 
                     try expectFunction("public func named(label name: String?)", parsedTo: Function(name: "named", params: [
                         .init(name: "label", type: .string, optional: true),
                     ]))
+
+                    try expectFunction("public func unnamed(_ name: String)", parsedTo: Function(name: "unnamed", params: [
+                        .init(name: "name", type: .string, optional: false, unnamed: true),
+                        ]))
 
                     try expectFunction("public func noParams()", parsedTo: Function(name: "noParams"))
                     try expectFunction("public func throwing() throws", parsedTo: Function(name: "throwing", throwing: true))
@@ -88,19 +92,18 @@ class BeakTests: XCTestCase {
 
                     try expectFunction(
                         Function(name: "build", params: [
-                            .init(name: "version", type: .string),
+                            .init(name: "version", type: .string, unnamed: true),
                             .init(name: "enum", type: .other("MyEnum")),
                             .init(name: "count", type: .int),
                         ], throwing: false),
                         arguments: [
-                            "--version",
                             "1.2.0",
                             "--enum",
                             ".case",
                             "--count",
                             "3"
                         ],
-                        toWrite: "build(version: \"1.2.0\", enum: .case, count: 3)"
+                        toWrite: "build(\"1.2.0\", enum: .case, count: 3)"
                     )
                 }
             }

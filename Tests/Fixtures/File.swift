@@ -13,7 +13,7 @@ public func list(path: String, verbose: Bool = false, doIt: Bool = true) throws 
 }
 
 /// release version
-public func release(version: String? = nil) {
+public func release(_ version: String) {
     helper()
     print("ran release \(version)")
 }

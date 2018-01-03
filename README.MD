@@ -84,7 +84,16 @@ Functions can be throwing, with any errors thrown printed using `CustomStringCon
 ### Parameters
 Any parameters without default values will be required.
 
-Param types of `Int`, `Bool`, and `String` are natively supported. All other types will be passed exactly as they are as raw values, so if it compiles you can pass in anything, for example an enum value`--buildType .debug`
+Param types of `Int`, `Bool`, and `String` are natively supported. All other types will be passed exactly as they are as raw values, so if it compiles you can pass in anything, for example an enum value`--buildType .debug`.
+
+Function parameters without labels will can be used with positional arguments:
+
+```swift
+public func release(_ version: String) { }
+```
+```sh
+beak run release 1.2.0
+```
 
 ### Dependencies
 Sometimes it's useful to be able to pull in other Swift packages as dependencies to use in your script. This can be done by adding some special comments at the top of your file. It must take the form:

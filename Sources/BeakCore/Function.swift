@@ -20,16 +20,18 @@ public struct Function: Equatable {
         public let optional: Bool
         public let defaultValue: String?
         public let description: String?
+        public let unnamed: Bool
 
         public var required: Bool {
             return defaultValue == nil
         }
 
-        public init(name: String, type: ParamType, optional: Bool = false, defaultValue: String? = nil, description: String? = nil) {
+        public init(name: String, type: ParamType, optional: Bool = false, defaultValue: String? = nil, unnamed: Bool = false, description: String? = nil) {
             self.name = name
             self.type = type
             self.optional = optional
             self.defaultValue = defaultValue
+            self.unnamed = unnamed
             self.description = description
         }
 
@@ -39,6 +41,7 @@ public struct Function: Equatable {
                 && lhs.optional == rhs.optional
                 && lhs.defaultValue == rhs.defaultValue
                 && lhs.description == rhs.description
+                && lhs.unnamed == rhs.unnamed
         }
 
         public enum ParamType: CustomStringConvertible, ExpressibleByStringLiteral {

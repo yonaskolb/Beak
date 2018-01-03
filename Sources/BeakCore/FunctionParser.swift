@@ -24,6 +24,7 @@ public struct FunctionParser {
 
         for param in function.params {
             func getOption<T: ArgumentKind>(type: T.Type) {
+
                 var description = param.description
                 if let defaultValue = param.defaultValue {
                     if let desc = description {
@@ -32,7 +33,11 @@ public struct FunctionParser {
                         description = "default: \(defaultValue)"
                     }
                 }
-                _ = parser.add(option: "--" + param.name, kind: T.self, usage: description)
+                if param.unnamed {
+                    _ = parser.add(positional: param.name, kind: type, optional: !param.required, usage: description)
+                } else {
+                    _ = parser.add(option: "--" + param.name, kind: T.self, usage: description)
+                }
             }
             switch param.type {
             case .bool:
@@ -49,27 +54,35 @@ public struct FunctionParser {
         var parsedParams: [String] = []
 
         for param in function.params {
+            var argumentName = param.name
+            if !param.unnamed {
+                argumentName = "--" + argumentName
+            }
             var stringValue: String?
             switch param.type {
             case .int:
-                if let value = try results.get("--" + param.name, type: Int.self) {
+                if let value = try results.get(argumentName, type: Int.self) {
                     stringValue = value.description
                 }
             case .bool:
-                if let value = try results.get("--" + param.name, type: Bool.self) {
+                if let value = try results.get(argumentName, type: Bool.self) {
                     stringValue = value.description
                 }
             case .string:
-                if let value = try results.get("--" + param.name, type: String.self), value != "nil" {
+                if let value = try results.get(argumentName, type: String.self), value != "nil" {
                     stringValue = value.quoted
                 }
             case .other:
-                if let value = try results.get("--" + param.name, type: String.self), value != "nil" {
+                if let value = try results.get(argumentName, type: String.self), value != "nil" {
                     stringValue = value
                 }
             }
             if let stringValue = stringValue {
-                parsedParams.append("\(param.name): \(stringValue)")
+                if param.unnamed {
+                    parsedParams.append(stringValue)
+                } else {
+                    parsedParams.append("\(param.name): \(stringValue)")
+                }
             } else if param.required {
                 throw BeakError.missingRequiredParam(param)
             }
