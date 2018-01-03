@@ -28,7 +28,7 @@ public class PackageManager {
 
     public func createPackage() -> String {
         let dependenciesString = beakFile.dependencies.map { ".package(url: \($0.package.quoted), \($0.requirement))," }.joined(separator: "\n")
-        let librariesString = beakFile.libraries.map { $0.quoted }.joined(separator: "\n")
+        let librariesString = beakFile.libraries.map { "\($0.quoted)," }.joined(separator: "\n")
         return """
         // swift-tools-version:4.0
 
