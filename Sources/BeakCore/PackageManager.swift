@@ -3,25 +3,36 @@ import PathKit
 
 public class PackageManager {
 
-    public let name: String
-    public let beakFile: BeakFile
-    public let functionCall: String
+    public var path: Path
+    public var name: String
+    public var beakFile: BeakFile
 
-    public init(name: String, beakFile: BeakFile, functionCall: String) {
+    var sourcesPath: Path { return path + "Sources" }
+    var mainFilePath: Path { return sourcesPath + "\(name)/main.swift" }
+
+    public init(path: Path, name: String, beakFile: BeakFile) {
+        self.path = path
         self.name = name
         self.beakFile = beakFile
-        self.functionCall = functionCall
     }
 
-    public func write(path: Path) throws {
-        try path.mkpath()
+    public func write(functionCall: String) throws {
+        try write()
 
         let swiftFile = beakFile.contents + "\n\n" + functionCall
-        let sourcesPath = path + "Sources"
-        let swiftFilePath = sourcesPath + "\(name)/main.swift"
-        try swiftFilePath.parent().mkpath()
-        try swiftFilePath.writeIfUnchanged(swiftFile)
+        try mainFilePath.writeIfUnchanged(swiftFile)
+    }
 
+    public func write(filePath: Path) throws {
+        try write()
+
+        try? mainFilePath.delete()
+        try mainFilePath.writeIfUnchanged(beakFile.contents)
+    }
+
+    func write() throws {
+        try path.mkpath()
+        try mainFilePath.parent().mkpath()
         let package = createPackage()
         try (path + "Package.Swift").writeIfUnchanged(package)
     }
@@ -37,12 +48,14 @@ public class PackageManager {
         let package = Package(
             name: \(name.quoted),
             dependencies: [
-            \(dependenciesString)],
+                \(dependenciesString)
+            ],
             targets: [
                 .target(
                     name: \(name.quoted),
                     dependencies: [
-                        \(librariesString)]
+                        \(librariesString)
+                    ]
                 )
             ]
         )
