@@ -7,7 +7,11 @@ func tryCommand(_ closure: () throws -> Void) {
     do {
         try closure()
     } catch {
-        print("⚠️  \(error)")
+        if error._domain == NSCocoaErrorDomain {
+            print("⚠️  \(error.localizedDescription)")
+        } else {
+            print("⚠️  \(error)")
+        }
         exit(1)
     }
 }
