@@ -22,12 +22,8 @@ public struct FunctionParser {
     static func getParams(function: Function, arguments: [String]) throws -> [String] {
         let parser = ArgumentParser(commandName: function.name, usage: "", overview: function.description ?? "")
 
-        var stringArguments: [String: OptionArgument<String>] = [:]
-        var intArguments: [String: OptionArgument<Int>] = [:]
-        var boolArguments: [String: OptionArgument<Bool>] = [:]
-
         for param in function.params {
-            func getOption<T: ArgumentKind>() -> OptionArgument<T> {
+            func getOption<T: ArgumentKind>(type: T.Type) {
                 var description = param.description
                 if let defaultValue = param.defaultValue {
                     if let desc = description {
@@ -36,15 +32,15 @@ public struct FunctionParser {
                         description = "default: \(defaultValue)"
                     }
                 }
-                return parser.add(option: "--" + param.name, kind: T.self, usage: description)
+                _ = parser.add(option: "--" + param.name, kind: T.self, usage: description)
             }
             switch param.type {
             case .bool:
-                boolArguments[param.name] = getOption()
+                getOption(type: Bool.self)
             case .int:
-                intArguments[param.name] = getOption()
+                getOption(type: Int.self)
             case .string, .other:
-                stringArguments[param.name] = getOption()
+                getOption(type: String.self)
             }
         }
 
@@ -56,23 +52,19 @@ public struct FunctionParser {
             var stringValue: String?
             switch param.type {
             case .int:
-                if let argument = intArguments[param.name],
-                    let value = results.get(argument) {
+                if let value = try results.get("--" + param.name, type: Int.self) {
                     stringValue = value.description
                 }
             case .bool:
-                if let argument = boolArguments[param.name],
-                    let value = results.get(argument) {
+                if let value = try results.get("--" + param.name, type: Bool.self) {
                     stringValue = value.description
                 }
             case .string:
-                if let argument = stringArguments[param.name],
-                    let value = results.get(argument), value != "nil" {
+                if let value = try results.get("--" + param.name, type: String.self), value != "nil" {
                     stringValue = value.quoted
                 }
             case .other:
-                if let argument = stringArguments[param.name],
-                    let value = results.get(argument), value != "nil" {
+                if let value = try results.get("--" + param.name, type: String.self), value != "nil" {
                     stringValue = value
                 }
             }
