@@ -17,12 +17,13 @@ public class PackageManager {
         try path.mkpath()
 
         let swiftFile = beakFile.contents + "\n\n" + functionCall
-        let swiftFilePath = path + "Sources/\(name)/main.swift"
+        let sourcesPath = path + "Sources"
+        let swiftFilePath = sourcesPath + "\(name)/main.swift"
         try swiftFilePath.parent().mkpath()
-        try swiftFilePath.write(swiftFile)
+        try swiftFilePath.writeIfUnchanged(swiftFile)
 
         let package = createPackage()
-        try (path + "Package.Swift").write(package)
+        try (path + "Package.Swift").writeIfUnchanged(package)
     }
 
     public func createPackage() -> String {
@@ -46,5 +47,17 @@ public class PackageManager {
             ]
         )
         """
+    }
+}
+
+extension Path {
+
+    func writeIfUnchanged(_ string: String) throws {
+        if let existingContent: String = try? read() {
+            if existingContent == string {
+                return
+            }
+        }
+        try write(string)
     }
 }
