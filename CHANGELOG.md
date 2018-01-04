@@ -7,7 +7,7 @@
 #### Added
 - Unnamed params are now parsed to positional arguments
 - Added `beak edit` command
-- Added `beak version` command
+- Added `beak --version`
 - Added `release` to `beak.swift`
 
 ### Changed

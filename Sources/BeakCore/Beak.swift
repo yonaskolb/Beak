@@ -28,22 +28,27 @@ public class Beak {
     public func execute(arguments: [String]) throws {
 
         let parser = ArgumentParser(commandName: "beak", usage: "[subcommand] [--path]", overview: "Beak can inspect and run functions in your swift scripts")
+        let versionArgument = parser.add(option: "--version", shortName: "-v", kind: Bool.self, usage: "Prints the current version of Beak")
 
         let commands = [
             "list": ListCommand(options: options, parentParser: parser),
             "function": FunctionCommand(options: options, parentParser: parser),
             "run": RunCommand(options: options, parentParser: parser),
             "edit": EditCommand(options: options, parentParser: parser),
-            "version": VersionCommand(options: options, parentParser: parser, version: version),
         ]
 
         let parsedArguments = try parser.parse(arguments)
+
+        if let printVersion = parsedArguments.get(versionArgument), printVersion == true {
+            print(self.version)
+            return
+        }
+
         if let subParser = parsedArguments.subparser(parser),
             let command = commands[subParser] {
             try command.execute(parsedArguments: parsedArguments)
         } else {
             parser.printUsage(on: stdoutStream)
         }
-        return
     }
 }
