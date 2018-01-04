@@ -31,15 +31,14 @@ class RunCommand: BeakCommand {
         let functionCall = try FunctionParser.getFunctionCall(function: function, arguments: functionArguments)
 
         // create package
-        let packageName = "BeakFile"
-        let packageManager = PackageManager(name: packageName, beakFile: beakFile, functionCall: functionCall)
         let packagePath = options.cachePath + directory.string.replacingOccurrences(of: "/", with: "_")
-        try packageManager.write(path: packagePath)
+        let packageManager = PackageManager(path: packagePath, name: options.packageName, beakFile: beakFile)
+        try packageManager.write(functionCall: functionCall)
 
         // build package
-        var buildContext = CustomContext(main)
-        buildContext.currentdirectory = packagePath.string
-        let buildOutput = buildContext.run(bash: "swift build --disable-sandbox")
+        var packageContext = CustomContext(main)
+        packageContext.currentdirectory = packagePath.string
+        let buildOutput = packageContext.run(bash: "swift build --disable-sandbox")
         if let error = buildOutput.error {
             print(buildOutput.stdout)
             print(buildOutput.stderror)
@@ -47,6 +46,6 @@ class RunCommand: BeakCommand {
         }
 
         // run package
-        try runAndPrint(bash: "\(packagePath.string)/.build/debug/\(packageName)")
+        try runAndPrint(bash: "\(packagePath.string)/.build/debug/\(options.packageName)")
     }
 }

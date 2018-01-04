@@ -56,22 +56,32 @@ $ swift run beak run install
 
 ## Usage
 
-List functions:
+#### List functions:
+
+This shows all the functions that can be run
 
 ```sh
 $ beak list
-Functions:
 
   release: Releases the product
   install: Installs the product
 
 ```
 
-Run a function:
+#### Run a function:
+This runs a specific function with parameters.
 
 ```sh
 $ beak run release --version 1.2.0
 version 1.2.0 released
+```
+
+#### Edit the swift file
+This generates and opens an Xcode project with all dependencies linked, which is useful for code completion if you have defined any dependencies.
+
+```sh
+$ beak edit
+generating project
 ```
 
 You can always use `--help` to get more information about a command or a function. This will use information from the doc comments.
@@ -124,6 +134,8 @@ import Pathkit
 import Shellout
 import Utility
 ```
+
+You can use `beak edit` to get code completion for these imported dependencies.
 
 ## License
 

@@ -8,9 +8,11 @@ import Basic
 public struct BeakOptions {
 
     public let cachePath: Path
+    public let packageName: String
 
-    public init(cachePath: Path = "~/Documents/beak/builds") {
+    public init(cachePath: Path = "~/Documents/beak/builds", packageName: String = "BeakFile") {
         self.cachePath = cachePath.normalize()
+        self.packageName = packageName
     }
 }
 
@@ -30,6 +32,7 @@ public class Beak {
             "list": ListCommand(options: options, parentParser: parser),
             "function": FunctionCommand(options: options, parentParser: parser),
             "run": RunCommand(options: options, parentParser: parser),
+            "edit": EditCommand(options: options, parentParser: parser),
         ]
 
         let parsedArguments = try parser.parse(arguments)
