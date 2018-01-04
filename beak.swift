@@ -55,8 +55,8 @@ public func updateBrew(_ version: String) throws {
       replacement: "sha256 \"\(sha)\"",
       path: "Formula/beak.rb")
 
-  //run(bash: "git add Formula/beak.rb")
-  //run(bash: "git commit -m \"Updated brew to \(version)\"")
+  run(bash: "git add Formula/beak.rb")
+  run(bash: "git commit -m \"Updated brew to \(version)\"")
 }
 
 /// Releases a new version of Beak

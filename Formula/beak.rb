@@ -8,6 +8,9 @@ class Beak < Formula
   depends_on :xcode
 
   def install
-    system "swift run beak run install"
+    build_path = "#{buildpath}/.build/release/beak"
+    ohai "Building Beak"
+    system("swift build --disable-sandbox -c release -Xswiftc -static-stdlib")
+    bin.install build_path
   end
 end
