@@ -45,6 +45,13 @@ Make sure Xcode 9+ is installed first.
 $ mint run yonaskolb/beak
 ```
 
+### Homebrew
+
+```
+$ brew tap yonaskolb/Beak https://github.com/yonaskolb/Beak.git
+$ brew install Beak
+```
+
 ### Swift PM and Beak 🐦
 This uses Swift PM to build and run **beak** from this repo, which then runs the `install` function inside the `Beak.swift` file also incuded in this repo. So meta!
 

@@ -10,3 +10,4 @@ class Beak < Formula
   def install
     system "swift run beak run install"
   end
+end
