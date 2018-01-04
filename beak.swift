@@ -40,7 +40,7 @@ public func release(_ version: String) throws {
         path: "Sources/BeakCore/Beak.swift")
 
     run(bash: "git add Sources/BeakCore/Beak.swift")
-    run(bash: "git commit -m \"Update brew to \(version)\"")
+    run(bash: "git commit -m \"Updated to \(version)\"")
     run(bash: "git tag \(version)")
     
     print("🐦  Released version \(version)!")
