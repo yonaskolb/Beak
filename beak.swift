@@ -38,7 +38,7 @@ public func install(directory: String = "/usr/local/bin") throws {
 ///   - version: The version to release
 public func updateBrew(_ version: String) throws {
   let releaseTar = "\(repo)/archive/\(version).tar.gz"
-  let output = run(bash: "curl -L -s $(RELEASE_TAR) | shasum -a 256 | sed 's/ .*//'")
+  let output = run(bash: "curl -L -s \(releaseTar) | shasum -a 256 | sed 's/ .*//'")
   guard output.succeeded else {
     print("Error retrieving brew SHA")
     return
