@@ -18,6 +18,7 @@ public struct BeakOptions {
 
 public class Beak {
 
+    public let version: String = "0.1.0"
     public let options: BeakOptions
 
     public init(options: BeakOptions) {
@@ -33,6 +34,7 @@ public class Beak {
             "function": FunctionCommand(options: options, parentParser: parser),
             "run": RunCommand(options: options, parentParser: parser),
             "edit": EditCommand(options: options, parentParser: parser),
+            "version": VersionCommand(options: options, parentParser: parser, version: version),
         ]
 
         let parsedArguments = try parser.parse(arguments)

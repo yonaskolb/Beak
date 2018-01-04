@@ -26,13 +26,13 @@ class EditCommand: BeakCommand {
         // generate project
         var packageContext = CustomContext(main)
         packageContext.currentdirectory = packagePath.string
-        print("Generating project")
         let buildOutput = packageContext.run(bash: "swift package generate-xcodeproj")
         if let error = buildOutput.error {
             print(buildOutput.stdout)
             print(buildOutput.stderror)
             throw error
         }
+        print("Generating project...")
 
         // run package
         try packageContext.runAndPrint(bash: "open \(options.packageName).xcodeproj")
