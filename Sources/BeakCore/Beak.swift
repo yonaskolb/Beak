@@ -27,8 +27,9 @@ public class Beak {
 
     public func execute(arguments: [String]) throws {
 
-        let parser = ArgumentParser(commandName: "beak", usage: "[subcommand] [--path]", overview: "Beak can inspect and run functions in your swift scripts")
+        let parser = ArgumentParser(commandName: "beak", usage: "[--path] [subcommand]", overview: "Beak can inspect and run functions in your swift scripts")
         let versionArgument = parser.add(option: "--version", shortName: "-v", kind: Bool.self, usage: "Prints the current version of Beak")
+        _ = parser.add(option: "--path", shortName: "-p", kind: String.self, usage: "The path to a swift file. Defaults to beak.swift", completion: .filename)
 
         let commands = [
             "list": ListCommand(options: options, parentParser: parser),
