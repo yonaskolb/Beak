@@ -84,10 +84,18 @@ $ beak list
 
 #### Run a function:
 This runs a specific function with parameters.
+Note that any top level expressions in the swift file will also be run before this function.
 
 ```sh
 $ beak run release --version 1.2.0
 version 1.2.0 released
+```
+
+#### Run the swift file
+It's also possible to just run the whole script instead of a specific function
+
+```sh
+$ beak run
 ```
 
 #### Edit the swift file

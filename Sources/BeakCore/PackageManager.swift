@@ -16,10 +16,13 @@ public class PackageManager {
         self.beakFile = beakFile
     }
 
-    public func write(functionCall: String) throws {
+    public func write(functionCall: String?) throws {
         try write()
 
-        let swiftFile = beakFile.contents + "\n\n" + functionCall
+        var swiftFile = beakFile.contents
+        if let functionCall = functionCall {
+            swiftFile += "\n\n" + functionCall
+        }
         try mainFilePath.writeIfUnchanged(swiftFile)
     }
 
