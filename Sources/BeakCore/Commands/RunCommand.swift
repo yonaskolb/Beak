@@ -14,23 +14,28 @@ class RunCommand: BeakCommand {
             name: "run",
             description: "Run a function"
         )
-        functionArgument = self.parser.add(positional: "function", kind: [String].self, optional: false, strategy: .remaining, usage: "The function to run", completion: ShellCompletion.none)
+        functionArgument = self.parser.add(positional: "function", kind: [String].self, optional: true, strategy: .remaining, usage: "The function to run", completion: ShellCompletion.none)
     }
 
     override func execute(path: Path, beakFile: BeakFile, parsedArguments: ArgumentParser.Result) throws {
         var functionArguments = parsedArguments.get(functionArgument) ?? []
-        let functionName = functionArguments[0]
-        functionArguments = Array(functionArguments.dropFirst())
-        
-        let directory = path.absolute().parent()
-        guard let function = beakFile.functions.first(where: { $0.name == functionName }) else {
-            throw BeakError.invalidFunction(functionName)
+
+
+        var functionCall: String?
+
+        // parse function call
+        if !functionArguments.isEmpty {
+            let functionName = functionArguments[0]
+            functionArguments = Array(functionArguments.dropFirst())
+
+            guard let function = beakFile.functions.first(where: { $0.name == functionName }) else {
+                throw BeakError.invalidFunction(functionName)
+            }
+            functionCall = try FunctionParser.getFunctionCall(function: function, arguments: functionArguments)
         }
 
-        // parse function
-        let functionCall = try FunctionParser.getFunctionCall(function: function, arguments: functionArguments)
-
         // create package
+        let directory = path.absolute().parent()
         let packagePath = options.cachePath + directory.string.replacingOccurrences(of: "/", with: "_")
         let packageManager = PackageManager(path: packagePath, name: options.packageName, beakFile: beakFile)
         try packageManager.write(functionCall: functionCall)
