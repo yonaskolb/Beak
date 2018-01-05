@@ -12,7 +12,6 @@
 #### Changed
 - moved `--path` parameter before subcommands
 
-
 [Commits](https://github.com/yonaskolb/XcodeGen/compare/0.2.0...0.3.0)
 
 ## 0.2.0
