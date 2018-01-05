@@ -2,6 +2,19 @@
 
 ## Master
 
+## 0.3.0
+
+#### Added
+- added homebrew formula
+- added automatic copying back of edited script from Xcode in `beak edit`
+- added ability to simply run file as a script without specifying a function
+
+#### Changed
+- moved `--path` parameter before subcommands
+
+
+[Commits](https://github.com/yonaskolb/XcodeGen/compare/0.2.0...0.3.0)
+
 ## 0.2.0
 
 #### Added
