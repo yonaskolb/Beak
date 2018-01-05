@@ -12,7 +12,7 @@
 #### Changed
 - moved `--path` parameter before subcommands
 
-[Commits](https://github.com/yonaskolb/XcodeGen/compare/0.2.0...0.3.0)
+[Commits](https://github.com/yonaskolb/Beak/compare/0.2.0...0.3.0)
 
 ## 0.2.0
 
@@ -34,7 +34,7 @@
 - Fixed build errors when multiple dependency libraries are imported
 - Fixed `install` beak function
 
-[Commits](https://github.com/yonaskolb/XcodeGen/compare/0.1.0...0.2.0)
+[Commits](https://github.com/yonaskolb/Beak/compare/0.1.0...0.2.0)
 
 ## 0.1.0
 First official release
