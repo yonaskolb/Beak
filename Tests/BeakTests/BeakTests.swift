@@ -72,7 +72,7 @@ class BeakTests: XCTestCase {
 
                     try expectFunction("public func unnamed(_ name: String)", parsedTo: Function(name: "unnamed", params: [
                         .init(name: "name", type: .string, optional: false, unnamed: true),
-                        ]))
+                    ]))
 
                     try expectFunction("public func noParams()", parsedTo: Function(name: "noParams"))
                     try expectFunction("public func throwing() throws", parsedTo: Function(name: "throwing", throwing: true))
@@ -101,7 +101,7 @@ class BeakTests: XCTestCase {
                             "--enum",
                             ".case",
                             "--count",
-                            "3"
+                            "3",
                         ],
                         toWrite: "build(\"1.2.0\", enum: .case, count: 3)"
                     )

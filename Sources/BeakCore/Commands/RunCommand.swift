@@ -1,7 +1,7 @@
 import Foundation
-import Utility
 import PathKit
 import SwiftShell
+import Utility
 
 class RunCommand: BeakCommand {
 
@@ -14,12 +14,11 @@ class RunCommand: BeakCommand {
             name: "run",
             description: "Run a function"
         )
-        functionArgument = self.parser.add(positional: "function", kind: [String].self, optional: true, strategy: .remaining, usage: "The function to run", completion: ShellCompletion.none)
+        functionArgument = parser.add(positional: "function", kind: [String].self, optional: true, strategy: .remaining, usage: "The function to run", completion: ShellCompletion.none)
     }
 
     override func execute(path: Path, beakFile: BeakFile, parsedArguments: ArgumentParser.Result) throws {
         var functionArguments = parsedArguments.get(functionArgument) ?? []
-
 
         var functionCall: String?
 

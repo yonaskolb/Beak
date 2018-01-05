@@ -86,12 +86,14 @@ public struct SwiftParser {
                 optional = false
                 type = typeName
             }
-            return Function.Param(name: name,
-                                  type: Function.Param.ParamType(string: type),
-                                  optional: optional,
-                                  defaultValue: defaultValue,
-                                  unnamed: unnamed,
-                                  description: paramDescriptions[name])
+            return Function.Param(
+                name: name,
+                type: Function.Param.ParamType(string: type),
+                optional: optional,
+                defaultValue: defaultValue,
+                unnamed: unnamed,
+                description: paramDescriptions[name]
+            )
         }
         let throwing: Bool
         if let nameSuffix = Substring.nameSuffix.extract(from: structure, contents: contents),

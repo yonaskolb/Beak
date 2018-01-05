@@ -17,7 +17,7 @@ public struct Function: Equatable, CustomStringConvertible {
     public var description: String {
         let paramString = params.map { param in
             "\(param.unnamed ? "_ " : "")\(param.name): \(param.optionalType)\(param.defaultValue != nil ? " = \(param.defaultValue!)" : "")"
-            }.joined(separator: ", ")
+        }.joined(separator: ", ")
         return "\(name)(\(paramString))\(throwing ? " throws" : "")"
     }
 

@@ -1,13 +1,6 @@
-//
-//  Command.swift
-//  BeakCore
-//
-//  Created by Yonas Kolb on 31/12/17.
-//
-
 import Foundation
-import Utility
 import PathKit
+import Utility
 
 class BeakCommand {
 
@@ -16,7 +9,7 @@ class BeakCommand {
 
     init(options: BeakOptions, parentParser: ArgumentParser, name: String, description: String) {
         self.options = options
-        self.parser = parentParser.add(subparser: name, overview: description)
+        parser = parentParser.add(subparser: name, overview: description)
     }
 
     func execute(parsedArguments: ArgumentParser.Result, path: Path) throws {
@@ -25,6 +18,5 @@ class BeakCommand {
     }
 
     func execute(path: Path, beakFile: BeakFile, parsedArguments: ArgumentParser.Result) throws {
-
     }
 }

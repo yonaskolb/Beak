@@ -1,9 +1,9 @@
+import Basic
 import Foundation
 import PathKit
 import SourceKittenFramework
 import SwiftShell
 import Utility
-import Basic
 
 public struct BeakOptions {
 
@@ -41,7 +41,7 @@ public class Beak {
         let parsedArguments = try parser.parse(arguments)
 
         if let printVersion = parsedArguments.get(versionArgument), printVersion == true {
-            print(self.version)
+            print(version)
             return
         }
 

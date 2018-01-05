@@ -12,7 +12,7 @@ public struct Dependency: Equatable {
             .map { String($0)
                 .trimmingCharacters(in: .whitespaces) }
         let packageAndLibraries = versionSplit[0]
-            .split(separator: " ",  omittingEmptySubsequences: true)
+            .split(separator: " ", omittingEmptySubsequences: true)
             .map(String.init)
         let package = packageAndLibraries[0]
 

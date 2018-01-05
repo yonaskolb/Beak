@@ -1,11 +1,11 @@
 import Foundation
-import Utility
 import PathKit
+import Utility
 
 class FunctionCommand: BeakCommand {
 
     var functionArgument: PositionalArgument<String>!
-    
+
     init(options: BeakOptions, parentParser: ArgumentParser) {
         super.init(
             options: options,
@@ -13,7 +13,7 @@ class FunctionCommand: BeakCommand {
             name: "function",
             description: "Info about a specific function"
         )
-        functionArgument = self.parser.add(positional: "function", kind: String.self, optional: false, usage: "The function to get info about", completion: ShellCompletion.none)
+        functionArgument = parser.add(positional: "function", kind: String.self, optional: false, usage: "The function to get info about", completion: ShellCompletion.none)
     }
 
     override func execute(path: Path, beakFile: BeakFile, parsedArguments: ArgumentParser.Result) throws {
@@ -27,4 +27,3 @@ class FunctionCommand: BeakCommand {
         print("\(function.name):\(function.docsDescription != nil ? " \(function.docsDescription!)" : "")\n  \(params.joined(separator: "\n  "))")
     }
 }
-
