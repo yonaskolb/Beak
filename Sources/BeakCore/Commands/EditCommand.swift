@@ -37,6 +37,14 @@ class EditCommand: BeakCommand {
         // run package
         try packageContext.runAndPrint(bash: "open \(options.packageName).xcodeproj")
         print("Edit the file \"Sources/\(options.packageName)/main.swift\"")
-        print("When you're finished you will have to manually copy and paste the file back to \(path.string)")
+        print("When you're finished type \"c\" to commit the changes and copy the file back to \(path.string), otherwise type anything else")
+        let line = readLine()
+        if line?.lowercased() == "c" {
+            try path.delete()
+            try packageManager.mainFilePath.copy(path)
+            print("Copied edited file back to \(path.string)")
+        } else {
+            print("Changes not copied back to \(path.string)")
+        }
     }
 }

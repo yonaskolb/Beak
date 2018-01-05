@@ -92,6 +92,7 @@ version 1.2.0 released
 
 #### Edit the swift file
 This generates and opens an Xcode project with all dependencies linked, which is useful for code completion if you have defined any dependencies.
+The command line will prompt you to type `c` to commit any changes you made in Xcode back to the original file
 
 ```sh
 $ beak edit
