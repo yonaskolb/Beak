@@ -19,8 +19,7 @@ class BeakCommand {
         self.parser = parentParser.add(subparser: name, overview: description)
     }
 
-    func execute(parsedArguments: ArgumentParser.Result) throws {
-        let path = Path(try parsedArguments.get("--path", type: String.self) ?? "beak.swift").normalize()
+    func execute(parsedArguments: ArgumentParser.Result, path: Path) throws {
         let beakFile = try BeakFile(path: path)
         try execute(path: path, beakFile: beakFile, parsedArguments: parsedArguments)
     }
