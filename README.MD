@@ -28,6 +28,13 @@ public func install() throws {
     print("installed")
 }
 ```
+```sh
+$ beak list
+    release: Releases the product
+    install: Installs the product
+$ beak run release --version 1.2.0
+  version 1.2.0 released!
+```
 
 ## How does it work?
 Beak analyzes your Swift file via SourceKit and finds all public and global functions. It uses information about the function and parameter names, types and default values to build up a command line interface. It also uses standard comment docs to build up descriptive help.
