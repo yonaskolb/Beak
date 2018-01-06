@@ -14,6 +14,8 @@ This is useful for scripting and for make-like files written in Swift. You can r
 An example Swift script:
 
 ```swift
+import Foundation
+
 /// Releases the product
 /// - Parameters:
 ///   - version: the version to release
@@ -112,7 +114,7 @@ You can always use `--help` to get more information about a command or a functio
 ### Functions
 For function to be accessible they must be global and declared public. Any non-public functions can be as helper functions, but won't be seen by Beak.
 
-Functions can be throwing, with any errors thrown printed using `CustomStringConvertible`. This makes it easy to fail your tasks
+Functions can be throwing, with any errors thrown printed using `CustomStringConvertible`. This makes it easy to fail your tasks. For now you must include an `import Foundation` in your script to have throwing functions
 
 ### Parameters
 Any parameters without default values will be required.
