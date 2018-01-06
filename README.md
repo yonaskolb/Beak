@@ -160,6 +160,37 @@ import Utility
 
 You can use `beak edit` to get code completion for these imported dependencies.
 
+## Shebang
+If you put a beak shebang at the top of your swift file and then run `chmod a+x beak.swift` on it to make it executable, you will be able to execute it directly without calling beak.
+
+**tasks.swift**
+
+```swift
+#!/usr/bin/env beak --path
+
+foo() {
+    print("hello foo")
+}
+
+bar() {
+	print("hello bar")
+}
+```
+
+```sh
+$ chmod a+x tasks.swift
+$ ./script.swift run foo
+  hello foo
+```
+
+If you then place this file into `usr/local/bin` you could run this file from anywhere:
+
+```
+$ cp tasks.swift /usr/local/bin/tasks
+$ tasks bar
+  hello bar
+```
+
 ## License
 
 Beak is licensed under the MIT license. See [LICENSE](LICENSE) for more info.
