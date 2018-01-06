@@ -175,7 +175,7 @@ foo() {
 }
 
 bar() {
-	print("hello bar")
+    print("hello bar")
 }
 ```
 
