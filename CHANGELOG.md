@@ -2,15 +2,25 @@
 
 ## Master
 
+## 0.3.1
+
+#### Added
+- Added shebang documentation `#!/usr/bin/env beak --path`
+
+#### Fixed
+- Fixed dependency declarations not being parsed if they didn't start on the first line, for example if you have a shebang
+
+[Commits](https://github.com/yonaskolb/Beak/compare/0.3.0...0.3.1)
+
 ## 0.3.0
 
 #### Added
-- added homebrew formula
-- added automatic copying back of edited script from Xcode in `beak edit`
-- added ability to simply run file as a script without specifying a function
+- Added homebrew formula
+- Added automatic copying back of edited script from Xcode in `beak edit`
+- Added ability to simply run file as a script without specifying a function
 
 #### Changed
-- moved `--path` parameter before subcommands
+- Moved `--path` parameter before subcommands
 
 [Commits](https://github.com/yonaskolb/Beak/compare/0.2.0...0.3.0)
 
