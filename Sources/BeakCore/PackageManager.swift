@@ -8,6 +8,7 @@ public class PackageManager {
     public var beakFile: BeakFile
 
     var sourcesPath: Path { return path + "Sources" }
+    var packagePath: Path { return path + "Package.Swift" }
     var mainFilePath: Path { return sourcesPath + "\(name)/main.swift" }
 
     public init(path: Path, name: String, beakFile: BeakFile) {
@@ -36,13 +37,13 @@ public class PackageManager {
     func write() throws {
         try path.mkpath()
         try mainFilePath.parent().mkpath()
-        let package = createPackage()
-        try (path + "Package.Swift").writeIfUnchanged(package)
+        let package = PackageManager.createPackage(name: name, beakFile: beakFile)
+        try packagePath.writeIfUnchanged(package)
     }
 
-    public func createPackage() -> String {
-        let dependenciesString = beakFile.dependencies.map { ".package(url: \($0.package.quoted), \($0.requirement))," }.joined(separator: "\n")
-        let librariesString = beakFile.libraries.map { "\($0.quoted)," }.joined(separator: "\n")
+    public static func createPackage(name: String, beakFile: BeakFile) -> String {
+        let dependenciesString = beakFile.dependencies.map { ".package(url: \($0.package.quoted), \($0.requirement))," }.joined(separator: "\n        ")
+        let librariesString = beakFile.libraries.map { "\($0.quoted)," }.joined(separator: "\n                ")
         return """
         // swift-tools-version:4.0
 

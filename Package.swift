@@ -31,7 +31,8 @@ let package = Package(
             ]),
         .testTarget(name: "BeakTests", dependencies: [
           "BeakCore",
-          "Spectre"
+          "Spectre",
+          "PathKit",
         ])
     ]
 )

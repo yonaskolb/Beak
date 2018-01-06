@@ -6,7 +6,6 @@ public struct BeakFile {
 
     public let contents: String
     public let dependencies: [Dependency]
-    public let libraries: [String]
     public let functions: [Function]
 
     public init(path: Path) throws {
@@ -15,6 +14,10 @@ public struct BeakFile {
         }
         let contents: String = try path.read()
         try self.init(contents: contents)
+    }
+
+    public var libraries: [String] {
+        return dependencies.reduce([]) { $0 + $1.libraries }
     }
 
     public init(contents: String) throws {
@@ -28,13 +31,11 @@ public struct BeakFile {
             .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
             .filter { !$0.isEmpty }
             .map(Dependency.init)
-        libraries = dependencies.reduce([]) { $0 + $1.libraries }
     }
 
-    public init(contents: String, dependencies: [Dependency], libraries: [String], functions: [Function]) {
+    public init(contents: String, dependencies: [Dependency], functions: [Function]) {
         self.contents = contents
         self.dependencies = dependencies
-        self.libraries = libraries
         self.functions = functions
     }
 }
