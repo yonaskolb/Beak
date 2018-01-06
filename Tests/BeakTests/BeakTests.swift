@@ -111,11 +111,21 @@ class BeakTests: XCTestCase {
             $0.it("parses dependencies") {
 
                 let file = """
+                #!/usr/bin/env beak --path
+
                 // beak: name/repo@4.2.0
                 // beak: https://github.com/name/repo2.git lib1 lib2 @ branch:v4
                 // beak: name2/repo3 @ exact:4.3.0
                 // other comment in beak file
+
                 """
+
+                let file2 = """
+                // beak: name/repo@4.2.0
+                // beak: https://github.com/name/repo2.git lib1 lib2 @ branch:v4
+                // beak: name2/repo3 @ exact:4.3.0
+                """
+
                 let dependencies: [Dependency] = [
                     .init(name: "repo", package: "https://github.com/name/repo.git", requirement: ".exact(\"4.2.0\")", libraries: ["repo"]),
                     .init(name: "repo2", package: "https://github.com/name/repo2.git", requirement: ".branch(\"v4\")", libraries: ["lib1", "lib2"]),
@@ -123,7 +133,9 @@ class BeakTests: XCTestCase {
                 ]
 
                 let beakFile = try BeakFile(contents: file)
+                let beakFile2 = try BeakFile(contents: file2)
                 try expect(beakFile.dependencies) == dependencies
+                try expect(beakFile2.dependencies) == dependencies
             }
         }
     }

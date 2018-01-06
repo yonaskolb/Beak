@@ -23,9 +23,10 @@ public struct BeakFile {
         dependencies = contents
             .split(separator: "\n")
             .map(String.init)
-            .prefix { $0.hasPrefix("// beak:") }
-            .map { $0.replacingOccurrences(of: "// beak:", with: "")
-                .trimmingCharacters(in: .whitespaces) }
+            .filter { $0.hasPrefix("// beak:") }
+            .map { $0.replacingOccurrences(of: "// beak:", with: "") }
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { !$0.isEmpty }
             .map(Dependency.init)
         libraries = dependencies.reduce([]) { $0 + $1.libraries }
     }
