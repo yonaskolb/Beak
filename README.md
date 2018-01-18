@@ -170,18 +170,18 @@ If you put a beak shebang at the top of your swift file and then run `chmod a+x 
 ```swift
 #!/usr/bin/env beak --path
 
-foo() {
+public func foo() {
     print("hello foo")
 }
 
-bar() {
+public func bar() {
     print("hello bar")
 }
 ```
 
 ```sh
 $ chmod a+x tasks.swift
-$ ./script.swift run foo
+$ ./tasks.swift run foo
   hello foo
 ```
 
