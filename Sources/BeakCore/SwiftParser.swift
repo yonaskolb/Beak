@@ -61,7 +61,7 @@ public struct SwiftParser {
         let publicNames = functionSignature.split(separator: "(").last!.split(separator: ":")
         var index = 0
         let bodyOffset = structure.int(.bodyOffset)
-        let params: [Function.Param] = try structure.substructure.filter { $0.kind == .varParameter && ($0.int(.offset) ?? 0) < (bodyOffset ?? 1)  }.map { paramStructure in
+        let params: [Function.Param] = try structure.substructure.filter { $0.kind == .varParameter && ($0.int(.offset) ?? 0) < (bodyOffset ?? 1) }.map { paramStructure in
             let paramName = paramStructure.string(.name) ?? ""
             var name = String(publicNames[index])
             var unnamed = false

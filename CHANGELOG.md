@@ -2,6 +2,13 @@
 
 ## Master
 
+## 0.3.2
+
+#### Fixed
+- Fixed the parsing of files with anonymous functions within the public functions #15
+
+[Commits](https://github.com/yonaskolb/Beak/compare/0.3.1...0.3.2)
+
 ## 0.3.1
 
 #### Added

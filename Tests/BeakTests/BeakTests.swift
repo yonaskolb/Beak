@@ -67,7 +67,7 @@ class BeakTests: XCTestCase {
                 }
                 """, parsedTo: Function(name: "topFunction", params: [
                     .init(name: "path", type: .string, optional: false),
-                    ]))
+                ]))
 
                 try expectFunction("public func unnamed(_ noName: String) {}", parsedTo: Function(name: "unnamed", params: [
                     .init(name: "noName", type: .string, optional: false, unnamed: true),
