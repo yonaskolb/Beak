@@ -8,7 +8,7 @@ enum SwiftAccessability: String {
     case `internal` = "source.lang.swift.accessibility.internal"
 }
 
-typealias SwiftStructure = [String: SourceKitRepresentable]
+public typealias SwiftStructure = [String: SourceKitRepresentable]
 
 extension Dictionary where Key == String, Value == SourceKitRepresentable {
 
