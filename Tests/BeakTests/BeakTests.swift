@@ -11,7 +11,7 @@ class BeakTests: XCTestCase {
 
             $0.it("parses functions") {
                 func expectFunction(_ function: String, parsedTo expectedFunction: Function) throws {
-                    let functions = try SwiftParser.parseFunctions(file: "// = : ? \n\(function){ }")
+                    let functions = try SwiftParser.parseFunctions(file: "// = : ? \n\(function)")
                     guard let parsedFunction = functions.first else {
                         throw failure("Could not find function")
                     }
@@ -24,7 +24,7 @@ class BeakTests: XCTestCase {
                     myString: String,
                     myBool: Bool,
                     custom: MyType
-                )
+                ){ }
                 """, parsedTo: Function(name: "normal", params: [
                     .init(name: "myInt", type: .int, optional: false),
                     .init(name: "myString", type: .string, optional: false),
@@ -38,7 +38,7 @@ class BeakTests: XCTestCase {
                     myString: String? = "default",
                     myBool: Bool = true,
                     custom: MyType = .default
-                )
+                ){ }
                 """, parsedTo: Function(name: "defaults", params: [
                     .init(name: "myInt", type: .int, optional: false, defaultValue: "5"),
                     .init(name: "myString", type: .string, optional: true, defaultValue: "\"default\""),
@@ -55,26 +55,34 @@ class BeakTests: XCTestCase {
                 public func described(
                     myInt: Int,
                     myString internal: String?
-                )
+                ){ }
                 """, parsedTo: Function(name: "described", params: [
                     .init(name: "myInt", type: .int, optional: false, description: "the int value"),
                     .init(name: "myString", type: .string, optional: true, description: "the string value"),
                 ], docsDescription: "My description on multiple lines"))
 
-                try expectFunction("public func unnamed(_ noName: String)", parsedTo: Function(name: "unnamed", params: [
+                try expectFunction("""
+                public func topFunction(path: String) {
+                    let x = { param in }
+                }
+                """, parsedTo: Function(name: "topFunction", params: [
+                    .init(name: "path", type: .string, optional: false),
+                    ]))
+
+                try expectFunction("public func unnamed(_ noName: String) {}", parsedTo: Function(name: "unnamed", params: [
                     .init(name: "noName", type: .string, optional: false, unnamed: true),
                 ]))
 
-                try expectFunction("public func named(label name: String?)", parsedTo: Function(name: "named", params: [
+                try expectFunction("public func named(label name: String?) {}", parsedTo: Function(name: "named", params: [
                     .init(name: "label", type: .string, optional: true),
                 ]))
 
-                try expectFunction("public func unnamed(_ name: String)", parsedTo: Function(name: "unnamed", params: [
+                try expectFunction("public func unnamed(_ name: String) {}", parsedTo: Function(name: "unnamed", params: [
                     .init(name: "name", type: .string, optional: false, unnamed: true),
                 ]))
 
-                try expectFunction("public func noParams()", parsedTo: Function(name: "noParams"))
-                try expectFunction("public func throwing() throws", parsedTo: Function(name: "throwing", throwing: true))
+                try expectFunction("public func noParams() {}", parsedTo: Function(name: "noParams"))
+                try expectFunction("public func throwing() throws {}", parsedTo: Function(name: "throwing", throwing: true))
             }
 
             $0.it("parses dependencies") {

@@ -19,13 +19,15 @@ public struct SwiftParser {
         for (index, docStructure) in swiftDocs.docsDictionary.substructure.enumerated() {
             subStructure[index][SwiftDocKey.documentationComment.rawValue] = docStructure[SwiftDocKey.documentationComment.rawValue]
         }
-        return subStructure
+        return try subStructure
             .filter { $0.kind == .functionFree && $0.accessibility == .public }
-            .map { SwiftParser.parseFunction(structure: $0, contents: file.contents) }
+            .map { try SwiftParser.parseFunction(structure: $0, contents: file.contents) }
     }
 
-    private static func parseFunction(structure: SwiftStructure, contents: String) -> Function {
-        let functionSignature = structure.string(.name)!
+    private static func parseFunction(structure: SwiftStructure, contents: String) throws -> Function {
+        guard let functionSignature = structure.string(.name) else {
+            throw BeakError.parsingError(structure)
+        }
         let docs = structure.string(.documentationComment)
         var paramDescriptions: [String: String] = [:]
         var description: String?
@@ -58,8 +60,9 @@ public struct SwiftParser {
         let name = String(functionSignature.split(separator: "(").first!)
         let publicNames = functionSignature.split(separator: "(").last!.split(separator: ":")
         var index = 0
-        let params: [Function.Param] = structure.substructure.filter { $0.kind == .varParameter }.map { structure in
-            let paramName = structure.string(.name) ?? ""
+        let bodyOffset = structure.int(.bodyOffset)
+        let params: [Function.Param] = try structure.substructure.filter { $0.kind == .varParameter && ($0.int(.offset) ?? 0) < (bodyOffset ?? 1)  }.map { paramStructure in
+            let paramName = paramStructure.string(.name) ?? ""
             var name = String(publicNames[index])
             var unnamed = false
             if name == "_" {
@@ -69,14 +72,18 @@ public struct SwiftParser {
             index += 1
 
             // get default value
-            let paramDeclaration = Substring.key.extract(from: structure, contents: contents)!
+            guard let paramDeclaration = Substring.key.extract(from: paramStructure, contents: contents) else {
+                throw BeakError.parsingError(structure)
+            }
             let expressionSplit = paramDeclaration.split(separator: "=")
                 .map(String.init)
                 .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
 
             let defaultValue = expressionSplit.count > 1 ? expressionSplit[1] : nil
 
-            let typeName = structure.string(.typeName)!
+            guard let typeName = paramStructure.string(.typeName) else {
+                throw BeakError.parsingError(structure)
+            }
             let optional: Bool
             let type: String
             if typeName.hasSuffix("?") {
