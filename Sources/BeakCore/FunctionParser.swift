@@ -61,19 +61,19 @@ public struct FunctionParser {
             var stringValue: String?
             switch param.type {
             case .int:
-                if let value = try results.get(argumentName, type: Int.self) {
+                if let value: Int = try results.get(argumentName) {
                     stringValue = value.description
                 }
             case .bool:
-                if let value = try results.get(argumentName, type: Bool.self) {
+                if let value: Bool = try results.get(argumentName) {
                     stringValue = value.description
                 }
             case .string:
-                if let value = try results.get(argumentName, type: String.self), value != "nil" {
+                if let value: String = try results.get(argumentName), value != "nil" {
                     stringValue = value.quoted
                 }
             case .other:
-                if let value = try results.get(argumentName, type: String.self), value != "nil" {
+                if let value: String = try results.get(argumentName), value != "nil" {
                     stringValue = value
                 }
             }

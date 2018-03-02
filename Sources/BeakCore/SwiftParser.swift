@@ -6,7 +6,7 @@ public struct SwiftParser {
 
     public static func parseFunctions(file: String) throws -> [Function] {
         let file = File(contents: file)
-        let structure = Structure(file: file)
+        let structure = try Structure(file: file)
         if let diagnostics = structure.dictionary["key.diagnostics"] as? [SwiftStructure],
             let diagnostic = diagnostics.first(where: { ($0["key.severity"] as? String)?.hasSuffix("error") ?? false }),
             let description = diagnostic["key.description"] as? String {
