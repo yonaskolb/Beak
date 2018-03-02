@@ -2,6 +2,13 @@
 
 ## Master
 
+## 0.3.3
+
+#### Fixed
+- Fixed a installation issue due to a dependency on a Swift PM commit that no longer existed #17
+
+[Commits](https://github.com/yonaskolb/Beak/compare/0.3.2...0.3.3)
+
 ## 0.3.2
 
 #### Fixed
