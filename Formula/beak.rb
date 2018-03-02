@@ -1,8 +1,8 @@
 class Beak < Formula
   desc "A command line interface for your Swift scripts"
   homepage "https://github.com/yonaskolb/Beak"
-  url "https://github.com/yonaskolb/Beak/archive/0.3.2.tar.gz"
-  sha256 "762f6c0f08a03ad1bf4f386aba852256f04628080f5ce5f2423778f0d523d0aa"
+  url "https://github.com/yonaskolb/Beak/archive/0.3.3.tar.gz"
+  sha256 "f937f4325e331a3748630367d8a9093730ae3e2640daf92d5cd5f5672beec3e4"
   head "https://github.com/yonaskolb/Beak.git"
 
   depends_on :xcode
