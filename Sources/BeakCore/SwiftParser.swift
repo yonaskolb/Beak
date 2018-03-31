@@ -16,8 +16,11 @@ public struct SwiftParser {
         // merge docs into structure
         var subStructure = structure.dictionary.substructure
         let swiftDocs = SwiftDocs(file: file, arguments: [])!
-        for (index, docStructure) in swiftDocs.docsDictionary.substructure.enumerated() {
-            subStructure[index][SwiftDocKey.documentationComment.rawValue] = docStructure[SwiftDocKey.documentationComment.rawValue]
+        
+        for docStructure in swiftDocs.docsDictionary.substructure {
+            if let index = subStructure.index(where: { $0.int(.nameOffset) == docStructure.int(.nameOffset) }) {
+                subStructure[index][SwiftDocKey.documentationComment.rawValue] = docStructure[SwiftDocKey.documentationComment.rawValue]
+            }
         }
         return try subStructure
             .filter { $0.kind == .functionFree && $0.accessibility == .public }
