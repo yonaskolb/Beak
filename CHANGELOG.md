@@ -2,6 +2,16 @@
 
 ## Master
 
+## 0.3.4
+
+#### Fixed
+- Fixed swift package manager dependency targeting so that `BeakCore` can be used as a dependency #19
+
+#### Internal
+- Updated PathKit, SWXMLHash, swift-package-manager, and SwiftShell
+
+[Commits](https://github.com/yonaskolb/Beak/compare/0.3.3...0.3.4)
+
 ## 0.3.3
 
 #### Fixed
