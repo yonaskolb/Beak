@@ -9,10 +9,10 @@ let package = Package(
         .library(name: "BeakCore", targets: ["BeakCore"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/jpsim/SourceKitten", from: "0.18.0"),
+        .package(url: "https://github.com/jpsim/SourceKitten", from: "0.19.1"),
         .package(url: "https://github.com/kylef/PathKit.git", from: "0.8.0"),
         .package(url: "https://github.com/kylef/Spectre.git", from: "0.8.0"),
-        .package(url: "https://github.com/yonaskolb/swift-package-manager", .branch("untyped_arguments")),
+        .package(url: "https://github.com/apple/swift-package-manager", from: "0.2.0"),
         .package(url: "https://github.com/kareman/SwiftShell.git", from: "4.0.0"),
     ],
     targets: [
