@@ -6,6 +6,7 @@ import Utility
 class RunCommand: BeakCommand {
 
     var functionArgument: PositionalArgument<[String]>!
+    var interruptHandler: InterruptHandler?
 
     init(options: BeakOptions, parentParser: ArgumentParser) {
         super.init(
@@ -48,8 +49,33 @@ class RunCommand: BeakCommand {
             print(buildOutput.stderror)
             throw error
         }
+        
+        func forward(from readable: ReadableStream, to writable: WritableStream) {
+            if let data = readable.readSomeData() {
+                writable.write(data: data)
+            }
+        }
+        
+        let stderr = FileHandleStream.init(FileHandle.standardError, encoding: .utf8)
 
         // run package
-        try runAndPrint(bash: "\(packagePath.string)/.build/debug/\(options.packageName)")
+        let cmd = runAsync(bash: "\(packagePath.string)/.build/debug/\(options.packageName)")
+        cmd.stdout.onOutput { forward(from: $0, to: StdoutStream.default) }
+        cmd.stderror.onOutput { forward(from: $0, to: stderr) }
+        
+        // if sent a SIGINT, first pass it on to child process
+        var interrupted = false
+        interruptHandler = try InterruptHandler {
+            interrupted = true
+            cmd.stop()
+        }
+        defer {
+            interruptHandler = nil
+            if interrupted {
+                raise(SIGINT)
+            }
+        }
+        
+        try cmd.finish()
     }
 }
