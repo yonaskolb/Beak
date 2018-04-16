@@ -18,7 +18,7 @@ public struct BeakOptions {
 
 public class Beak {
 
-    public let version: String = "0.3.4"
+    public let version: String = "0.3.5"
     public let options: BeakOptions
 
     public init(options: BeakOptions) {
