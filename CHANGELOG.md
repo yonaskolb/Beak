@@ -2,6 +2,13 @@
 
 ## Master
 
+## 0.3.5
+
+#### Fixed
+- Fix parsed docs not matching to the correct functions in some cases #21
+
+[Commits](https://github.com/yonaskolb/Beak/compare/0.3.4...0.3.5)
+
 ## 0.3.4
 
 #### Fixed
