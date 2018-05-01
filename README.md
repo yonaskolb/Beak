@@ -1,9 +1,9 @@
 # Beak 🐦
 
-[![SPM](https://img.shields.io/badge/Swift_PM-compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager)
-[![Git Version](https://img.shields.io/github/release/yonaskolb/Beak.svg)](https://github.com/yonaskolb/Beak/releases)
-[![Build Status](https://img.shields.io/circleci/project/github/yonaskolb/Beak.svg)](https://circleci.com/gh/yonaskolb/Beak)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/yonaskolb/Beak/blob/master/LICENSE)
+[![SPM](https://img.shields.io/badge/Swift_PM-compatible-brightgreen.svg?style=for-the-badge)](https://swift.org/package-manager)
+[![Git Version](https://img.shields.io/github/release/yonaskolb/Beak.svg?style=for-the-badge)](https://github.com/yonaskolb/Beak/releases)
+[![Build Status](https://img.shields.io/circleci/project/github/yonaskolb/Beak.svg?style=for-the-badge)](https://circleci.com/gh/yonaskolb/Beak)
+[![license](https://img.shields.io/github/license/yonaskolb/Beak.svg?style=for-the-badge)](https://github.com/yonaskolb/Beak/blob/master/LICENSE)
 
 *Peck into your Swift files from the command line*
 
