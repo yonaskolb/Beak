@@ -21,15 +21,19 @@ public class Beak {
         self.options = options
     }
 
-    public func execute() -> Never {
+    public func execute(arguments: [String]? = nil) -> Int32 {
         let cli = CLI(name: "beak", version: version, description: "Beak can inspect and run functions in your swift scripts")
-        cli.globalOptions.append(_pathKey)
+        cli.globalOptions.append(GlobalOptions.path)
         cli.commands = [
             ListCommand(),
             FunctionCommand(),
             RunCommand(options: options),
             EditCommand(options: options)
         ]
-        cli.goAndExit()
+        if let arguments = arguments {
+            return cli.go(with: arguments)
+        } else {
+            return cli.go()
+        }
     }
 }

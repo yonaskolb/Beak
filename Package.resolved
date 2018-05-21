@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/norio-nomura/Clang_C.git",
         "state": {
           "branch": null,
-          "revision": "90a9574276f0fd17f02f58979423c3fd4d73b59e",
-          "version": "1.0.2"
+          "revision": "7b7d3eed8080d14ba39c50e29fa8c7b051bcf969",
+          "version": "1.0.3"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/Quick/Nimble.git",
         "state": {
           "branch": null,
-          "revision": "22800b0954c89344bb8c87f8ab93378076716fb7",
-          "version": "7.0.3"
+          "revision": "21f4fed2052cea480f5f1d2044d45aa25fdfb988",
+          "version": "7.1.1"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/Quick/Quick.git",
         "state": {
           "branch": null,
-          "revision": "0ff81f2c665b4381f526bd656f8708dd52a9ea2f",
-          "version": "1.2.0"
+          "revision": "3e3023569c8d4c4a0d000f58db765df53041117f",
+          "version": "1.3.0"
         }
       },
       {
@@ -69,8 +69,8 @@
         "repositoryURL": "https://github.com/jpsim/SourceKitten",
         "state": {
           "branch": null,
-          "revision": "e06eb730499439ae32c5fbb6f72809ebec2371fd",
-          "version": "0.19.1"
+          "revision": "7c09176766d4bbc5da377ad857953fb49510a6aa",
+          "version": "0.21.0"
         }
       },
       {
@@ -87,17 +87,8 @@
         "repositoryURL": "https://github.com/jakeheis/SwiftCLI",
         "state": {
           "branch": null,
-          "revision": "5ff6ad3f547f83bd9a0b282be93330feb1fbf72d",
-          "version": "5.1.0"
-        }
-      },
-      {
-        "package": "SwiftShell",
-        "repositoryURL": "https://github.com/kareman/SwiftShell.git",
-        "state": {
-          "branch": null,
-          "revision": "b9fd06798993153bc57cde10ee6c75ddc55c2dbd",
-          "version": "4.0.2"
+          "revision": "995f5966072bded933400bbe77ad24914f01d0c0",
+          "version": "5.1.1"
         }
       },
       {
@@ -105,8 +96,8 @@
         "repositoryURL": "https://github.com/drmohundro/SWXMLHash.git",
         "state": {
           "branch": null,
-          "revision": "17d992beb3aaeda403fd35f8d5e70ab1a8124f35",
-          "version": "4.6.0"
+          "revision": "2211b35c2e0e8b08493f86ba52b26e530cabb751",
+          "version": "4.7.0"
         }
       },
       {
@@ -114,8 +105,8 @@
         "repositoryURL": "https://github.com/jpsim/Yams.git",
         "state": {
           "branch": null,
-          "revision": "95f45caf07472ec78223ebada45255086a85b01a",
-          "version": "0.5.0"
+          "revision": "6652aa7b793d3c8a075db0614acb575fcaecf457",
+          "version": "0.7.0"
         }
       }
     ]

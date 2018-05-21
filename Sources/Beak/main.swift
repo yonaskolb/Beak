@@ -1,5 +1,7 @@
 import BeakCore
+import Foundation
 
 let options = BeakOptions()
 let beak = Beak(options: options)
-beak.execute()
+let result = beak.execute()
+exit(result)

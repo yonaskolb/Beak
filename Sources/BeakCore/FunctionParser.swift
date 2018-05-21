@@ -23,19 +23,19 @@ public struct FunctionParser {
         var parsedParams: [String] = []
         var args = arguments
         for param in function.params {
-            let paramValue: String?
+            let possibleValue: String?
             if param.unnamed {
-                paramValue = args.isEmpty ? nil : args.removeFirst()
+                possibleValue = args.isEmpty ? nil : args.removeFirst()
             } else {
                 if let index = args.index(where: { $0 == "--\(param.name)" }), index + 1 < args.count {
                     args.remove(at: index)
-                    paramValue = args.remove(at: index)
+                    possibleValue = args.remove(at: index)
                 } else {
-                    paramValue = nil
+                    possibleValue = nil
                 }
             }
             
-            guard let rawValue = paramValue else {
+            guard var value = possibleValue else {
                 if param.required {
                     throw BeakError.missingRequiredParam(param)
                 } else {
@@ -43,22 +43,20 @@ public struct FunctionParser {
                 }
             }
             
-            let value: String
             switch param.type {
             case .bool:
-                guard let converted = Bool.convert(from: rawValue) else {
-                    throw BeakError.conversionError(param, rawValue)
+                guard let converted = Bool.convert(from: value) else {
+                    throw BeakError.conversionError(param, value)
                 }
                 value = converted.description
             case .int:
-                guard let converted = Int.convert(from: rawValue) else {
-                    throw BeakError.conversionError(param, rawValue)
+                guard let converted = Int.convert(from: value) else {
+                    throw BeakError.conversionError(param, value)
                 }
                 value = converted.description
             case .string:
-                value = rawValue.quoted
-            case .other:
-                value = rawValue
+                value = value.quoted
+            case .other: break
             }
             
             if param.unnamed {

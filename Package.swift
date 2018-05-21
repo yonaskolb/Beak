@@ -13,7 +13,6 @@ let package = Package(
         .package(url: "https://github.com/kylef/PathKit.git", from: "0.8.0"),
         .package(url: "https://github.com/kylef/Spectre.git", from: "0.8.0"),
         .package(url: "https://github.com/jakeheis/SwiftCLI", from: "5.1.0"),
-        .package(url: "https://github.com/kareman/SwiftShell.git", from: "4.0.0"),
     ],
     targets: [
         .target(
@@ -27,7 +26,6 @@ let package = Package(
               "SourceKittenFramework",
               "PathKit",
               "SwiftCLI",
-              "SwiftShell",
             ]),
         .testTarget(name: "BeakTests", dependencies: [
           "BeakCore",

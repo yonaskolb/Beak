@@ -1,5 +1,4 @@
 import PathKit
-import SwiftShell
 import SwiftCLI
 
 class RunCommand: BeakCommand {
@@ -34,16 +33,15 @@ class RunCommand: BeakCommand {
         try packageManager.write(functionCall: functionCall)
 
         // build package
-        var packageContext = CustomContext(main)
-        packageContext.currentdirectory = packagePath.string
-        let buildOutput = packageContext.run(bash: "swift build --disable-sandbox")
-        if let error = buildOutput.error {
-            print(buildOutput.stdout)
-            print(buildOutput.stderror)
+        do {
+            _ = try capture("swift", arguments: ["build", "--disable-sandbox"], directory: packagePath.string)
+        } catch let error as CaptureError {
+            stdout <<< error.captured.rawStdout
+            stdout <<< error.captured.rawStderr
             throw error
         }
 
         // run package
-        try runAndPrint(bash: "\(packagePath.string)/.build/debug/\(options.packageName)")
+        try Task.execvp("\(packagePath.string)/.build/debug/\(options.packageName)", arguments: [])
     }
 }

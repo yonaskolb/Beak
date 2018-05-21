@@ -1,5 +1,5 @@
 import PathKit
-import SwiftShell
+import SwiftCLI
 
 class EditCommand: BeakCommand {
     
@@ -21,27 +21,28 @@ class EditCommand: BeakCommand {
         try packageManager.write(filePath: path)
 
         // generate project
-        var packageContext = CustomContext(main)
-        packageContext.currentdirectory = packagePath.string
-        let buildOutput = packageContext.run(bash: "swift package generate-xcodeproj")
-        if let error = buildOutput.error {
-            print(buildOutput.stdout)
-            print(buildOutput.stderror)
+        do {
+            _ = try capture("swift", arguments: ["package", "generate-xcodeproj"], directory: packagePath.string)
+        } catch let error as CaptureError {
+            stdout <<< error.captured.rawStdout
+            stdout <<< error.captured.rawStderr
             throw error
         }
-        print("Generating project...")
+        stdout <<< "Generating project..."
 
         // run package
-        try packageContext.runAndPrint(bash: "open \(options.packageName).xcodeproj")
-        print("Edit the file \"Sources/\(options.packageName)/main.swift\"")
-        print("When you're finished type \"c\" to commit the changes and copy the file back to \(path.string), otherwise type anything else")
+        try run("open", arguments: ["\(options.packageName).xcodeproj"], directory: packagePath.string)
+        
+        stdout <<< "Edit the file \"Sources/\(options.packageName)/main.swift\""
+        stdout <<< "When you're finished type \"c\" to commit the changes and copy the file back to \(path.string), otherwise type anything else"
+        
         let line = readLine()
         if line?.lowercased() == "c" {
             try path.delete()
             try packageManager.mainFilePath.copy(path)
-            print("Copied edited file back to \(path.string)")
+            stdout <<< "Copied edited file back to \(path.string)"
         } else {
-            print("Changes not copied back to \(path.string)")
+            stdout <<< "Changes not copied back to \(path.string)"
         }
     }
 }
