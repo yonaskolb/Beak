@@ -1,5 +1,5 @@
 import Foundation
-import Utility
+import SwiftCLI
 
 public struct FunctionParser {
 
@@ -20,71 +20,51 @@ public struct FunctionParser {
     }
 
     static func getParams(function: Function, arguments: [String]) throws -> [String] {
-        let parser = ArgumentParser(commandName: function.name, usage: "", overview: function.docsDescription ?? "")
-
-        for param in function.params {
-            func getOption<T: ArgumentKind>(type: T.Type) {
-
-                var description = param.description
-                if let defaultValue = param.defaultValue {
-                    if let desc = description {
-                        description = "\(desc) (default: \(defaultValue))"
-                    } else {
-                        description = "default: \(defaultValue)"
-                    }
-                }
-                if param.unnamed {
-                    _ = parser.add(positional: param.name, kind: type, optional: !param.required, usage: description)
-                } else {
-                    _ = parser.add(option: "--" + param.name, kind: T.self, usage: description)
-                }
-            }
-            switch param.type {
-            case .bool:
-                getOption(type: Bool.self)
-            case .int:
-                getOption(type: Int.self)
-            case .string, .other:
-                getOption(type: String.self)
-            }
-        }
-
-        let results = try parser.parse(arguments)
-
         var parsedParams: [String] = []
-
+        var args = arguments
         for param in function.params {
-            var argumentName = param.name
-            if !param.unnamed {
-                argumentName = "--" + argumentName
-            }
-            var stringValue: String?
-            switch param.type {
-            case .int:
-                if let value: Int = try results.get(argumentName) {
-                    stringValue = value.description
-                }
-            case .bool:
-                if let value: Bool = try results.get(argumentName) {
-                    stringValue = value.description
-                }
-            case .string:
-                if let value: String = try results.get(argumentName), value != "nil" {
-                    stringValue = value.quoted
-                }
-            case .other:
-                if let value: String = try results.get(argumentName), value != "nil" {
-                    stringValue = value
-                }
-            }
-            if let stringValue = stringValue {
-                if param.unnamed {
-                    parsedParams.append(stringValue)
+            let paramValue: String?
+            if param.unnamed {
+                paramValue = args.isEmpty ? nil : args.removeFirst()
+            } else {
+                if let index = args.index(where: { $0 == "--\(param.name)" }), index + 1 < args.count {
+                    args.remove(at: index)
+                    paramValue = args.remove(at: index)
                 } else {
-                    parsedParams.append("\(param.name): \(stringValue)")
+                    paramValue = nil
                 }
-            } else if param.required {
-                throw BeakError.missingRequiredParam(param)
+            }
+            
+            guard let rawValue = paramValue else {
+                if param.required {
+                    throw BeakError.missingRequiredParam(param)
+                } else {
+                    continue
+                }
+            }
+            
+            let value: String
+            switch param.type {
+            case .bool:
+                guard let converted = Bool.convert(from: rawValue) else {
+                    throw BeakError.conversionError(param, rawValue)
+                }
+                value = converted.description
+            case .int:
+                guard let converted = Int.convert(from: rawValue) else {
+                    throw BeakError.conversionError(param, rawValue)
+                }
+                value = converted.description
+            case .string:
+                value = rawValue.quoted
+            case .other:
+                value = rawValue
+            }
+            
+            if param.unnamed {
+                parsedParams.append(value)
+            } else {
+                parsedParams.append("\(param.name): \(value)")
             }
         }
         return parsedParams

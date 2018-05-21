@@ -1,9 +1,5 @@
-import Basic
-import Foundation
 import PathKit
-import SourceKittenFramework
-import SwiftShell
-import Utility
+import SwiftCLI
 
 public struct BeakOptions {
 
@@ -25,31 +21,15 @@ public class Beak {
         self.options = options
     }
 
-    public func execute(arguments: [String]) throws {
-
-        let parser = ArgumentParser(commandName: "beak", usage: "[--path] [subcommand]", overview: "Beak can inspect and run functions in your swift scripts")
-        let versionArgument = parser.add(option: "--version", shortName: "-v", kind: Bool.self, usage: "Prints the current version of Beak")
-        _ = parser.add(option: "--path", shortName: "-p", kind: String.self, usage: "The path to a swift file. Defaults to beak.swift", completion: .filename)
-
-        let commands = [
-            "list": ListCommand(options: options, parentParser: parser),
-            "function": FunctionCommand(options: options, parentParser: parser),
-            "run": RunCommand(options: options, parentParser: parser),
-            "edit": EditCommand(options: options, parentParser: parser),
+    public func execute() -> Never {
+        let cli = CLI(name: "beak", version: version, description: "Beak can inspect and run functions in your swift scripts")
+        cli.globalOptions.append(_pathKey)
+        cli.commands = [
+            ListCommand(),
+            FunctionCommand(),
+            RunCommand(options: options),
+            EditCommand(options: options)
         ]
-
-        let parsedArguments = try parser.parse(arguments)
-
-        if let printVersion = parsedArguments.get(versionArgument), printVersion == true {
-            print(version)
-            return
-        }
-
-        if let subParser = parsedArguments.subparser(parser),
-            let command = commands[subParser] {
-            try command.execute(parsedArguments: parsedArguments)
-        } else {
-            parser.printUsage(on: stdoutStream)
-        }
+        cli.goAndExit()
     }
 }

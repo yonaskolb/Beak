@@ -1,25 +1,22 @@
-import Foundation
 import PathKit
-import Utility
+import SwiftCLI
 
-class BeakCommand {
+let _pathKey = Key<String>("--path", "-p", description: "The path to a swift file. Defaults to beak.swift")
 
-    let parser: ArgumentParser
-    let options: BeakOptions
-    let pathArgument: OptionArgument<String>
+protocol BeakCommand: Command {
+    func execute(path: Path, beakFile: BeakFile) throws
+}
 
-    init(options: BeakOptions, parentParser: ArgumentParser, name: String, description: String) {
-        self.options = options
-        parser = parentParser.add(subparser: name, overview: description)
-        pathArgument = parser.add(option: "--path", shortName: "-p", kind: String.self, usage: "The path to a swift file. Defaults to beak.swift", completion: .filename)
+extension BeakCommand {
+    
+    var path: Key<String> {
+        return _pathKey
     }
-
-    func execute(parsedArguments: ArgumentParser.Result) throws {
-        let path = Path(parsedArguments.get(pathArgument) ?? "beak.swift").normalize()
+    
+    func execute() throws {
+        let path = Path(_pathKey.value ?? "beak.swift").normalize()
         let beakFile = try BeakFile(path: path)
-        try execute(path: path, beakFile: beakFile, parsedArguments: parsedArguments)
+        try execute(path: path, beakFile: beakFile)
     }
-
-    func execute(path: Path, beakFile: BeakFile, parsedArguments: ArgumentParser.Result) throws {
-    }
+    
 }

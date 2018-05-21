@@ -1,36 +1,30 @@
-import Foundation
 import PathKit
 import SwiftShell
-import Utility
+import SwiftCLI
 
 class RunCommand: BeakCommand {
 
-    var functionArgument: PositionalArgument<[String]>!
+    let name = "run"
+    let shortDescription = "Run a function"
 
-    init(options: BeakOptions, parentParser: ArgumentParser) {
-        super.init(
-            options: options,
-            parentParser: parentParser,
-            name: "run",
-            description: "Run a function"
-        )
-        functionArgument = parser.add(positional: "function", kind: [String].self, optional: true, strategy: .remaining, usage: "The function to run", completion: ShellCompletion.none)
+    let function = OptionalParameter()
+    let functionArgs = OptionalCollectedParameter()
+    
+    let options: BeakOptions
+
+    init(options: BeakOptions) {
+        self.options = options
     }
 
-    override func execute(path: Path, beakFile: BeakFile, parsedArguments: ArgumentParser.Result) throws {
-        var functionArguments = parsedArguments.get(functionArgument) ?? []
-
+    func execute(path: Path, beakFile: BeakFile) throws {
         var functionCall: String?
 
         // parse function call
-        if !functionArguments.isEmpty {
-            let functionName = functionArguments[0]
-            functionArguments = Array(functionArguments.dropFirst())
-
+        if let functionName = function.value {
             guard let function = beakFile.functions.first(where: { $0.name == functionName }) else {
                 throw BeakError.invalidFunction(functionName)
             }
-            functionCall = try FunctionParser.getFunctionCall(function: function, arguments: functionArguments)
+            functionCall = try FunctionParser.getFunctionCall(function: function, arguments: functionArgs.value)
         }
 
         // create package

@@ -1,6 +1,5 @@
 import Foundation
 import SourceKittenFramework
-import Utility
 
 public struct SwiftParser {
 
@@ -36,14 +35,14 @@ public struct SwiftParser {
         var description: String?
 
         if let docs = docs {
-            let docsSplit = docs.split(around: "- Parameters:")
-            description = docsSplit.0.trimmingCharacters(in: .whitespacesAndNewlines)
-            if let paramDocs = docsSplit.1 {
+            if let split = docs.range(of: "- Parameters:") {
+                description = String(docs.prefix(upTo: split.lowerBound)).trimmingCharacters(in: .whitespacesAndNewlines)
+                
+                let paramDocs = String(docs.suffix(from: split.upperBound))
                 let regEx = try! NSRegularExpression(pattern: "  - (.*?): (.*?)$", options: [.anchorsMatchLines])
                 let matches = regEx.matches(in: paramDocs, options: [], range: NSRange(location: 0, length: paramDocs.count))
 
                 for match in matches {
-
                     let nameRange = match.range(at: 1)
                     let name = paramDocs
                         .substring(start: nameRange.location, length: nameRange.length)
@@ -56,9 +55,9 @@ public struct SwiftParser {
 
                     paramDescriptions[name] = description
                 }
+            } else {
+                description = docs.trimmingCharacters(in: .whitespacesAndNewlines)
             }
-        } else {
-            description = nil
         }
         let name = String(functionSignature.split(separator: "(").first!)
         let publicNames = functionSignature.split(separator: "(").last!.split(separator: ":")

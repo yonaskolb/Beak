@@ -1,21 +1,18 @@
-import Foundation
-import Utility
 import PathKit
 import SwiftShell
 
 class EditCommand: BeakCommand {
+    
+    let name = "edit"
+    let shortDescription = "Edit the Swift file in an Xcode Project with imported dependencies"
+    
+    let options: BeakOptions
 
-    init(options: BeakOptions, parentParser: ArgumentParser) {
-        super.init(
-            options: options,
-            parentParser: parentParser,
-            name: "edit",
-            description: "Edit the Swift file in an Xcode Project with imported dependencies"
-        )
+    init(options: BeakOptions) {
+        self.options = options
     }
-
-    override func execute(path: Path, beakFile: BeakFile, parsedArguments: ArgumentParser.Result) throws {
-
+    
+    func execute(path: Path, beakFile: BeakFile) throws {
         let directory = path.absolute().parent()
 
         // create package
