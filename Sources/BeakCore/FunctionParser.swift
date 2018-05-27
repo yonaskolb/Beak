@@ -43,20 +43,26 @@ public struct FunctionParser {
                 }
             }
             
-            switch param.type {
-            case .bool:
-                guard let converted = Bool.convert(from: value) else {
+            if value == "nil" {
+                if !param.optional {
                     throw BeakError.conversionError(param, value)
                 }
-                value = converted.description
-            case .int:
-                guard let converted = Int.convert(from: value) else {
-                    throw BeakError.conversionError(param, value)
+            } else {
+                switch param.type {
+                case .bool:
+                    guard let converted = Bool.convert(from: value) else {
+                        throw BeakError.conversionError(param, value)
+                    }
+                    value = converted.description
+                case .int:
+                    guard let converted = Int.convert(from: value) else {
+                        throw BeakError.conversionError(param, value)
+                    }
+                    value = converted.description
+                case .string:
+                    value = value.quoted
+                case .other: break
                 }
-                value = converted.description
-            case .string:
-                value = value.quoted
-            case .other: break
             }
             
             if param.unnamed {
