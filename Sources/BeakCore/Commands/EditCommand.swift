@@ -24,8 +24,8 @@ class EditCommand: BeakCommand {
         do {
             _ = try capture("swift", arguments: ["package", "generate-xcodeproj"], directory: packagePath.string)
         } catch let error as CaptureError {
-            stdout <<< error.captured.rawStdout
-            stdout <<< error.captured.rawStderr
+            stderr <<< error.captured.rawStdout
+            stderr <<< error.captured.rawStderr
             throw error
         }
         stdout <<< "Generating project..."
