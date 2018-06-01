@@ -8,6 +8,11 @@ class Beak < Formula
   depends_on :xcode
 
   def install
+       
+    # fixes an issue an issue in homebrew when both Xcode 9.3+ and command line tools are installed
+    # see more details here https://github.com/Homebrew/brew/pull/4147
+    ENV["CC"] = Utils.popen_read("xcrun -find clang").chomp
+
     build_path = "#{buildpath}/.build/release/beak"
     ohai "Building Beak"
     system("swift build --disable-sandbox -c release -Xswiftc -static-stdlib")
