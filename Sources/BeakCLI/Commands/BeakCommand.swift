@@ -1,5 +1,6 @@
 import PathKit
 import SwiftCLI
+import BeakCore
 
 struct GlobalOptions {
     static let path = Key<String>("-p", "--path", description: "The path to a swift file. Defaults to beak.swift")

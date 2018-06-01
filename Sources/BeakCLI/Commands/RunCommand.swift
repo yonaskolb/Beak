@@ -1,5 +1,6 @@
 import PathKit
 import SwiftCLI
+import BeakCore
 
 class RunCommand: BeakCommand {
 

@@ -1,7 +1,7 @@
-import BeakCore
 import Foundation
+import BeakCLI
+import BeakCore
 
 let options = BeakOptions()
-let beak = Beak(options: options)
-let result = beak.execute()
-exit(result)
+let beak = BeakCLI(options: options)
+beak.execute()

@@ -7,9 +7,9 @@ public class PackageManager {
     public var name: String
     public var beakFile: BeakFile
 
-    var sourcesPath: Path { return path + "Sources" }
-    var packagePath: Path { return path + "Package.swift" }
-    var mainFilePath: Path { return sourcesPath + "\(name)/main.swift" }
+    public var sourcesPath: Path { return path + "Sources" }
+    public var packagePath: Path { return path + "Package.swift" }
+    public var mainFilePath: Path { return sourcesPath + "\(name)/main.swift" }
 
     public init(path: Path, name: String, beakFile: BeakFile) {
         self.path = path

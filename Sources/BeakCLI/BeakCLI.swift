@@ -1,18 +1,8 @@
-import PathKit
 import SwiftCLI
+import BeakCore
+import Foundation
 
-public struct BeakOptions {
-
-    public let cachePath: Path
-    public let packageName: String
-
-    public init(cachePath: Path = "~/.beak/builds", packageName: String = "BeakFile") {
-        self.cachePath = cachePath.normalize()
-        self.packageName = packageName
-    }
-}
-
-public class Beak {
+public class BeakCLI {
 
     public let version: String = "0.3.5"
     public let options: BeakOptions
@@ -21,7 +11,7 @@ public class Beak {
         self.options = options
     }
 
-    public func execute(arguments: [String]? = nil) -> Int32 {
+    public func execute(arguments: [String]? = nil) {
         let cli = CLI(name: "beak", version: version, description: "Beak can inspect and run functions in your swift scripts")
         cli.globalOptions.append(GlobalOptions.path)
         cli.commands = [
@@ -30,10 +20,13 @@ public class Beak {
             RunCommand(options: options),
             EditCommand(options: options)
         ]
+
+        let status: Int32
         if let arguments = arguments {
-            return cli.go(with: arguments)
+            status = cli.go(with: arguments)
         } else {
-            return cli.go()
+            status = cli.go()
         }
+        exit(status)
     }
 }

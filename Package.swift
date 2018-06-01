@@ -18,19 +18,27 @@ let package = Package(
         .target(
             name: "Beak",
             dependencies: [
-              "BeakCore",
+                "BeakCLI",
+            ]),
+        .target(
+            name: "BeakCLI",
+            dependencies: [
+                "BeakCore",
+                "SwiftCLI",
             ]),
         .target(
             name: "BeakCore",
             dependencies: [
-              "SourceKittenFramework",
-              "PathKit",
-              "SwiftCLI",
+                "SourceKittenFramework",
+                "PathKit",
+                "SwiftCLI",
             ]),
-        .testTarget(name: "BeakTests", dependencies: [
-          "BeakCore",
-          "Spectre",
-          "PathKit",
-        ])
+        .testTarget(
+            name: "BeakTests", 
+            dependencies: [
+                "BeakCore",
+                "Spectre",
+                "PathKit",
+            ])
     ]
 )
