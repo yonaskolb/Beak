@@ -1,7 +1,6 @@
 import SourceKittenFramework
-import SwiftCLI
 
-public enum BeakError: ProcessError, CustomStringConvertible {
+public enum BeakError: Error, CustomStringConvertible {
     case fileNotFound(String)
     case compileError(String)
     case invalidFunction(String)
@@ -18,14 +17,6 @@ public enum BeakError: ProcessError, CustomStringConvertible {
         case let .parsingError(structure): return "Could not parse Beak file structure:\n\(toJSON(structure))"
         case let .conversionError(param, value): return "'\(value)' is not convertible to \(param.type.string) for argument \(param.name)"
         }
-    }
-    
-    public var message: String? {
-        return "⚠️  \(description)"
-    }
-    
-    public var exitStatus: Int32 {
-        return 1
     }
     
 }
