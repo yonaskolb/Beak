@@ -1,21 +1,18 @@
-import Foundation
-import Utility
 import PathKit
-import SwiftShell
+import SwiftCLI
 
 class EditCommand: BeakCommand {
+    
+    let name = "edit"
+    let shortDescription = "Edit the Swift file in an Xcode Project with imported dependencies"
+    
+    let options: BeakOptions
 
-    init(options: BeakOptions, parentParser: ArgumentParser) {
-        super.init(
-            options: options,
-            parentParser: parentParser,
-            name: "edit",
-            description: "Edit the Swift file in an Xcode Project with imported dependencies"
-        )
+    init(options: BeakOptions) {
+        self.options = options
     }
-
-    override func execute(path: Path, beakFile: BeakFile, parsedArguments: ArgumentParser.Result) throws {
-
+    
+    func execute(path: Path, beakFile: BeakFile) throws {
         let directory = path.absolute().parent()
 
         // create package
@@ -24,27 +21,28 @@ class EditCommand: BeakCommand {
         try packageManager.write(filePath: path)
 
         // generate project
-        var packageContext = CustomContext(main)
-        packageContext.currentdirectory = packagePath.string
-        let buildOutput = packageContext.run(bash: "swift package generate-xcodeproj")
-        if let error = buildOutput.error {
-            print(buildOutput.stdout)
-            print(buildOutput.stderror)
+        do {
+            _ = try capture("swift", arguments: ["package", "generate-xcodeproj"], directory: packagePath.string)
+        } catch let error as CaptureError {
+            stderr <<< error.captured.rawStdout
+            stderr <<< error.captured.rawStderr
             throw error
         }
-        print("Generating project...")
+        stdout <<< "Generating project..."
 
         // run package
-        try packageContext.runAndPrint(bash: "open \(options.packageName).xcodeproj")
-        print("Edit the file \"Sources/\(options.packageName)/main.swift\"")
-        print("When you're finished type \"c\" to commit the changes and copy the file back to \(path.string), otherwise type anything else")
+        try run("open", arguments: ["\(options.packageName).xcodeproj"], directory: packagePath.string)
+        
+        stdout <<< "Edit the file \"Sources/\(options.packageName)/main.swift\""
+        stdout <<< "When you're finished type \"c\" to commit the changes and copy the file back to \(path.string), otherwise type anything else"
+        
         let line = readLine()
         if line?.lowercased() == "c" {
             try path.delete()
             try packageManager.mainFilePath.copy(path)
-            print("Copied edited file back to \(path.string)")
+            stdout <<< "Copied edited file back to \(path.string)"
         } else {
-            print("Changes not copied back to \(path.string)")
+            stdout <<< "Changes not copied back to \(path.string)"
         }
     }
 }
