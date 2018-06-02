@@ -68,9 +68,9 @@ public func release(_ version: String) throws {
     try replaceFile(
         regex: "public let version: String = \".*\"",
         replacement: "public let version: String = \"\(version)\"",
-        path: "Sources/BeakCore/Beak.swift")
+        path: "Sources/BeakCLI/BeakCLI.swift")
 
-    run(bash: "git add Sources/BeakCore/Beak.swift")
+    run(bash: "git add Sources/BeakCLI/BeakCLI.swift")
     run(bash: "git commit -m \"Updated to \(version)\"")
     run(bash: "git tag \(version)")
 

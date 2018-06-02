@@ -2,6 +2,27 @@
 
 ## Master
 
+## 0.4.0
+
+### Added
+- Added support for reading from input in beak files (stdin) #29 @jakeheis
+- Added support for cancellation (SIGINT forwarding) #29 @jakeheis
+- Added support for passing `nil` to optional parameters #29 @jakeheis
+
+#### Fixed
+
+- Fixed running on case sensitive file systems #27 @tflhyl
+- Fixed homebrew installations #32 @yonaskolb
+
+#### Changed
+- Changed beak cache path from `~/Documents/beak/builds` to `~/.beak/builds` #30 @tflhyl
+
+#### Internal
+- Replaced `SwiftPM` and `SwiftShell` with `SwiftCLI` #29 @jakeheis
+- Created seperate `BeakCLI` target #31 @yonaskolb
+
+[Commits](https://github.com/yonaskolb/Beak/compare/0.3.5...0.4.0)
+
 ## 0.3.5
 
 #### Fixed
