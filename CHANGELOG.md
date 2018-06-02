@@ -8,6 +8,7 @@
 - Added support for reading from input in beak files (stdin) #29 @jakeheis
 - Added support for cancellation (SIGINT forwarding) #29 @jakeheis
 - Added support for passing `nil` to optional parameters #29 @jakeheis
+- Added Linux support #33 @yonaskolb
 
 #### Fixed
 
