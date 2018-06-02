@@ -1,6 +1,7 @@
 # Beak 🐦
 
 [![SPM](https://img.shields.io/badge/Swift_PM-compatible-brightgreen.svg?style=for-the-badge)](https://swift.org/package-manager)
+![Linux](https://img.shields.io/badge/Platforms-macOS_Linux-blue.svg?style=for-the-badge)
 [![Git Version](https://img.shields.io/github/release/yonaskolb/Beak.svg?style=for-the-badge)](https://github.com/yonaskolb/Beak/releases)
 [![Build Status](https://img.shields.io/circleci/project/github/yonaskolb/Beak.svg?style=for-the-badge)](https://circleci.com/gh/yonaskolb/Beak)
 [![license](https://img.shields.io/github/license/yonaskolb/Beak.svg?style=for-the-badge)](https://github.com/yonaskolb/Beak/blob/master/LICENSE)

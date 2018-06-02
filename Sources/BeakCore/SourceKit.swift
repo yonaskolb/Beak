@@ -83,7 +83,7 @@ enum Substring {
     }
 
     func extract(from source: [String: SourceKitRepresentable], contents: String) -> String? {
-        let substring = range(for: source).flatMap { contents.substringWithByteRange(start: Int($0.offset), length: Int($0.length)) }
+        let substring = range(for: source).flatMap { contents.substring(start: Int($0.offset), length: Int($0.length)) }
         return substring?.isEmpty == true ? nil : substring?.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }
