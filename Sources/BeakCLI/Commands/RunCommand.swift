@@ -9,7 +9,7 @@ class RunCommand: BeakCommand {
 
     let function = OptionalParameter()
     let functionArgs = OptionalCollectedParameter()
-    
+
     let options: BeakOptions
 
     init(options: BeakOptions) {

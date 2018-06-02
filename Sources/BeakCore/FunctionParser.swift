@@ -34,7 +34,7 @@ public struct FunctionParser {
                     possibleValue = nil
                 }
             }
-            
+
             guard var value = possibleValue else {
                 if param.required {
                     throw BeakError.missingRequiredParam(param)
@@ -42,7 +42,7 @@ public struct FunctionParser {
                     continue
                 }
             }
-            
+
             if value == "nil" {
                 if !param.optional {
                     throw BeakError.conversionError(param, value)
@@ -64,7 +64,7 @@ public struct FunctionParser {
                 case .other: break
                 }
             }
-            
+
             if param.unnamed {
                 parsedParams.append(value)
             } else {

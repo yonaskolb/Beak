@@ -15,7 +15,7 @@ public struct SwiftParser {
         // merge docs into structure
         var subStructure = structure.dictionary.substructure
         let swiftDocs = SwiftDocs(file: file, arguments: [])!
-        
+
         for docStructure in swiftDocs.docsDictionary.substructure {
             if let index = subStructure.index(where: { $0.int(.nameOffset) == docStructure.int(.nameOffset) }) {
                 subStructure[index][SwiftDocKey.documentationComment.rawValue] = docStructure[SwiftDocKey.documentationComment.rawValue]
@@ -37,7 +37,7 @@ public struct SwiftParser {
         if let docs = docs {
             if let split = docs.range(of: "- Parameters:") {
                 description = String(docs.prefix(upTo: split.lowerBound)).trimmingCharacters(in: .whitespacesAndNewlines)
-                
+
                 let paramDocs = String(docs.suffix(from: split.upperBound))
                 let regEx = try! NSRegularExpression(pattern: "  - (.*?): (.*?)$", options: [.anchorsMatchLines])
                 let matches = regEx.matches(in: paramDocs, options: [], range: NSRange(location: 0, length: paramDocs.count))

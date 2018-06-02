@@ -7,9 +7,9 @@ extension BeakTests {
 }
 
 #if !os(macOS)
-public func __allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(BeakTests.__allTests),
-    ]
-}
+    public func __allTests() -> [XCTestCaseEntry] {
+        return [
+            testCase(BeakTests.__allTests),
+        ]
+    }
 #endif

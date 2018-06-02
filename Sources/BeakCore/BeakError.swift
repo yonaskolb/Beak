@@ -7,7 +7,7 @@ public enum BeakError: Error, CustomStringConvertible {
     case missingRequiredParam(Function.Param)
     case parsingError(SwiftStructure)
     case conversionError(Function.Param, String)
-    
+
     public var description: String {
         switch self {
         case let .fileNotFound(file): return "File not found: \(file)"
@@ -18,5 +18,5 @@ public enum BeakError: Error, CustomStringConvertible {
         case let .conversionError(param, value): return "'\(value)' is not convertible to \(param.type.string) for argument \(param.name)"
         }
     }
-    
+
 }

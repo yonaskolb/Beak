@@ -3,10 +3,10 @@ import SwiftCLI
 import BeakCore
 
 class FunctionCommand: BeakCommand {
-    
+
     let name = "function"
     let shortDescription = "Info about a specific function"
-    
+
     let functionName = Parameter()
 
     func execute(path: Path, beakFile: BeakFile) throws {

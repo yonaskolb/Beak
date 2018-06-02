@@ -18,7 +18,7 @@ public class BeakCLI {
             ListCommand(),
             FunctionCommand(),
             RunCommand(options: options),
-            EditCommand(options: options)
+            EditCommand(options: options),
         ]
 
         let status: Int32

@@ -12,7 +12,7 @@ let repo = "https://github.com/yonaskolb/Beak"
 
 /// Formats all the code in the project
 public func formatCode() throws {
-    let formatOptions = "--wraparguments beforefirst --stripunusedargs closure-only --header strip"
+    let formatOptions = "--wraparguments beforefirst --stripunusedargs closure-only --header strip --disable sortedImports,blankLinesAtEndOfScope,blankLinesAtStartOfScope"
     try runAndPrint(bash: "swiftformat Sources \(formatOptions)")
     try runAndPrint(bash: "swiftformat Tests \(formatOptions)")
 }

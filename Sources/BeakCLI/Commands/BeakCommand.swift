@@ -12,15 +12,15 @@ protocol BeakCommand: Command {
 }
 
 extension BeakCommand {
-    
+
     var path: Key<String> {
         return GlobalOptions.path
     }
-    
+
     func execute() throws {
         let path = Path(self.path.value ?? "beak.swift").normalize()
         let beakFile = try BeakFile(path: path)
         try execute(path: path, beakFile: beakFile)
     }
-    
+
 }
