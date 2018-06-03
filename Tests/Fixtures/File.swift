@@ -18,6 +18,12 @@ public func release(_ version: String) {
     print("ran release \(version)")
 }
 
+public func ask() {
+    if let line = readLine() {
+        print("Recieved \(line)")
+    }
+}
+
 func helper() {
 }
 
