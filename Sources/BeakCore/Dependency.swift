@@ -63,10 +63,4 @@ public struct Dependency: Equatable {
         return ".\(type)(\(version))"
     }
 
-    public static func == (lhs: Dependency, rhs: Dependency) -> Bool {
-        return lhs.name == rhs.name
-            && lhs.package == rhs.package
-            && lhs.requirement == rhs.requirement
-            && lhs.libraries == rhs.libraries
-    }
 }

@@ -42,16 +42,7 @@ public struct Function: Equatable, CustomStringConvertible {
             self.description = description
         }
 
-        public static func == (lhs: Param, rhs: Param) -> Bool {
-            return lhs.name == rhs.name
-                && lhs.type.string == rhs.type.string
-                && lhs.optional == rhs.optional
-                && lhs.defaultValue == rhs.defaultValue
-                && lhs.description == rhs.description
-                && lhs.unnamed == rhs.unnamed
-        }
-
-        public enum ParamType: CustomStringConvertible, ExpressibleByStringLiteral {
+        public enum ParamType: Equatable, CustomStringConvertible, ExpressibleByStringLiteral {
             case bool
             case int
             case string
@@ -87,10 +78,5 @@ public struct Function: Equatable, CustomStringConvertible {
         public var optionalType: String {
             return type.string + (optional ? "?" : "")
         }
-    }
-
-    public static func == (lhs: Function, rhs: Function) -> Bool {
-        return lhs.name == rhs.name
-            && lhs.params == rhs.params
     }
 }

@@ -2,7 +2,7 @@ import Foundation
 import PathKit
 import SourceKittenFramework
 
-public struct BeakFile {
+public struct BeakFile: Equatable {
 
     public let contents: String
     public let dependencies: [Dependency]
