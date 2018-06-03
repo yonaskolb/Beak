@@ -2,6 +2,7 @@
 import PathKit
 import Spectre
 import XCTest
+import SourceKittenFramework
 
 class BeakTests: XCTestCase {
 
@@ -9,13 +10,28 @@ class BeakTests: XCTestCase {
 
         describe("Beak File") {
 
+            $0.it("parses emoji") {
+                let contents = """
+                // emoji comment 🐦
+                func adam() throws -> String {}
+                """
+                let file = File(contents: contents)
+                let structure = try Structure(file: file)
+
+                let function = structure.dictionary.substructure.first!
+
+                try expect(function.string(.name)) == "adam()"
+                try expect(Substring.name.extract(from: function, contents: contents)) == "adam()"
+                try expect(Substring.nameSuffix.extract(from: function, contents: contents)) == "throws -> String {}"
+            }
+
             $0.it("parses functions") {
-                func expectFunction(_ function: String, parsedTo expectedFunction: Function) throws {
+                func expectFunction(_ function: String, parsedTo expectedFunction: Function, file: String = #file, line: Int = #line) throws {
                     let functions = try SwiftParser.parseFunctions(file: "// = : ? \n\(function)")
                     guard let parsedFunction = functions.first else {
                         throw failure("Could not find function")
                     }
-                    try expect(parsedFunction) == expectedFunction
+                    try expect(parsedFunction, file: file, line: line) == expectedFunction
                 }
 
                 try expectFunction("""
@@ -59,7 +75,7 @@ class BeakTests: XCTestCase {
                 """, parsedTo: Function(name: "described", params: [
                     .init(name: "myInt", type: .int, optional: false, description: "the int value"),
                     .init(name: "myString", type: .string, optional: true, description: "the string value"),
-                ], docsDescription: "My description on multiple lines"))
+                ], docsDescription: "My description on\nmultiple lines"))
 
                 try expectFunction("""
                 public func topFunction(path: String) {
@@ -83,6 +99,10 @@ class BeakTests: XCTestCase {
 
                 try expectFunction("public func noParams() {}", parsedTo: Function(name: "noParams"))
                 try expectFunction("public func throwing() throws {}", parsedTo: Function(name: "throwing", throwing: true))
+                try expectFunction("public func throwing(_ version: String) throws {}", parsedTo: Function(name: "throwing", params: [
+                    .init(name: "version", type: .string, optional: false, unnamed: true),
+                    ], throwing: true))
+
             }
 
             $0.it("parses dependencies") {
@@ -113,6 +133,70 @@ class BeakTests: XCTestCase {
                 let beakFile2 = try BeakFile(contents: file2)
                 try expect(beakFile.dependencies) == dependencies
                 try expect(beakFile2.dependencies) == dependencies
+            }
+
+            $0.it("parses beak file") {
+                let path = Path(#file) + "../../../beak.swift"
+                let contents: String = try path.read()
+                let beakFile = try BeakFile(path: path)
+                
+                let expectedBeakFile = BeakFile(
+                    contents: contents,
+                    dependencies: [
+                        Dependency(name: "SwiftShell",
+                                   package: "https://github.com/kareman/SwiftShell.git",
+                                   requirement: ".exact(\"4.0.0\")",
+                                   libraries: ["SwiftShell"]),
+                        Dependency(name: "Regex",
+                                   package: "https://github.com/sharplet/Regex.git",
+                                   requirement: ".exact(\"1.1.0\")",
+                                   libraries: ["Regex"]),
+                        Dependency(name: "PathKit",
+                                   package: "https://github.com/kylef/PathKit.git",
+                                   requirement: ".exact(\"0.8.0\")",
+                                   libraries: ["PathKit"]),
+                        ],
+                    functions: [
+                        Function(name: "formatCode",
+                                 params: [],
+                                 throwing: true,
+                                 docsDescription: "Formats all the code in the project"),
+                        Function(name: "install",
+                                 params: [
+                                    Function.Param(name: "directory",
+                                                   type: .string,
+                                                   optional: false,
+                                                   defaultValue: "\"/usr/local/bin\"",
+                                                   unnamed: false,
+                                                   description: "The directory to install beak"),
+                                    ],
+                                 throwing: true,
+                                 docsDescription: "Installs beak"),
+                        Function(name: "updateBrew",
+                                 params: [
+                                    Function.Param(name: "version",
+                                                   type: .string,
+                                                   optional: false,
+                                                   defaultValue: nil,
+                                                   unnamed: true,
+                                                   description: "The version to release"),
+                                    ],
+                                 throwing: true,
+                                 docsDescription: "Updates homebrew formula to a certain version"),
+                        Function(name: "release",
+                                 params: [
+                                    Function.Param(name: "version",
+                                                   type: .string,
+                                                   optional: false,
+                                                   defaultValue: nil,
+                                                   unnamed: true,
+                                                   description: "The version to release"),
+                                    ],
+                                 throwing: true,
+                                 docsDescription: "Releases a new version of Beak"),
+                        ])
+
+                try expect(beakFile) == expectedBeakFile
             }
         }
 

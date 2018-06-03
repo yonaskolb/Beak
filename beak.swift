@@ -32,7 +32,7 @@ public func install(directory: String = "/usr/local/bin") throws {
     print("🐦  Installed Beak!")
 }
 
-/// Updates homebrew formular to a certain version
+/// Updates homebrew formula to a certain version
 ///
 /// - Parameters:
 ///   - version: The version to release
