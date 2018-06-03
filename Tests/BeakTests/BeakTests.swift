@@ -101,7 +101,7 @@ class BeakTests: XCTestCase {
                 try expectFunction("public func throwing() throws {}", parsedTo: Function(name: "throwing", throwing: true))
                 try expectFunction("public func throwing(_ version: String) throws {}", parsedTo: Function(name: "throwing", params: [
                     .init(name: "version", type: .string, optional: false, unnamed: true),
-                    ], throwing: true))
+                ], throwing: true))
 
             }
 
@@ -139,62 +139,83 @@ class BeakTests: XCTestCase {
                 let path = Path(#file) + "../../../beak.swift"
                 let contents: String = try path.read()
                 let beakFile = try BeakFile(path: path)
-                
+
                 let expectedBeakFile = BeakFile(
                     contents: contents,
                     dependencies: [
-                        Dependency(name: "SwiftShell",
-                                   package: "https://github.com/kareman/SwiftShell.git",
-                                   requirement: ".exact(\"4.0.0\")",
-                                   libraries: ["SwiftShell"]),
-                        Dependency(name: "Regex",
-                                   package: "https://github.com/sharplet/Regex.git",
-                                   requirement: ".exact(\"1.1.0\")",
-                                   libraries: ["Regex"]),
-                        Dependency(name: "PathKit",
-                                   package: "https://github.com/kylef/PathKit.git",
-                                   requirement: ".exact(\"0.8.0\")",
-                                   libraries: ["PathKit"]),
-                        ],
+                        Dependency(
+                            name: "SwiftShell",
+                            package: "https://github.com/kareman/SwiftShell.git",
+                            requirement: ".exact(\"4.0.0\")",
+                            libraries: ["SwiftShell"]
+                        ),
+                        Dependency(
+                            name: "Regex",
+                            package: "https://github.com/sharplet/Regex.git",
+                            requirement: ".exact(\"1.1.0\")",
+                            libraries: ["Regex"]
+                        ),
+                        Dependency(
+                            name: "PathKit",
+                            package: "https://github.com/kylef/PathKit.git",
+                            requirement: ".exact(\"0.8.0\")",
+                            libraries: ["PathKit"]
+                        ),
+                    ],
                     functions: [
-                        Function(name: "formatCode",
-                                 params: [],
-                                 throwing: true,
-                                 docsDescription: "Formats all the code in the project"),
-                        Function(name: "install",
-                                 params: [
-                                    Function.Param(name: "directory",
-                                                   type: .string,
-                                                   optional: false,
-                                                   defaultValue: "\"/usr/local/bin\"",
-                                                   unnamed: false,
-                                                   description: "The directory to install beak"),
-                                    ],
-                                 throwing: true,
-                                 docsDescription: "Installs beak"),
-                        Function(name: "updateBrew",
-                                 params: [
-                                    Function.Param(name: "version",
-                                                   type: .string,
-                                                   optional: false,
-                                                   defaultValue: nil,
-                                                   unnamed: true,
-                                                   description: "The version to release"),
-                                    ],
-                                 throwing: true,
-                                 docsDescription: "Updates homebrew formula to a certain version"),
-                        Function(name: "release",
-                                 params: [
-                                    Function.Param(name: "version",
-                                                   type: .string,
-                                                   optional: false,
-                                                   defaultValue: nil,
-                                                   unnamed: true,
-                                                   description: "The version to release"),
-                                    ],
-                                 throwing: true,
-                                 docsDescription: "Releases a new version of Beak"),
-                        ])
+                        Function(
+                            name: "formatCode",
+                            params: [],
+                            throwing: true,
+                            docsDescription: "Formats all the code in the project"
+                        ),
+                        Function(
+                            name: "install",
+                            params: [
+                                Function.Param(
+                                    name: "directory",
+                                    type: .string,
+                                    optional: false,
+                                    defaultValue: "\"/usr/local/bin\"",
+                                    unnamed: false,
+                                    description: "The directory to install beak"
+                                ),
+                            ],
+                            throwing: true,
+                            docsDescription: "Installs beak"
+                        ),
+                        Function(
+                            name: "updateBrew",
+                            params: [
+                                Function.Param(
+                                    name: "version",
+                                    type: .string,
+                                    optional: false,
+                                    defaultValue: nil,
+                                    unnamed: true,
+                                    description: "The version to release"
+                                ),
+                            ],
+                            throwing: true,
+                            docsDescription: "Updates homebrew formula to a certain version"
+                        ),
+                        Function(
+                            name: "release",
+                            params: [
+                                Function.Param(
+                                    name: "version",
+                                    type: .string,
+                                    optional: false,
+                                    defaultValue: nil,
+                                    unnamed: true,
+                                    description: "The version to release"
+                                ),
+                            ],
+                            throwing: true,
+                            docsDescription: "Releases a new version of Beak"
+                        ),
+                    ]
+                )
 
                 try expect(beakFile) == expectedBeakFile
             }
