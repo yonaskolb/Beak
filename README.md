@@ -190,9 +190,11 @@ If you then place this file into `usr/local/bin` you could run this file from an
 
 ```
 $ cp tasks.swift /usr/local/bin/tasks
-$ tasks bar
+$ tasks run bar
   hello bar
 ```
+
+To automatically insert the `run` option, you can change your shebang to `#!/usr/bin/env beak run --path`. 
 
 ## License
 
