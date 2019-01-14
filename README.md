@@ -196,6 +196,11 @@ $ tasks run bar
 
 To automatically insert the `run` option, you can change your shebang to `#!/usr/bin/env beak run --path`. 
 
+## Alternatives
+
+* [swift sh](https://github.com/mxcl/swift-sh)
+* [Marathon](https://github.com/JohnSundell/Marathon)
+
 ## License
 
 Beak is licensed under the MIT license. See [LICENSE](LICENSE) for more info.
