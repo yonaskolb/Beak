@@ -23,7 +23,7 @@ public func formatCode() throws {
 ///   - directory: The directory to install beak
 public func install(directory: String = "/usr/local/bin") throws {
     print("🐦  Building Beak...")
-    let output = run(bash: "swift build --disable-sandbox -c release -Xswiftc -static-stdlib")
+    let output = run(bash: "swift build --disable-sandbox -c release")
     if let error = output.error {
         print("Couldn't build:\n\(error)")
         return
