@@ -2,6 +2,9 @@
 
 ## Master
 
+### Changed:
+- Updated to Swift 5 and dropped Swift 4.2 #44 @yonaskolb
+
 ## 0.4.0
 
 ### Added
