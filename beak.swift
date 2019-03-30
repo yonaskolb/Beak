@@ -1,6 +1,6 @@
-// beak: kareman/SwiftShell @ 4.0.0
-// beak: sharplet/Regex @ 1.1.0
-// beak: kylef/PathKit @ 0.8.0
+// beak: kareman/SwiftShell @ 5.0.0
+// beak: sharplet/Regex @ 2.0.0
+// beak: kylef/PathKit @ 1.0.0
 
 import Foundation
 import SwiftShell
