@@ -4,7 +4,7 @@ import Foundation
 
 public class BeakCLI {
 
-    public let version: String = "0.4.0"
+    public let version: String = "0.5.0"
     public let options: BeakOptions
 
     public init(options: BeakOptions) {
