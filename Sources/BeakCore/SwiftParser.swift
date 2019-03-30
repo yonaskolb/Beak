@@ -17,7 +17,7 @@ public struct SwiftParser {
         let swiftDocs = SwiftDocs(file: file, arguments: [])!
 
         for docStructure in swiftDocs.docsDictionary.substructure {
-            if let index = subStructure.index(where: { $0.int(.nameOffset) == docStructure.int(.nameOffset) }) {
+            if let index = subStructure.firstIndex(where: { $0.int(.nameOffset) == docStructure.int(.nameOffset) }) {
                 subStructure[index][SwiftDocKey.documentationComment.rawValue] = docStructure[SwiftDocKey.documentationComment.rawValue]
             }
         }

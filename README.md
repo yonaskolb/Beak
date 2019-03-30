@@ -48,7 +48,7 @@ By default Beak looks for a file called `beak.swift` in your current directory, 
 This repo itself has a Beak file for running build scripts.
 
 ## Installing
-Make sure Xcode 9+ is installed first.
+Make sure Xcode 10.2+ is installed first.
 
 ### [Mint](https://github.com/yonaskolb/mint) 🌱
 ```sh

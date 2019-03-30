@@ -27,7 +27,7 @@ public struct FunctionParser {
             if param.unnamed {
                 possibleValue = args.isEmpty ? nil : args.removeFirst()
             } else {
-                if let index = args.index(where: { $0 == "--\(param.name)" }), index + 1 < args.count {
+                if let index = args.firstIndex(where: { $0 == "--\(param.name)" }), index + 1 < args.count {
                     args.remove(at: index)
                     possibleValue = args.remove(at: index)
                 } else {
