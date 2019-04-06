@@ -15,7 +15,7 @@ class Beak < Formula
 
     build_path = "#{buildpath}/.build/release/beak"
     ohai "Building Beak"
-    system("swift build --disable-sandbox -c release -Xswiftc -static-stdlib")
+    system("swift build --disable-sandbox -c release")
     bin.install build_path
   end
 end
