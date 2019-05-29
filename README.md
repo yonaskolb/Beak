@@ -18,6 +18,7 @@ An example Swift script:
 // This links https://github.com/kylef/PathKit as a dependency
 // beak: kylef/PathKit @ 1.0.0
 
+import PathKit // from the dependency listed above
 import Foundation
 
 /// Releases the product
