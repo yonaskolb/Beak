@@ -15,6 +15,9 @@ This is useful for scripting and for make-like files written in Swift. You can r
 An example Swift script:
 
 ```swift
+// This links https://github.com/kylef/PathKit as a dependency
+// beak: kylef/PathKit @ 1.0.0
+
 import Foundation
 
 /// Releases the product
