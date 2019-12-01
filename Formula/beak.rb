@@ -1,8 +1,8 @@
 class Beak < Formula
   desc "A command line interface for your Swift scripts"
   homepage "https://github.com/yonaskolb/Beak"
-  url "https://github.com/yonaskolb/Beak/archive/0.4.0.tar.gz"
-  sha256 "c306292c94aadd648437a2334936231baaa9ba195738aeeb28379fcb34900d41"
+  url "https://github.com/yonaskolb/Beak/archive/0.5.1.tar.gz"
+  sha256 "83aa529a03af3477e9d8a3a97b48ef56ec6ffe605717cb887d3960313c2b10ce"
   head "https://github.com/yonaskolb/Beak.git"
 
   depends_on :xcode
@@ -15,7 +15,7 @@ class Beak < Formula
 
     build_path = "#{buildpath}/.build/release/beak"
     ohai "Building Beak"
-    system("swift build --disable-sandbox -c release -Xswiftc -static-stdlib")
+    system("swift build --disable-sandbox -c release")
     bin.install build_path
   end
 end

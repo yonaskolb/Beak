@@ -15,6 +15,10 @@ This is useful for scripting and for make-like files written in Swift. You can r
 An example Swift script:
 
 ```swift
+// This links https://github.com/kylef/PathKit as a dependency
+// beak: kylef/PathKit @ 1.0.0
+
+import PathKit // from the dependency listed above
 import Foundation
 
 /// Releases the product
@@ -48,7 +52,7 @@ By default Beak looks for a file called `beak.swift` in your current directory, 
 This repo itself has a Beak file for running build scripts.
 
 ## Installing
-Make sure Xcode 9+ is installed first.
+Make sure Xcode 10.2+ is installed first.
 
 ### [Mint](https://github.com/yonaskolb/mint) 🌱
 ```sh
@@ -195,6 +199,11 @@ $ tasks run bar
 ```
 
 To automatically insert the `run` option, you can change your shebang to `#!/usr/bin/env beak run --path`. 
+
+## Alternatives
+
+* [swift sh](https://github.com/mxcl/swift-sh)
+* [Marathon](https://github.com/JohnSundell/Marathon)
 
 ## License
 

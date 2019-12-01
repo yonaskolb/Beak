@@ -49,7 +49,7 @@ public struct Function: Equatable, CustomStringConvertible {
             case other(String)
 
             public init(stringLiteral value: String) {
-                self.init(stringLiteral: value)
+                self.init(string: value)
             }
 
             public init(string: String) {

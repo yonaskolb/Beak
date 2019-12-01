@@ -146,19 +146,19 @@ class BeakTests: XCTestCase {
                         Dependency(
                             name: "SwiftShell",
                             package: "https://github.com/kareman/SwiftShell.git",
-                            requirement: ".exact(\"4.0.0\")",
+                            requirement: ".exact(\"5.0.0\")",
                             libraries: ["SwiftShell"]
                         ),
                         Dependency(
                             name: "Regex",
                             package: "https://github.com/sharplet/Regex.git",
-                            requirement: ".exact(\"1.1.0\")",
+                            requirement: ".exact(\"2.0.0\")",
                             libraries: ["Regex"]
                         ),
                         Dependency(
                             name: "PathKit",
                             package: "https://github.com/kylef/PathKit.git",
-                            requirement: ".exact(\"0.8.0\")",
+                            requirement: ".exact(\"1.0.0\")",
                             libraries: ["PathKit"]
                         ),
                     ],
@@ -281,12 +281,15 @@ class BeakTests: XCTestCase {
                 let package = PackageManager.createPackage(name: "Test", beakFile: beakFile)
 
                 let expectedPackage = """
-                // swift-tools-version:4.0
+                // swift-tools-version:5.0
 
                 import PackageDescription
 
                 let package = Package(
                     name: "Test",
+                    platforms: [
+                        .macOS(.v10_13),
+                    ],
                     dependencies: [
                         .package(url: "https://github.com/name/repo.git", .exact("4.2.0")),
                         .package(url: "https://github.com/name/repo2.git", .branch("v4")),

@@ -1,6 +1,6 @@
-// beak: kareman/SwiftShell @ 4.0.0
-// beak: sharplet/Regex @ 1.1.0
-// beak: kylef/PathKit @ 0.8.0
+// beak: kareman/SwiftShell @ 5.0.0
+// beak: sharplet/Regex @ 2.0.0
+// beak: kylef/PathKit @ 1.0.0
 
 import Foundation
 import SwiftShell
@@ -23,7 +23,7 @@ public func formatCode() throws {
 ///   - directory: The directory to install beak
 public func install(directory: String = "/usr/local/bin") throws {
     print("🐦  Building Beak...")
-    let output = run(bash: "swift build --disable-sandbox -c release -Xswiftc -static-stdlib")
+    let output = run(bash: "swift build --disable-sandbox -c release")
     if let error = output.error {
         print("Couldn't build:\n\(error)")
         return

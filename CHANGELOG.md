@@ -1,6 +1,23 @@
 # Change Log
 
-## Master
+## Next Version
+
+## 0.5.1
+
+### Fixed:
+- Fixed homebrew installations @yonaskolb
+
+[Commits](https://github.com/yonaskolb/Beak/compare/0.5.0...0.5.1)
+
+## 0.5.0
+
+### Fixed:
+- Fixed installation when building in Swift 5 #44 yonaskolb
+
+### Changed:
+- Updated to Swift 5 and dropped Swift 4.2 #44 @yonaskolb
+
+[Commits](https://github.com/yonaskolb/Beak/compare/0.4.0...0.5.0)
 
 ## 0.4.0
 

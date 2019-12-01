@@ -45,12 +45,15 @@ public class PackageManager {
         let dependenciesString = beakFile.dependencies.map { ".package(url: \($0.package.quoted), \($0.requirement))," }.joined(separator: "\n        ")
         let librariesString = beakFile.libraries.map { "\($0.quoted)," }.joined(separator: "\n                ")
         return """
-        // swift-tools-version:4.0
+        // swift-tools-version:5.0
 
         import PackageDescription
 
         let package = Package(
             name: \(name.quoted),
+            platforms: [
+                .macOS(.v10_13),
+            ],
             dependencies: [
                 \(dependenciesString)
             ],
