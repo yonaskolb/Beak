@@ -1,6 +1,7 @@
 # Change Log
 
 ## Next Version
+- Fixed edit command removing file attributes #46 @maxchuquimia
 
 ## 0.5.1
 
