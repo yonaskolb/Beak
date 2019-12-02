@@ -1,6 +1,7 @@
 import PathKit
 import SwiftCLI
 import BeakCore
+import Foundation
 
 class EditCommand: BeakCommand {
 
@@ -39,8 +40,9 @@ class EditCommand: BeakCommand {
 
         let line = readLine()
         if line?.lowercased() == "c" {
+            let attributes = try FileManager.default.attributesOfItem(atPath: path.string)
             try path.delete()
-            try packageManager.mainFilePath.copy(path)
+            try FileManager.default.createFile(atPath: path.string, contents: packageManager.mainFilePath.read(), attributes: attributes)
             stdout <<< "Copied edited file back to \(path.string)"
         } else {
             stdout <<< "Changes not copied back to \(path.string)"
