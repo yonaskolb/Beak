@@ -1,0 +1,203 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Routable"
+- "Command"
+- "CommandGroup"
+provides-nominal:
+- "8SwiftCLI8RoutableP"
+- "8SwiftCLI7CommandP"
+- "8SwiftCLI12CommandGroupP"
+provides-member:
+- ["8SwiftCLI8RoutableP", ""]
+- ["8SwiftCLI7CommandP", ""]
+- ["8SwiftCLI12CommandGroupP", ""]
+- ["8SwiftCLI8RoutableP", "stdout"]
+- ["8SwiftCLI8RoutableP", "stderr"]
+- ["8SwiftCLI8RoutableP", "options"]
+- ["8SwiftCLI8RoutableP", "optionGroups"]
+- ["8SwiftCLI7CommandP", "parameters"]
+- ["8SwiftCLI7CommandP", "shortDescription"]
+- ["8SwiftCLI7CommandP", "longDescription"]
+- ["8SwiftCLI12CommandGroupP", "aliases"]
+- ["8SwiftCLI12CommandGroupP", "longDescription"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "&&"
+- "AnyObject"
+- "AnyParameter"
+- "AssignmentPrecedence"
+- !private "CastingPrecedence"
+- "Command"
+- "CommandGroup"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "Mirror"
+- "Option"
+- "OptionGroup"
+- "Routable"
+- "String"
+- "StringLiteralType"
+- "WritableStream"
+- !private "WriteStream"
+depends-member:
+- !private ["s13AnyCollectionV", "compactMap"]
+- !private ["Sa", "append"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "append"]
+- !private ["SK", "subscript"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "append"]
+- !private ["Sl", "compactMap"]
+- !private ["Sl", "subscript"]
+- ["8SwiftCLI7CommandP", "AnyParameter"]
+- ["8SwiftCLI7CommandP", "Mirror"]
+- ["8SwiftCLI7CommandP", "String"]
+- ["8SwiftCLI7CommandP", "execute"]
+- ["8SwiftCLI7CommandP", "longDescription"]
+- ["8SwiftCLI7CommandP", "parameters"]
+- !private ["8SwiftCLI7CommandP", "parametersFromMirror"]
+- ["8SwiftCLI7CommandP", "shortDescription"]
+- ["8SwiftCLI12CommandGroupP", "Routable"]
+- ["8SwiftCLI12CommandGroupP", "String"]
+- ["8SwiftCLI12CommandGroupP", "aliases"]
+- ["8SwiftCLI12CommandGroupP", "children"]
+- ["8SwiftCLI12CommandGroupP", "longDescription"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "children"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "superclassMirror"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "children"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "superclassMirror"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "append"]
+- !private ["Se", "subscript"]
+- !private ["SE", "append"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "append"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["SH", "append"]
+- !private ["SH", "subscript"]
+- !private ["s6MirrorV", "children"]
+- !private ["s6MirrorV", "init"]
+- !private ["s6MirrorV", "superclassMirror"]
+- !private ["SM", "append"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["Sk", "append"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "subscript"]
+- ["8SwiftCLI8RoutableP", "AnyParameter"]
+- ["8SwiftCLI8RoutableP", "Mirror"]
+- ["8SwiftCLI8RoutableP", "Option"]
+- ["8SwiftCLI8RoutableP", "OptionGroup"]
+- ["8SwiftCLI8RoutableP", "Routable"]
+- ["8SwiftCLI8RoutableP", "String"]
+- ["8SwiftCLI8RoutableP", "WritableStream"]
+- !private ["8SwiftCLI8RoutableP", "WriteStream"]
+- ["8SwiftCLI8RoutableP", ""]
+- ["8SwiftCLI8RoutableP", "aliases"]
+- ["8SwiftCLI8RoutableP", "children"]
+- ["8SwiftCLI8RoutableP", "execute"]
+- ["8SwiftCLI8RoutableP", "longDescription"]
+- ["8SwiftCLI8RoutableP", "name"]
+- ["8SwiftCLI8RoutableP", "optionGroups"]
+- ["8SwiftCLI8RoutableP", "options"]
+- !private ["8SwiftCLI8RoutableP", "optionsFromMirror"]
+- ["8SwiftCLI8RoutableP", "parameters"]
+- !private ["8SwiftCLI8RoutableP", "parametersFromMirror"]
+- ["8SwiftCLI8RoutableP", "shortDescription"]
+- ["8SwiftCLI8RoutableP", "stderr"]
+- ["8SwiftCLI8RoutableP", "stdout"]
+- !private ["ST", "append"]
+- !private ["ST", "compactMap"]
+- !private ["ST", "subscript"]
+- !private ["8SwiftCLI11WriteStreamO", "stderr"]
+- !private ["8SwiftCLI11WriteStreamO", "stdout"]
+- !private ["s22_AnyCollectionProtocolP", "compactMap"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- !private "s13AnyCollectionV"
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- "8SwiftCLI7CommandP"
+- "8SwiftCLI12CommandGroupP"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- !private "s6MirrorV"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "Sk"
+- !private "Sm"
+- "8SwiftCLI8RoutableP"
+- !private "ST"
+- !private "8SwiftCLI11WriteStreamO"
+- !private "s22_AnyCollectionProtocolP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "62de47787fd5e7d9d68dced2d51f320f"

@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "dd6c90533c7abeb404a924aba76da7ac"
+build_time: [1584288515, 716355000]
+inputs:
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Tests/BeakTests/BeakTests.swift": [1584288368, 651452704]
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Tests/BeakTests/XCTestManifests.swift": [1584288368, 651708427]

@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "9816e62db1b64e6d232349a05c0a8707"
+build_time: [1584288517, 934019000]
+inputs:
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Sources/Beak/main.swift": [1584288368, 646747190]

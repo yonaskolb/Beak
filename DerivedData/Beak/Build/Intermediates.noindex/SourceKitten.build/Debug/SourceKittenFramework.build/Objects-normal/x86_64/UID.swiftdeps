@@ -1,0 +1,321 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "UID"
+- "=="
+provides-nominal:
+- "21SourceKittenFramework3UIDV"
+provides-member:
+- ["21SourceKittenFramework3UIDV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "CustomStringConvertible"
+- "ExpressibleByStringLiteral"
+- "Hashable"
+- "Int"
+- "RawRepresentable"
+- "SourceKitObjectConvertible"
+- "String"
+- "UID"
+- "sourcekitd_object_t"
+- !private "sourcekitd_request_uid_create"
+- !private "sourcekitd_uid_get_from_cstr"
+- !private "sourcekitd_uid_get_string_ptr"
+- "sourcekitd_uid_t"
+depends-member:
+- !private ["SK", "init"]
+- !private ["s7CVarArgP", "hashValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "hashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "ExtendedGraphemeClusterLiteralType"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- ["s23CustomStringConvertibleP", "StringLiteralType"]
+- ["s23CustomStringConvertibleP", "UnicodeScalarLiteralType"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["s23CustomStringConvertibleP", "_Default_StringLiteralType"]
+- ["s23CustomStringConvertibleP", "_Default_UnicodeScalarLiteralType"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "sourcekitdObject"]
+- !private ["s23CustomStringConvertibleP", "sourcekitd_request_uid_create"]
+- !private ["s23CustomStringConvertibleP", "sourcekitd_uid_get_from_cstr"]
+- !private ["s23CustomStringConvertibleP", "sourcekitd_uid_get_string_ptr"]
+- !private ["s23CustomStringConvertibleP", "string"]
+- !private ["s23CustomStringConvertibleP", "uid"]
+- !private ["Se", "init"]
+- !private ["SE", "init"]
+- ["SQ", "=="]
+- ["SQ", "ExtendedGraphemeClusterLiteralType"]
+- !private ["SQ", "String"]
+- ["SQ", "StringLiteralType"]
+- ["SQ", "UnicodeScalarLiteralType"]
+- ["SQ", ""]
+- ["SQ", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["SQ", "_Default_StringLiteralType"]
+- ["SQ", "_Default_UnicodeScalarLiteralType"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "sourcekitdObject"]
+- !private ["SQ", "sourcekitd_request_uid_create"]
+- !private ["SQ", "sourcekitd_uid_get_from_cstr"]
+- !private ["SQ", "sourcekitd_uid_get_string_ptr"]
+- !private ["SQ", "string"]
+- !private ["SQ", "uid"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "=="]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "ExtendedGraphemeClusterLiteralType"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "String"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "StringLiteralType"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "UnicodeScalarLiteralType"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_Default_StringLiteralType"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_Default_UnicodeScalarLiteralType"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_rawHashValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "description"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hash"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hashValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "sourcekitdObject"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "sourcekitd_request_uid_create"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "sourcekitd_uid_get_from_cstr"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "sourcekitd_uid_get_string_ptr"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "string"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "uid"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- ["s26ExpressibleByStringLiteralP", "=="]
+- ["s26ExpressibleByStringLiteralP", "ExtendedGraphemeClusterLiteralType"]
+- !private ["s26ExpressibleByStringLiteralP", "String"]
+- ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
+- ["s26ExpressibleByStringLiteralP", "UnicodeScalarLiteralType"]
+- ["s26ExpressibleByStringLiteralP", ""]
+- ["s26ExpressibleByStringLiteralP", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["s26ExpressibleByStringLiteralP", "_Default_StringLiteralType"]
+- ["s26ExpressibleByStringLiteralP", "_Default_UnicodeScalarLiteralType"]
+- ["s26ExpressibleByStringLiteralP", "_rawHashValue"]
+- ["s26ExpressibleByStringLiteralP", "description"]
+- ["s26ExpressibleByStringLiteralP", "hash"]
+- ["s26ExpressibleByStringLiteralP", "hashValue"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "sourcekitdObject"]
+- !private ["s26ExpressibleByStringLiteralP", "sourcekitd_request_uid_create"]
+- !private ["s26ExpressibleByStringLiteralP", "sourcekitd_uid_get_from_cstr"]
+- !private ["s26ExpressibleByStringLiteralP", "sourcekitd_uid_get_string_ptr"]
+- !private ["s26ExpressibleByStringLiteralP", "string"]
+- !private ["s26ExpressibleByStringLiteralP", "uid"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "=="]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "ExtendedGraphemeClusterLiteralType"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "String"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "StringLiteralType"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "UnicodeScalarLiteralType"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_Default_StringLiteralType"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_Default_UnicodeScalarLiteralType"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_rawHashValue"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "description"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "hash"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "hashValue"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "sourcekitdObject"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "sourcekitd_request_uid_create"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "sourcekitd_uid_get_from_cstr"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "sourcekitd_uid_get_string_ptr"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "string"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "uid"]
+- ["SH", "=="]
+- ["SH", "ExtendedGraphemeClusterLiteralType"]
+- !private ["SH", "String"]
+- ["SH", "StringLiteralType"]
+- ["SH", "UnicodeScalarLiteralType"]
+- ["SH", ""]
+- ["SH", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["SH", "_Default_StringLiteralType"]
+- ["SH", "_Default_UnicodeScalarLiteralType"]
+- ["SH", "_rawHashValue"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "sourcekitdObject"]
+- !private ["SH", "sourcekitd_request_uid_create"]
+- !private ["SH", "sourcekitd_uid_get_from_cstr"]
+- !private ["SH", "sourcekitd_uid_get_string_ptr"]
+- !private ["SH", "string"]
+- !private ["SH", "uid"]
+- !private ["s6HasherV", "combine"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["4Yams17NodeRepresentableP", "init"]
+- !private ["s13OpaquePointerV", "hashValue"]
+- !private ["Sm", "init"]
+- !private ["SY", "rawValue"]
+- !private ["4Yams19ScalarConstructibleP", "init"]
+- !private ["4Yams19ScalarRepresentableP", "init"]
+- !private ["ST", "init"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "=="]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "ExtendedGraphemeClusterLiteralType"]
+- !private ["21SourceKittenFramework0A20KitObjectConvertibleP", "String"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "StringLiteralType"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "UnicodeScalarLiteralType"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", ""]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "_Default_StringLiteralType"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "_Default_UnicodeScalarLiteralType"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "_rawHashValue"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "description"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "hash"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "hashValue"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "init"]
+- ["21SourceKittenFramework0A20KitObjectConvertibleP", "sourcekitdObject"]
+- !private ["21SourceKittenFramework0A20KitObjectConvertibleP", "sourcekitd_request_uid_create"]
+- !private ["21SourceKittenFramework0A20KitObjectConvertibleP", "sourcekitd_uid_get_from_cstr"]
+- !private ["21SourceKittenFramework0A20KitObjectConvertibleP", "sourcekitd_uid_get_string_ptr"]
+- !private ["21SourceKittenFramework0A20KitObjectConvertibleP", "string"]
+- !private ["21SourceKittenFramework0A20KitObjectConvertibleP", "uid"]
+- !private ["21SourceKittenFramework0A16KitRepresentableP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- ["21SourceKittenFramework3UIDV", "=="]
+- ["21SourceKittenFramework3UIDV", "Bool"]
+- ["21SourceKittenFramework3UIDV", "ExtendedGraphemeClusterLiteralType"]
+- ["21SourceKittenFramework3UIDV", "Int"]
+- ["21SourceKittenFramework3UIDV", "RawRepresentable"]
+- ["21SourceKittenFramework3UIDV", "String"]
+- ["21SourceKittenFramework3UIDV", "StringLiteralType"]
+- ["21SourceKittenFramework3UIDV", "UID"]
+- ["21SourceKittenFramework3UIDV", "UnicodeScalarLiteralType"]
+- ["21SourceKittenFramework3UIDV", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["21SourceKittenFramework3UIDV", "_Default_StringLiteralType"]
+- ["21SourceKittenFramework3UIDV", "_Default_UnicodeScalarLiteralType"]
+- ["21SourceKittenFramework3UIDV", "_rawHashValue"]
+- ["21SourceKittenFramework3UIDV", "deinit"]
+- ["21SourceKittenFramework3UIDV", "description"]
+- ["21SourceKittenFramework3UIDV", "hash"]
+- ["21SourceKittenFramework3UIDV", "hashValue"]
+- ["21SourceKittenFramework3UIDV", "init"]
+- ["21SourceKittenFramework3UIDV", "sourcekitdObject"]
+- ["21SourceKittenFramework3UIDV", "sourcekitd_object_t"]
+- !private ["21SourceKittenFramework3UIDV", "sourcekitd_request_uid_create"]
+- !private ["21SourceKittenFramework3UIDV", "sourcekitd_uid_get_from_cstr"]
+- !private ["21SourceKittenFramework3UIDV", "sourcekitd_uid_get_string_ptr"]
+- ["21SourceKittenFramework3UIDV", "sourcekitd_uid_t"]
+- ["21SourceKittenFramework3UIDV", "string"]
+- ["21SourceKittenFramework3UIDV", "uid"]
+- !private ["9SWXMLHash26XMLAttributeDeserializableP", "init"]
+- !private ["9SWXMLHash24XMLElementDeserializableP", "init"]
+- !private ["4Yams13YAMLEncodableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s6HasherV"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "4Yams17NodeRepresentableP"
+- !private "s13OpaquePointerV"
+- !private "Sm"
+- !private "SY"
+- !private "4Yams19ScalarConstructibleP"
+- !private "4Yams19ScalarRepresentableP"
+- !private "ST"
+- "21SourceKittenFramework0A20KitObjectConvertibleP"
+- !private "21SourceKittenFramework0A16KitRepresentableP"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "21SourceKittenFramework3UIDV"
+- !private "9SWXMLHash26XMLAttributeDeserializableP"
+- !private "9SWXMLHash24XMLElementDeserializableP"
+- !private "4Yams13YAMLEncodableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/Build/Products/Debug/SWXMLHash.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/Build/Products/Debug/Yams.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/Clang_C/include/Clang_C.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/SourceKit/include/sourcekitd.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/Clang_C/include/CXErrorCode.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/Clang_C/include/CXCompilationDatabase.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/Clang_C/include/CXString.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/Yams/Sources/CYaml/include/CYaml.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/Yams/Sources/CYaml/include/yaml.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/Clang_C/include/BuildSystem.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/Clang_C/include/Platform.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/Clang_C/include/Documentation.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/SourceKit/include/SourceKit.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/Clang_C/include/Index.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/Build/Intermediates.noindex/GeneratedModuleMaps/macosx/Clang_C.modulemap"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/Build/Intermediates.noindex/GeneratedModuleMaps/macosx/CYaml.modulemap"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/Build/Intermediates.noindex/GeneratedModuleMaps/macosx/SourceKit.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "f98dff3a5174e1a28930f35ce866c8c4"

@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "5edf3bd4075b5fe2b27fdd223bad9189"
+build_time: [1584288506, 951286000]
+inputs:
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Sources/BeakCore/BeakError.swift": [1584288368, 648908462]
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Sources/BeakCore/BeakFile.swift": [1584288368, 649142205]
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Sources/BeakCore/Dependency.swift": [1584288368, 649399395]
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Sources/BeakCore/Function.swift": [1584288368, 649668863]
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Sources/BeakCore/FunctionParser.swift": [1584288368, 649943987]
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Sources/BeakCore/PackageManager.swift": [1584288368, 650211468]
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Sources/BeakCore/SourceKit.swift": [1584288368, 650446737]
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Sources/BeakCore/String.swift": [1584288368, 650666080]
+  "/Users/cavellebenjamin/Development/toolbox/Beak/Sources/BeakCore/SwiftParser.swift": [1584288368, 650958528]

@@ -1,0 +1,507 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "YAMLEncoder"
+- "_YAMLCodingKey"
+provides-nominal:
+- "4Yams11YAMLEncoderC"
+- "4Yams14_YAMLCodingKeyV"
+provides-member:
+- ["4Yams11YAMLEncoderC", ""]
+- ["4Yams14_YAMLCodingKeyV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- !private "=="
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- "CastingPrecedence"
+- "CodingKey"
+- "CodingUserInfoKey"
+- "Emitter"
+- "Encodable"
+- "Encoder"
+- !private "EncodingError"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "KeyedEncodingContainer"
+- "KeyedEncodingContainerProtocol"
+- "Node"
+- "SingleValueEncodingContainer"
+- "String"
+- "StringLiteralType"
+- "Swift"
+- "Tag"
+- "UnkeyedEncodingContainer"
+- "YAMLEncodable"
+- "YAMLEncoder"
+- "_Encoder"
+- !private "_KeyedEncodingContainer"
+- "_ReferencingEncoder"
+- !private "_UnkeyedEncodingContainer"
+- "_YAMLCodingKey"
+- !private "precondition"
+- !private "serialize"
+depends-member:
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- ["Sb", "deinit"]
+- ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_YAMLCodingKey"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "stringValue"]
+- !private ["s9CodingKeyP", "super"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- !private ["Sl", "subscript"]
+- ["SL", "Mapping"]
+- ["SL", "Node"]
+- ["SL", "Sequence"]
+- ["SL", "Tag"]
+- !private ["SL", "append"]
+- !private ["SL", "count"]
+- ["SL", "init"]
+- !private ["SL", "isMapping"]
+- !private ["SL", "isSequence"]
+- !private ["SL", "mapping"]
+- !private ["SL", "null"]
+- !private ["SL", "sequence"]
+- !private ["SL", "subscript"]
+- ["SL", "unused"]
+- !private ["s13EncodingErrorO7ContextV", "init"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_YAMLCodingKey"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- !private ["s28CustomDebugStringConvertibleP", "null"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- !private ["s28CustomDebugStringConvertibleP", "super"]
+- !private ["s17CustomReflectableP", "null"]
+- ["s23CustomStringConvertibleP", "Name"]
+- ["s23CustomStringConvertibleP", "Tag"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_YAMLCodingKey"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- !private ["s23CustomStringConvertibleP", "super"]
+- ["s23CustomStringConvertibleP", "unused"]
+- !private ["Se", "null"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["Sd", "deinit"]
+- ["4Yams7EmitterC", "Options"]
+- !private ["SE", "box"]
+- !private ["SE", "encode"]
+- !private ["SE", "null"]
+- !private ["s7EncoderP", ""]
+- !private ["s7EncoderP", "_KeyedEncodingContainer"]
+- !private ["s7EncoderP", "_UnkeyedEncodingContainer"]
+- !private ["s7EncoderP", "_YAMLCodingKey"]
+- !private ["s7EncoderP", "assertCanEncodeNewValue"]
+- !private ["s7EncoderP", "canEncodeNewValue"]
+- ["s7EncoderP", "codingPath"]
+- ["s7EncoderP", "container"]
+- ["s7EncoderP", "encode"]
+- ["s7EncoderP", "encodeNil"]
+- !private ["s7EncoderP", "encoder"]
+- !private ["s7EncoderP", "init"]
+- !private ["s7EncoderP", "mapping"]
+- !private ["s7EncoderP", "node"]
+- !private ["s7EncoderP", "precondition"]
+- !private ["s7EncoderP", "reference"]
+- !private ["s7EncoderP", "sequence"]
+- ["s7EncoderP", "singleValueContainer"]
+- ["s7EncoderP", "unkeyedContainer"]
+- ["s7EncoderP", "userInfo"]
+- !private ["s13EncodingErrorO", "Context"]
+- !private ["s13EncodingErrorO", "invalidValue"]
+- ["SQ", "Mapping"]
+- ["SQ", "Name"]
+- ["SQ", "Node"]
+- ["SQ", "Sequence"]
+- ["SQ", "Tag"]
+- !private ["SQ", "append"]
+- !private ["SQ", "count"]
+- ["SQ", "init"]
+- !private ["SQ", "isMapping"]
+- !private ["SQ", "isSequence"]
+- !private ["SQ", "mapping"]
+- ["SQ", "null"]
+- !private ["SQ", "sequence"]
+- !private ["SQ", "subscript"]
+- ["SQ", "unused"]
+- !private ["s5ErrorP", "Context"]
+- !private ["s5ErrorP", "invalidValue"]
+- ["s25ExpressibleByArrayLiteralP", "Mapping"]
+- ["s25ExpressibleByArrayLiteralP", "Node"]
+- ["s25ExpressibleByArrayLiteralP", "Sequence"]
+- ["s25ExpressibleByArrayLiteralP", "Tag"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "isMapping"]
+- !private ["s25ExpressibleByArrayLiteralP", "isSequence"]
+- !private ["s25ExpressibleByArrayLiteralP", "mapping"]
+- !private ["s25ExpressibleByArrayLiteralP", "null"]
+- !private ["s25ExpressibleByArrayLiteralP", "sequence"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- ["s25ExpressibleByArrayLiteralP", "unused"]
+- ["s30ExpressibleByDictionaryLiteralP", "Mapping"]
+- ["s30ExpressibleByDictionaryLiteralP", "Node"]
+- ["s30ExpressibleByDictionaryLiteralP", "Sequence"]
+- ["s30ExpressibleByDictionaryLiteralP", "Tag"]
+- ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "isMapping"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "isSequence"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "mapping"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "null"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "sequence"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- ["s30ExpressibleByDictionaryLiteralP", "unused"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Mapping"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Node"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Sequence"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Tag"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isMapping"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isSequence"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "mapping"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "null"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "sequence"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subscript"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "unused"]
+- ["s25ExpressibleByFloatLiteralP", "Mapping"]
+- ["s25ExpressibleByFloatLiteralP", "Node"]
+- ["s25ExpressibleByFloatLiteralP", "Sequence"]
+- ["s25ExpressibleByFloatLiteralP", "Tag"]
+- ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "isMapping"]
+- !private ["s25ExpressibleByFloatLiteralP", "isSequence"]
+- !private ["s25ExpressibleByFloatLiteralP", "mapping"]
+- !private ["s25ExpressibleByFloatLiteralP", "null"]
+- !private ["s25ExpressibleByFloatLiteralP", "sequence"]
+- !private ["s25ExpressibleByFloatLiteralP", "subscript"]
+- ["s25ExpressibleByFloatLiteralP", "unused"]
+- ["s27ExpressibleByIntegerLiteralP", "Mapping"]
+- ["s27ExpressibleByIntegerLiteralP", "Node"]
+- ["s27ExpressibleByIntegerLiteralP", "Sequence"]
+- ["s27ExpressibleByIntegerLiteralP", "Tag"]
+- ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "isMapping"]
+- !private ["s27ExpressibleByIntegerLiteralP", "isSequence"]
+- !private ["s27ExpressibleByIntegerLiteralP", "mapping"]
+- !private ["s27ExpressibleByIntegerLiteralP", "null"]
+- !private ["s27ExpressibleByIntegerLiteralP", "sequence"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subscript"]
+- ["s27ExpressibleByIntegerLiteralP", "unused"]
+- !private ["s23ExpressibleByNilLiteralP", "null"]
+- ["s26ExpressibleByStringLiteralP", "Mapping"]
+- ["s26ExpressibleByStringLiteralP", "Node"]
+- ["s26ExpressibleByStringLiteralP", "Sequence"]
+- ["s26ExpressibleByStringLiteralP", "Tag"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "isMapping"]
+- !private ["s26ExpressibleByStringLiteralP", "isSequence"]
+- !private ["s26ExpressibleByStringLiteralP", "mapping"]
+- ["s26ExpressibleByStringLiteralP", "null"]
+- !private ["s26ExpressibleByStringLiteralP", "sequence"]
+- !private ["s26ExpressibleByStringLiteralP", "subscript"]
+- ["s26ExpressibleByStringLiteralP", "unused"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "Mapping"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "Node"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "Sequence"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "Tag"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "isMapping"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "isSequence"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "mapping"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "null"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "sequence"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subscript"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "unused"]
+- ["Sf", "deinit"]
+- ["SH", "Mapping"]
+- ["SH", "Name"]
+- ["SH", "Node"]
+- ["SH", "Sequence"]
+- ["SH", "Tag"]
+- !private ["SH", "append"]
+- !private ["SH", "count"]
+- ["SH", "init"]
+- !private ["SH", "isMapping"]
+- !private ["SH", "isSequence"]
+- !private ["SH", "mapping"]
+- ["SH", "null"]
+- !private ["SH", "sequence"]
+- !private ["SH", "subscript"]
+- ["SH", "unused"]
+- ["Si", "deinit"]
+- ["s5Int16V", "deinit"]
+- ["s5Int32V", "deinit"]
+- ["s5Int64V", "deinit"]
+- ["s4Int8V", "deinit"]
+- !private ["s22KeyedEncodingContainerV", "init"]
+- ["s30KeyedEncodingContainerProtocolP", "Key"]
+- !private ["s30KeyedEncodingContainerProtocolP", ""]
+- ["s30KeyedEncodingContainerProtocolP", "_Default_Key"]
+- !private ["s30KeyedEncodingContainerProtocolP", "_YAMLCodingKey"]
+- ["s30KeyedEncodingContainerProtocolP", "codingPath"]
+- ["s30KeyedEncodingContainerProtocolP", "encode"]
+- ["s30KeyedEncodingContainerProtocolP", "encodeConditional"]
+- ["s30KeyedEncodingContainerProtocolP", "encodeIfPresent"]
+- ["s30KeyedEncodingContainerProtocolP", "encodeNil"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encoder"]
+- !private ["s30KeyedEncodingContainerProtocolP", "init"]
+- ["s30KeyedEncodingContainerProtocolP", "nestedContainer"]
+- ["s30KeyedEncodingContainerProtocolP", "nestedUnkeyedContainer"]
+- ["s30KeyedEncodingContainerProtocolP", "superEncoder"]
+- !private ["10Foundation14LocalizedErrorP", "Context"]
+- !private ["10Foundation14LocalizedErrorP", "invalidValue"]
+- !private ["4Yams4NodeO7MappingV", "deinit"]
+- !private ["4Yams4NodeO7MappingV", "subscript"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "subscript"]
+- ["4Yams3TagC4NameV", "Tag"]
+- ["4Yams3TagC4NameV", "deinit"]
+- ["4Yams3TagC4NameV", "null"]
+- ["4Yams3TagC4NameV", "unused"]
+- ["4Yams4NodeO", "Mapping"]
+- ["4Yams4NodeO", "Node"]
+- ["4Yams4NodeO", "Sequence"]
+- ["4Yams4NodeO", "Tag"]
+- ["4Yams4NodeO", "deinit"]
+- ["4Yams4NodeO", "init"]
+- !private ["4Yams4NodeO", "isMapping"]
+- !private ["4Yams4NodeO", "isSequence"]
+- !private ["4Yams4NodeO", "mapping"]
+- !private ["4Yams4NodeO", "null"]
+- !private ["4Yams4NodeO", "sequence"]
+- !private ["4Yams4NodeO", "subscript"]
+- ["4Yams4NodeO", "unused"]
+- ["4Yams17NodeRepresentableP", "Mapping"]
+- ["4Yams17NodeRepresentableP", "Node"]
+- ["4Yams17NodeRepresentableP", "Sequence"]
+- ["4Yams17NodeRepresentableP", "Tag"]
+- ["4Yams17NodeRepresentableP", "init"]
+- !private ["4Yams17NodeRepresentableP", "isMapping"]
+- !private ["4Yams17NodeRepresentableP", "isSequence"]
+- !private ["4Yams17NodeRepresentableP", "mapping"]
+- !private ["4Yams17NodeRepresentableP", "null"]
+- !private ["4Yams17NodeRepresentableP", "sequence"]
+- !private ["4Yams17NodeRepresentableP", "subscript"]
+- ["4Yams17NodeRepresentableP", "unused"]
+- !private ["Sq", "null"]
+- !private ["4Yams7EmitterC7OptionsV", "allowUnicode"]
+- !private ["4Yams7EmitterC7OptionsV", "canonical"]
+- !private ["4Yams7EmitterC7OptionsV", "explicitEnd"]
+- !private ["4Yams7EmitterC7OptionsV", "explicitStart"]
+- !private ["4Yams7EmitterC7OptionsV", "indent"]
+- ["4Yams7EmitterC7OptionsV", "init"]
+- !private ["4Yams7EmitterC7OptionsV", "lineBreak"]
+- !private ["4Yams7EmitterC7OptionsV", "sortKeys"]
+- !private ["4Yams7EmitterC7OptionsV", "version"]
+- !private ["4Yams7EmitterC7OptionsV", "width"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- ["SY", "null"]
+- ["SY", "unused"]
+- !private ["4Yams4NodeO8SequenceV", "append"]
+- !private ["ST", "append"]
+- !private ["4Yams4NodeO8SequenceV", "count"]
+- !private ["ST", "count"]
+- !private ["4Yams4NodeO8SequenceV", "deinit"]
+- !private ["ST", "subscript"]
+- !private ["s28SingleValueEncodingContainerP", ""]
+- !private ["s28SingleValueEncodingContainerP", "_KeyedEncodingContainer"]
+- !private ["s28SingleValueEncodingContainerP", "_UnkeyedEncodingContainer"]
+- !private ["s28SingleValueEncodingContainerP", "_YAMLCodingKey"]
+- !private ["s28SingleValueEncodingContainerP", "assertCanEncodeNewValue"]
+- !private ["s28SingleValueEncodingContainerP", "canEncodeNewValue"]
+- ["s28SingleValueEncodingContainerP", "codingPath"]
+- ["s28SingleValueEncodingContainerP", "container"]
+- ["s28SingleValueEncodingContainerP", "encode"]
+- ["s28SingleValueEncodingContainerP", "encodeNil"]
+- !private ["s28SingleValueEncodingContainerP", "encoder"]
+- !private ["s28SingleValueEncodingContainerP", "init"]
+- !private ["s28SingleValueEncodingContainerP", "mapping"]
+- !private ["s28SingleValueEncodingContainerP", "node"]
+- !private ["s28SingleValueEncodingContainerP", "precondition"]
+- !private ["s28SingleValueEncodingContainerP", "reference"]
+- !private ["s28SingleValueEncodingContainerP", "sequence"]
+- ["s28SingleValueEncodingContainerP", "singleValueContainer"]
+- ["s28SingleValueEncodingContainerP", "unkeyedContainer"]
+- ["s28SingleValueEncodingContainerP", "userInfo"]
+- ["SS", "deinit"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- ["4Yams3TagC", "Name"]
+- ["4Yams3TagC", "Tag"]
+- ["4Yams3TagC", "init"]
+- ["4Yams3TagC", "unused"]
+- !private ["4Yams13TagResolvableP", "append"]
+- !private ["4Yams13TagResolvableP", "count"]
+- !private ["4Yams13TagResolvableP", "subscript"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- ["Su", "deinit"]
+- ["s6UInt16V", "deinit"]
+- ["s6UInt32V", "deinit"]
+- ["s6UInt64V", "deinit"]
+- ["s5UInt8V", "deinit"]
+- !private ["s24UnkeyedEncodingContainerP", ""]
+- ["s24UnkeyedEncodingContainerP", "codingPath"]
+- ["s24UnkeyedEncodingContainerP", "count"]
+- !private ["s24UnkeyedEncodingContainerP", "currentEncoder"]
+- ["s24UnkeyedEncodingContainerP", "encode"]
+- ["s24UnkeyedEncodingContainerP", "encodeConditional"]
+- ["s24UnkeyedEncodingContainerP", "encodeNil"]
+- !private ["s24UnkeyedEncodingContainerP", "encoder"]
+- !private ["s24UnkeyedEncodingContainerP", "init"]
+- ["s24UnkeyedEncodingContainerP", "nestedContainer"]
+- ["s24UnkeyedEncodingContainerP", "nestedUnkeyedContainer"]
+- ["s24UnkeyedEncodingContainerP", "superEncoder"]
+- !private ["4Yams13YAMLEncodableP", "box"]
+- ["4Yams11YAMLEncoderC", "CodingUserInfoKey"]
+- ["4Yams11YAMLEncoderC", "Emitter"]
+- !private ["4Yams11YAMLEncoderC", "EncodingError"]
+- ["4Yams11YAMLEncoderC", "Options"]
+- ["4Yams11YAMLEncoderC", "String"]
+- ["4Yams11YAMLEncoderC", "Swift"]
+- !private ["4Yams11YAMLEncoderC", "_Encoder"]
+- ["4Yams11YAMLEncoderC", "encode"]
+- ["4Yams11YAMLEncoderC", "init"]
+- ["4Yams11YAMLEncoderC", "options"]
+- !private ["4Yams11YAMLEncoderC", "serialize"]
+- !private ["s21_ObjectiveCBridgeableP", "null"]
+- ["4Yams14_YAMLCodingKeyV", "Int"]
+- ["4Yams14_YAMLCodingKeyV", "String"]
+- ["4Yams14_YAMLCodingKeyV", "_YAMLCodingKey"]
+- ["4Yams14_YAMLCodingKeyV", "debugDescription"]
+- ["4Yams14_YAMLCodingKeyV", "deinit"]
+- ["4Yams14_YAMLCodingKeyV", "description"]
+- ["4Yams14_YAMLCodingKeyV", "init"]
+- ["4Yams14_YAMLCodingKeyV", "intValue"]
+- ["4Yams14_YAMLCodingKeyV", "stringValue"]
+- ["4Yams14_YAMLCodingKeyV", "super"]
+depends-nominal:
+- !private "SK"
+- "Sb"
+- "s9CodingKeyP"
+- !private "Sl"
+- "SL"
+- !private "s13EncodingErrorO7ContextV"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- "Sd"
+- "4Yams7EmitterC"
+- !private "SE"
+- "s7EncoderP"
+- !private "s13EncodingErrorO"
+- "SQ"
+- !private "s5ErrorP"
+- "s25ExpressibleByArrayLiteralP"
+- "s30ExpressibleByDictionaryLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s25ExpressibleByFloatLiteralP"
+- "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "Sf"
+- "SH"
+- "Si"
+- "s5Int16V"
+- "s5Int32V"
+- "s5Int64V"
+- "s4Int8V"
+- !private "s22KeyedEncodingContainerV"
+- "s30KeyedEncodingContainerProtocolP"
+- !private "10Foundation14LocalizedErrorP"
+- !private "4Yams4NodeO7MappingV"
+- !private "SM"
+- "4Yams3TagC4NameV"
+- "4Yams4NodeO"
+- "4Yams17NodeRepresentableP"
+- !private "Sq"
+- "4Yams7EmitterC7OptionsV"
+- !private "Sk"
+- !private "Sm"
+- "SY"
+- !private "4Yams4NodeO8SequenceV"
+- !private "ST"
+- !private "4Yams4NodeO8SequenceV"
+- !private "ST"
+- !private "4Yams4NodeO8SequenceV"
+- !private "ST"
+- "s28SingleValueEncodingContainerP"
+- "SS"
+- !private "s27StringInterpolationProtocolP"
+- "4Yams3TagC"
+- !private "4Yams13TagResolvableP"
+- !private "s16TextOutputStreamP"
+- "Su"
+- "s6UInt16V"
+- "s6UInt32V"
+- "s6UInt64V"
+- "s5UInt8V"
+- "s24UnkeyedEncodingContainerP"
+- !private "4Yams13YAMLEncodableP"
+- "4Yams11YAMLEncoderC"
+- !private "s21_ObjectiveCBridgeableP"
+- "4Yams14_YAMLCodingKeyV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/Yams/Sources/CYaml/include/CYaml.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/Yams/Sources/CYaml/include/yaml.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/Build/Intermediates.noindex/GeneratedModuleMaps/macosx/Clang_C.modulemap"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/Build/Intermediates.noindex/GeneratedModuleMaps/macosx/CYaml.modulemap"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/Build/Intermediates.noindex/GeneratedModuleMaps/macosx/SourceKit.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "4d9921f71daf2a601274aad186a46800"

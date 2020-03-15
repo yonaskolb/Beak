@@ -1,0 +1,670 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "XMLIndexerDeserializable"
+- "XMLElementDeserializable"
+- "XMLAttributeDeserializable"
+- "XMLDeserializationError"
+provides-nominal:
+- "9SWXMLHash24XMLIndexerDeserializableP"
+- "9SWXMLHash24XMLElementDeserializableP"
+- "9SWXMLHash26XMLAttributeDeserializableP"
+- "9SWXMLHash23XMLDeserializationErrorO"
+- "SS"
+- "Si"
+- "Sd"
+- "Sf"
+- "Sb"
+provides-member:
+- ["9SWXMLHash24XMLIndexerDeserializableP", ""]
+- ["9SWXMLHash24XMLElementDeserializableP", ""]
+- ["9SWXMLHash26XMLAttributeDeserializableP", ""]
+- ["9SWXMLHash10XMLIndexerO", ""]
+- ["9SWXMLHash10XMLElementC", ""]
+- ["9SWXMLHash23XMLDeserializationErrorO", ""]
+- ["SS", ""]
+- ["Si", ""]
+- ["Sd", ""]
+- ["Sf", ""]
+- ["Sb", ""]
+- ["9SWXMLHash24XMLIndexerDeserializableP", "deserialize"]
+- ["9SWXMLHash24XMLElementDeserializableP", "deserialize"]
+- ["9SWXMLHash26XMLAttributeDeserializableP", "deserialize"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- ["9SWXMLHash10XMLElementC", "value"]
+- ["9SWXMLHash10XMLElementC", "value"]
+- ["9SWXMLHash10XMLElementC", "nonEmptyTextOrThrow"]
+- ["9SWXMLHash10XMLElementC", "value"]
+- ["9SWXMLHash10XMLElementC", "value"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- "Bool"
+- "CustomStringConvertible"
+- "Double"
+- "Error"
+- "Float"
+- !private "FloatLiteralType"
+- "IndexOps"
+- "IndexingError"
+- "Int"
+- !private "IntegerLiteralType"
+- !private "NSString"
+- "RawRepresentable"
+- "String"
+- !private "StringLiteralType"
+- "XMLAttribute"
+- "XMLAttributeDeserializable"
+- "XMLDeserializationError"
+- "XMLElement"
+- "XMLElementDeserializable"
+- "XMLIndexer"
+- "XMLIndexerDeserializable"
+- !private "fatalError"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "Double"]
+- !private ["s18AdditiveArithmeticP", "Float"]
+- !private ["s18AdditiveArithmeticP", "Int"]
+- !private ["s18AdditiveArithmeticP", "XMLDeserializationError"]
+- ["s18AdditiveArithmeticP", "deserialize"]
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["Sa", "map"]
+- ["SK", "deserialize"]
+- !private ["SK", "isEmpty"]
+- !private ["SK", "map"]
+- !private ["SB", "Double"]
+- !private ["SB", "Float"]
+- !private ["SB", "XMLDeserializationError"]
+- ["SB", "deserialize"]
+- !private ["SB", "init"]
+- !private ["Sz", "Int"]
+- !private ["Sz", "XMLDeserializationError"]
+- ["Sz", "deserialize"]
+- !private ["Sz", "init"]
+- ["Sb", "Bool"]
+- !private ["Sb", "NSString"]
+- ["Sb", "XMLAttribute"]
+- ["Sb", "XMLElement"]
+- ["Sb", "deinit"]
+- ["Sb", "deserialize"]
+- !private ["Sb", "init"]
+- !private ["s7CVarArgP", "Bool"]
+- !private ["s7CVarArgP", "Double"]
+- !private ["s7CVarArgP", "Float"]
+- !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "NSString"]
+- !private ["s7CVarArgP", "XMLDeserializationError"]
+- !private ["s7CVarArgP", "boolValue"]
+- ["s7CVarArgP", "deserialize"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "map"]
+- ["Sl", "deserialize"]
+- !private ["Sl", "isEmpty"]
+- !private ["Sl", "map"]
+- !private ["SL", "Double"]
+- !private ["SL", "Float"]
+- !private ["SL", "Int"]
+- !private ["SL", "XMLDeserializationError"]
+- ["SL", "deserialize"]
+- !private ["SL", "init"]
+- !private ["SL", "isEmpty"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "Double"]
+- !private ["s28CustomDebugStringConvertibleP", "Float"]
+- !private ["s28CustomDebugStringConvertibleP", "XMLDeserializationError"]
+- !private ["s28CustomDebugStringConvertibleP", "boolValue"]
+- ["s28CustomDebugStringConvertibleP", "deserialize"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s17CustomReflectableP", "Bool"]
+- !private ["s17CustomReflectableP", "Double"]
+- !private ["s17CustomReflectableP", "Float"]
+- !private ["s17CustomReflectableP", "Int"]
+- !private ["s17CustomReflectableP", "NSString"]
+- !private ["s17CustomReflectableP", "XMLDeserializationError"]
+- ["s17CustomReflectableP", "deserialize"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s23CustomStringConvertibleP", "Bool"]
+- !private ["s23CustomStringConvertibleP", "Double"]
+- !private ["s23CustomStringConvertibleP", "Float"]
+- !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "NSString"]
+- !private ["s23CustomStringConvertibleP", "XMLDeserializationError"]
+- !private ["s23CustomStringConvertibleP", "XMLIndexer"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_code"]
+- ["s23CustomStringConvertibleP", "_domain"]
+- ["s23CustomStringConvertibleP", "_getEmbeddedNSError"]
+- ["s23CustomStringConvertibleP", "_userInfo"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "attribute"]
+- ["s23CustomStringConvertibleP", "attributeDeserializationFailed"]
+- ["s23CustomStringConvertibleP", "attributeDoesNotExist"]
+- !private ["s23CustomStringConvertibleP", "boolValue"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "deserialize"]
+- ["s23CustomStringConvertibleP", "element"]
+- !private ["s23CustomStringConvertibleP", "fatalError"]
+- ["s23CustomStringConvertibleP", "implementationIsMissing"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- ["s23CustomStringConvertibleP", "list"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- ["s23CustomStringConvertibleP", "nodeHasNoValue"]
+- ["s23CustomStringConvertibleP", "nodeIsInvalid"]
+- !private ["s23CustomStringConvertibleP", "nonEmptyTextOrThrow"]
+- ["s23CustomStringConvertibleP", "stream"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- ["s23CustomStringConvertibleP", "typeConversionFailed"]
+- !private ["s23CustomStringConvertibleP", "value"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["Se", "Bool"]
+- !private ["Se", "Double"]
+- !private ["Se", "Float"]
+- !private ["Se", "Int"]
+- !private ["Se", "NSString"]
+- !private ["Se", "XMLDeserializationError"]
+- ["Se", "deserialize"]
+- !private ["Se", "init"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "map"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["Sd", "Double"]
+- ["Sd", "XMLAttribute"]
+- !private ["Sd", "XMLDeserializationError"]
+- ["Sd", "XMLElement"]
+- ["Sd", "deinit"]
+- ["Sd", "deserialize"]
+- !private ["Sd", "init"]
+- !private ["SE", "Bool"]
+- !private ["SE", "Double"]
+- !private ["SE", "Float"]
+- !private ["SE", "Int"]
+- !private ["SE", "NSString"]
+- !private ["SE", "XMLDeserializationError"]
+- ["SE", "deserialize"]
+- !private ["SE", "init"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "map"]
+- !private ["SQ", "Bool"]
+- !private ["SQ", "Double"]
+- !private ["SQ", "Float"]
+- !private ["SQ", "Int"]
+- !private ["SQ", "NSString"]
+- !private ["SQ", "XMLDeserializationError"]
+- !private ["SQ", "boolValue"]
+- ["SQ", "deserialize"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "map"]
+- ["s5ErrorP", ""]
+- ["s5ErrorP", "_code"]
+- ["s5ErrorP", "_domain"]
+- ["s5ErrorP", "_getEmbeddedNSError"]
+- ["s5ErrorP", "_userInfo"]
+- ["s5ErrorP", "attributeDeserializationFailed"]
+- ["s5ErrorP", "attributeDoesNotExist"]
+- ["s5ErrorP", "description"]
+- !private ["s5ErrorP", "fatalError"]
+- ["s5ErrorP", "implementationIsMissing"]
+- ["s5ErrorP", "nodeHasNoValue"]
+- ["s5ErrorP", "nodeIsInvalid"]
+- ["s5ErrorP", "typeConversionFailed"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s27ExpressibleByBooleanLiteralP", "Bool"]
+- !private ["s27ExpressibleByBooleanLiteralP", "NSString"]
+- ["s27ExpressibleByBooleanLiteralP", "deserialize"]
+- !private ["s27ExpressibleByBooleanLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "boolValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "deserialize"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByFloatLiteralP", "Double"]
+- !private ["s25ExpressibleByFloatLiteralP", "Float"]
+- !private ["s25ExpressibleByFloatLiteralP", "XMLDeserializationError"]
+- ["s25ExpressibleByFloatLiteralP", "deserialize"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "Double"]
+- !private ["s27ExpressibleByIntegerLiteralP", "Float"]
+- !private ["s27ExpressibleByIntegerLiteralP", "Int"]
+- !private ["s27ExpressibleByIntegerLiteralP", "XMLDeserializationError"]
+- ["s27ExpressibleByIntegerLiteralP", "deserialize"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s32ExpressibleByStringInterpolationP", "deserialize"]
+- !private ["s32ExpressibleByStringInterpolationP", "isEmpty"]
+- !private ["s26ExpressibleByStringLiteralP", "boolValue"]
+- ["s26ExpressibleByStringLiteralP", "deserialize"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "isEmpty"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "boolValue"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "deserialize"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
+- !private ["s17FixedWidthIntegerP", "Int"]
+- !private ["s17FixedWidthIntegerP", "XMLDeserializationError"]
+- ["s17FixedWidthIntegerP", "deserialize"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- ["Sf", "Float"]
+- ["Sf", "XMLAttribute"]
+- !private ["Sf", "XMLDeserializationError"]
+- ["Sf", "XMLElement"]
+- ["Sf", "deinit"]
+- ["Sf", "deserialize"]
+- !private ["Sf", "init"]
+- !private ["SF", "Double"]
+- !private ["SF", "Float"]
+- !private ["SF", "XMLDeserializationError"]
+- ["SF", "deserialize"]
+- !private ["SF", "init"]
+- !private ["SH", "Bool"]
+- !private ["SH", "Double"]
+- !private ["SH", "Float"]
+- !private ["SH", "Int"]
+- !private ["SH", "NSString"]
+- !private ["SH", "XMLDeserializationError"]
+- !private ["SH", "boolValue"]
+- ["SH", "deserialize"]
+- !private ["SH", "init"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "map"]
+- !private ["9SWXMLHash8IndexOpsC", "findElements"]
+- ["Si", "Int"]
+- ["Si", "XMLAttribute"]
+- !private ["Si", "XMLDeserializationError"]
+- ["Si", "XMLElement"]
+- ["Si", "deinit"]
+- ["Si", "deserialize"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "Bool"]
+- !private ["s25LosslessStringConvertibleP", "Double"]
+- !private ["s25LosslessStringConvertibleP", "Float"]
+- !private ["s25LosslessStringConvertibleP", "Int"]
+- !private ["s25LosslessStringConvertibleP", "NSString"]
+- !private ["s25LosslessStringConvertibleP", "XMLDeserializationError"]
+- ["s25LosslessStringConvertibleP", "deserialize"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "isEmpty"]
+- !private ["s10MirrorPathP", "Int"]
+- !private ["s10MirrorPathP", "XMLDeserializationError"]
+- ["s10MirrorPathP", "deserialize"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "isEmpty"]
+- !private ["SM", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- !private ["So8NSCodingP", "boolValue"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isEmpty"]
+- !private ["So9NSCopyingP", "boolValue"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "isEmpty"]
+- !private ["So21NSItemProviderReadingP", "boolValue"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "isEmpty"]
+- !private ["So21NSItemProviderWritingP", "boolValue"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "isEmpty"]
+- !private ["So16NSMutableCopyingP", "boolValue"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "isEmpty"]
+- !private ["So8NSObjectC", "boolValue"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isEmpty"]
+- !private ["So8NSObjectP", "boolValue"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isEmpty"]
+- !private ["So14NSSecureCodingP", "boolValue"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "isEmpty"]
+- !private ["So8NSStringC", "boolValue"]
+- !private ["So8NSStringC", "init"]
+- !private ["So8NSStringC", "isEmpty"]
+- !private ["Sj", "Double"]
+- !private ["Sj", "Float"]
+- !private ["Sj", "Int"]
+- !private ["Sj", "XMLDeserializationError"]
+- ["Sj", "deserialize"]
+- !private ["Sj", "init"]
+- !private ["Sk", "map"]
+- ["Sm", "deserialize"]
+- !private ["Sm", "isEmpty"]
+- !private ["Sm", "map"]
+- !private ["SY", "rawValue"]
+- !private ["s10SIMDScalarP", "Double"]
+- !private ["s10SIMDScalarP", "Float"]
+- !private ["s10SIMDScalarP", "Int"]
+- !private ["s10SIMDScalarP", "XMLDeserializationError"]
+- ["s10SIMDScalarP", "deserialize"]
+- !private ["s10SIMDScalarP", "init"]
+- ["ST", "deserialize"]
+- !private ["ST", "isEmpty"]
+- !private ["ST", "map"]
+- !private ["SZ", "Int"]
+- !private ["SZ", "XMLDeserializationError"]
+- ["SZ", "deserialize"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "Double"]
+- !private ["s13SignedNumericP", "Float"]
+- !private ["s13SignedNumericP", "Int"]
+- !private ["s13SignedNumericP", "XMLDeserializationError"]
+- ["s13SignedNumericP", "deserialize"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "Double"]
+- !private ["Sx", "Float"]
+- !private ["Sx", "Int"]
+- !private ["Sx", "XMLDeserializationError"]
+- ["Sx", "deserialize"]
+- !private ["Sx", "init"]
+- ["SS", "String"]
+- ["SS", "XMLAttribute"]
+- ["SS", "XMLElement"]
+- ["SS", "deinit"]
+- ["SS", "deserialize"]
+- !private ["SS", "isEmpty"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- ["Sy", "deserialize"]
+- !private ["Sy", "isEmpty"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- ["s16TextOutputStreamP", "deserialize"]
+- !private ["s16TextOutputStreamP", "isEmpty"]
+- !private ["s20TextOutputStreamableP", "Double"]
+- !private ["s20TextOutputStreamableP", "Float"]
+- !private ["s20TextOutputStreamableP", "XMLDeserializationError"]
+- ["s20TextOutputStreamableP", "deserialize"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "isEmpty"]
+- !private ["9SWXMLHash12XMLAttributeV", "deinit"]
+- !private ["9SWXMLHash12XMLAttributeV", "text"]
+- !private ["9SWXMLHash26XMLAttributeDeserializableP", "Bool"]
+- !private ["9SWXMLHash26XMLAttributeDeserializableP", "Double"]
+- !private ["9SWXMLHash26XMLAttributeDeserializableP", "Float"]
+- !private ["9SWXMLHash26XMLAttributeDeserializableP", "Int"]
+- !private ["9SWXMLHash26XMLAttributeDeserializableP", "NSString"]
+- ["9SWXMLHash26XMLAttributeDeserializableP", "XMLAttribute"]
+- !private ["9SWXMLHash26XMLAttributeDeserializableP", "XMLDeserializationError"]
+- ["9SWXMLHash26XMLAttributeDeserializableP", ""]
+- ["9SWXMLHash26XMLAttributeDeserializableP", "deserialize"]
+- !private ["9SWXMLHash26XMLAttributeDeserializableP", "init"]
+- !private ["9SWXMLHash26XMLAttributeDeserializableP", "isEmpty"]
+- !private ["9SWXMLHash10XMLContentP", "XMLDeserializationError"]
+- !private ["9SWXMLHash10XMLContentP", "attribute"]
+- !private ["9SWXMLHash10XMLContentP", "nonEmptyTextOrThrow"]
+- !private ["9SWXMLHash10XMLContentP", "text"]
+- !private ["9SWXMLHash10XMLContentP", "value"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "AttributeDeserializationFailed"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "AttributeDoesNotExist"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "ImplementationIsMissing"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "IndexOps"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "IndexingError"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "NodeHasNoValue"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "String"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "TypeConversionFailed"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "XMLAttribute"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "XMLDeserializationError"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "XMLElement"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "XMLIndexer"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "_code"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "_domain"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "_getEmbeddedNSError"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "_userInfo"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "attributeDeserializationFailed"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "attributeDoesNotExist"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "deinit"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "description"]
+- !private ["9SWXMLHash23XMLDeserializationErrorO", "fatalError"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "implementationIsMissing"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "nodeHasNoValue"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "nodeIsInvalid"]
+- ["9SWXMLHash23XMLDeserializationErrorO", "typeConversionFailed"]
+- ["9SWXMLHash10XMLElementC", "RawRepresentable"]
+- ["9SWXMLHash10XMLElementC", "String"]
+- ["9SWXMLHash10XMLElementC", "XMLAttributeDeserializable"]
+- !private ["9SWXMLHash10XMLElementC", "XMLDeserializationError"]
+- !private ["9SWXMLHash10XMLElementC", "attribute"]
+- !private ["9SWXMLHash10XMLElementC", "deinit"]
+- ["9SWXMLHash10XMLElementC", "nonEmptyTextOrThrow"]
+- !private ["9SWXMLHash10XMLElementC", "text"]
+- ["9SWXMLHash10XMLElementC", "value"]
+- !private ["9SWXMLHash24XMLElementDeserializableP", "Bool"]
+- !private ["9SWXMLHash24XMLElementDeserializableP", "Double"]
+- !private ["9SWXMLHash24XMLElementDeserializableP", "Float"]
+- !private ["9SWXMLHash24XMLElementDeserializableP", "Int"]
+- !private ["9SWXMLHash24XMLElementDeserializableP", "NSString"]
+- !private ["9SWXMLHash24XMLElementDeserializableP", "XMLDeserializationError"]
+- ["9SWXMLHash24XMLElementDeserializableP", "XMLElement"]
+- ["9SWXMLHash24XMLElementDeserializableP", ""]
+- ["9SWXMLHash24XMLElementDeserializableP", "deserialize"]
+- !private ["9SWXMLHash24XMLElementDeserializableP", "init"]
+- !private ["9SWXMLHash24XMLElementDeserializableP", "isEmpty"]
+- ["9SWXMLHash10XMLIndexerO", "RawRepresentable"]
+- ["9SWXMLHash10XMLIndexerO", "String"]
+- ["9SWXMLHash10XMLIndexerO", "XMLAttributeDeserializable"]
+- !private ["9SWXMLHash10XMLIndexerO", "XMLDeserializationError"]
+- ["9SWXMLHash10XMLIndexerO", "XMLElementDeserializable"]
+- !private ["9SWXMLHash10XMLIndexerO", "XMLIndexer"]
+- ["9SWXMLHash10XMLIndexerO", "XMLIndexerDeserializable"]
+- !private ["9SWXMLHash10XMLIndexerO", "deinit"]
+- ["9SWXMLHash10XMLIndexerO", "element"]
+- !private ["9SWXMLHash10XMLIndexerO", "init"]
+- ["9SWXMLHash10XMLIndexerO", "list"]
+- ["9SWXMLHash10XMLIndexerO", "stream"]
+- ["9SWXMLHash10XMLIndexerO", "value"]
+- !private ["9SWXMLHash24XMLIndexerDeserializableP", "XMLDeserializationError"]
+- ["9SWXMLHash24XMLIndexerDeserializableP", "XMLIndexer"]
+- ["9SWXMLHash24XMLIndexerDeserializableP", "deserialize"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s15_CVarArgAlignedP", "Double"]
+- !private ["s15_CVarArgAlignedP", "Float"]
+- !private ["s15_CVarArgAlignedP", "XMLDeserializationError"]
+- ["s15_CVarArgAlignedP", "deserialize"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "Double"]
+- !private ["s22_CVarArgPassedAsDoubleP", "Float"]
+- !private ["s22_CVarArgPassedAsDoubleP", "XMLDeserializationError"]
+- ["s22_CVarArgPassedAsDoubleP", "deserialize"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "Bool"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "Double"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "Float"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "Int"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "NSString"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "XMLDeserializationError"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "boolValue"]
+- ["s30_CustomPlaygroundQuickLookableP", "deserialize"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "Bool"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "NSString"]
+- ["s35_ExpressibleByBuiltinBooleanLiteralP", "deserialize"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "deserialize"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "Double"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "Float"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "XMLDeserializationError"]
+- ["s33_ExpressibleByBuiltinFloatLiteralP", "deserialize"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "Double"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "Float"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "Int"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "XMLDeserializationError"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "deserialize"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "deserialize"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "isEmpty"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "deserialize"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "isEmpty"]
+- ["s19_HasContiguousBytesP", "deserialize"]
+- !private ["s19_HasContiguousBytesP", "isEmpty"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "Double"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "Float"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "Int"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "XMLDeserializationError"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "boolValue"]
+- ["s35_HasCustomAnyHashableRepresentationP", "deserialize"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "boolValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "boolValue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "Bool"]
+- !private ["s21_ObjectiveCBridgeableP", "Double"]
+- !private ["s21_ObjectiveCBridgeableP", "Float"]
+- !private ["s21_ObjectiveCBridgeableP", "Int"]
+- !private ["s21_ObjectiveCBridgeableP", "NSString"]
+- !private ["s21_ObjectiveCBridgeableP", "XMLDeserializationError"]
+- ["s21_ObjectiveCBridgeableP", "deserialize"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+depends-nominal:
+- "s18AdditiveArithmeticP"
+- !private "Sa"
+- "SK"
+- "SB"
+- "Sz"
+- "Sb"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- "Se"
+- !private "s26DefaultStringInterpolationV"
+- "Sd"
+- "SE"
+- "SQ"
+- "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s25ExpressibleByFloatLiteralP"
+- "s27ExpressibleByIntegerLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s17FixedWidthIntegerP"
+- "Sf"
+- "SF"
+- "SH"
+- !private "9SWXMLHash8IndexOpsC"
+- "Si"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- "Sj"
+- !private "Sk"
+- "Sm"
+- !private "SY"
+- "s10SIMDScalarP"
+- "ST"
+- "SZ"
+- "s13SignedNumericP"
+- "Sx"
+- "SS"
+- !private "s27StringInterpolationProtocolP"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "9SWXMLHash12XMLAttributeV"
+- "9SWXMLHash26XMLAttributeDeserializableP"
+- !private "9SWXMLHash10XMLContentP"
+- "9SWXMLHash23XMLDeserializationErrorO"
+- "9SWXMLHash10XMLElementC"
+- "9SWXMLHash24XMLElementDeserializableP"
+- "9SWXMLHash10XMLIndexerO"
+- "9SWXMLHash24XMLIndexerDeserializableP"
+- !private "s14_ArrayProtocolP"
+- "s15_CVarArgAlignedP"
+- "s22_CVarArgPassedAsDoubleP"
+- "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s33_ExpressibleByBuiltinFloatLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "de701fa789470a684b871a69b9a7e8ae"

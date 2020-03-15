@@ -1,0 +1,402 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ProcessError"
+- "RouteError"
+- "OptionError"
+- "ParameterError"
+provides-nominal:
+- "8SwiftCLI12ProcessErrorP"
+- "8SwiftCLI0B0C5ErrorV"
+- "8SwiftCLI10RouteErrorV"
+- "8SwiftCLI11OptionErrorV"
+- "8SwiftCLI11OptionErrorV4KindO"
+- "8SwiftCLI14ParameterErrorV"
+provides-member:
+- ["8SwiftCLI12ProcessErrorP", ""]
+- ["8SwiftCLI0B0C", ""]
+- ["8SwiftCLI0B0C5ErrorV", ""]
+- ["8SwiftCLI10RouteErrorV", ""]
+- ["8SwiftCLI11OptionErrorV", ""]
+- ["8SwiftCLI11OptionErrorV4KindO", ""]
+- ["8SwiftCLI14ParameterErrorV", ""]
+- ["8SwiftCLI0B0C", "Error"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- !private "=="
+- "AssignmentPrecedence"
+- "BinaryInteger"
+- "CLI"
+- "CommandGroupPath"
+- "CommandPath"
+- !private "FloatLiteralType"
+- "Int"
+- "Int32"
+- !private "IntegerLiteralType"
+- "OptionError"
+- "OptionGroup"
+- "ParameterError"
+- "ParameterIterator"
+- "ProcessError"
+- "RouteError"
+- "String"
+- !private "StringLiteralType"
+- "Swift"
+- "TernaryPrecedence"
+- !private "UnicodeScalarType"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["Sa", "compactMap"]
+- !private ["Sa", "count"]
+- !private ["Sa", "joined"]
+- !private ["Sa", "last"]
+- !private ["SK", "compactMap"]
+- !private ["SK", "count"]
+- !private ["SK", "joined"]
+- !private ["SK", "last"]
+- !private ["Sz", "init"]
+- ["8SwiftCLI0B0C", "BinaryInteger"]
+- ["8SwiftCLI0B0C", "Error"]
+- ["8SwiftCLI0B0C", "Int32"]
+- ["8SwiftCLI0B0C", "ProcessError"]
+- ["8SwiftCLI0B0C", "String"]
+- !private ["s7CVarArgP", "compactMap"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "joined"]
+- !private ["s7CVarArgP", "last"]
+- !private ["Sl", "compactMap"]
+- !private ["Sl", "count"]
+- !private ["Sl", "joined"]
+- !private ["Sl", "last"]
+- !private ["8SwiftCLI12CommandGroupP", "Int32"]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "compactMap"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "joined"]
+- !private ["10Foundation15ContiguousBytesP", "last"]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "joined"]
+- !private ["s28CustomDebugStringConvertibleP", "last"]
+- ["s28CustomDebugStringConvertibleP", "none"]
+- ["s28CustomDebugStringConvertibleP", "some"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "joined"]
+- !private ["s17CustomReflectableP", "last"]
+- ["s17CustomReflectableP", "none"]
+- ["s17CustomReflectableP", "some"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "joined"]
+- !private ["s23CustomStringConvertibleP", "last"]
+- !private ["s23CustomStringConvertibleP", "names"]
+- !private ["s23CustomStringConvertibleP", "options"]
+- !private ["s23CustomStringConvertibleP", "restriction"]
+- !private ["10Foundation12DataProtocolP", "compactMap"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "joined"]
+- !private ["10Foundation12DataProtocolP", "last"]
+- !private ["Se", "compactMap"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
+- !private ["Se", "joined"]
+- !private ["Se", "last"]
+- ["Se", "none"]
+- ["Se", "some"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "compactMap"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SE", "joined"]
+- !private ["SE", "last"]
+- ["SE", "none"]
+- ["SE", "some"]
+- ["SQ", "atLeastOne"]
+- ["SQ", "atMostOne"]
+- !private ["SQ", "compactMap"]
+- !private ["SQ", "count"]
+- ["SQ", "exactlyOne"]
+- !private ["SQ", "init"]
+- !private ["SQ", "joined"]
+- !private ["SQ", "last"]
+- ["SQ", "none"]
+- ["SQ", "some"]
+- ["8SwiftCLI0B0C5ErrorV", "BinaryInteger"]
+- ["8SwiftCLI0B0C5ErrorV", "Int32"]
+- ["s5ErrorP", "Int32"]
+- ["8SwiftCLI0B0C5ErrorV", "String"]
+- ["s5ErrorP", "String"]
+- ["s5ErrorP", ""]
+- ["8SwiftCLI0B0C5ErrorV", "_code"]
+- ["s5ErrorP", "_code"]
+- ["8SwiftCLI0B0C5ErrorV", "_domain"]
+- ["s5ErrorP", "_domain"]
+- ["8SwiftCLI0B0C5ErrorV", "_getEmbeddedNSError"]
+- ["s5ErrorP", "_getEmbeddedNSError"]
+- ["8SwiftCLI0B0C5ErrorV", "_userInfo"]
+- ["s5ErrorP", "_userInfo"]
+- !private ["s5ErrorP", "command"]
+- ["8SwiftCLI0B0C5ErrorV", "deinit"]
+- ["8SwiftCLI0B0C5ErrorV", "exitStatus"]
+- ["s5ErrorP", "exitStatus"]
+- ["8SwiftCLI0B0C5ErrorV", "init"]
+- !private ["s5ErrorP", "init"]
+- !private ["s5ErrorP", "kind"]
+- !private ["s5ErrorP", "maxCount"]
+- ["8SwiftCLI0B0C5ErrorV", "message"]
+- ["s5ErrorP", "message"]
+- !private ["s5ErrorP", "minCount"]
+- !private ["s5ErrorP", "notFound"]
+- !private ["s5ErrorP", "partialPath"]
+- !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "joined"]
+- !private ["s25ExpressibleByArrayLiteralP", "last"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s23ExpressibleByNilLiteralP", "none"]
+- ["s23ExpressibleByNilLiteralP", "some"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- ["SH", "atLeastOne"]
+- ["SH", "atMostOne"]
+- !private ["SH", "compactMap"]
+- !private ["SH", "count"]
+- ["SH", "exactlyOne"]
+- !private ["SH", "init"]
+- !private ["SH", "joined"]
+- !private ["SH", "last"]
+- ["SH", "none"]
+- ["SH", "some"]
+- !private ["s5Int32V", "init"]
+- ["8SwiftCLI11OptionErrorV4KindO", "OptionGroup"]
+- ["8SwiftCLI11OptionErrorV4KindO", "String"]
+- ["8SwiftCLI11OptionErrorV4KindO", "expectedValueAfterKey"]
+- ["8SwiftCLI11OptionErrorV4KindO", "illegalTypeForKey"]
+- ["8SwiftCLI11OptionErrorV4KindO", "message"]
+- ["8SwiftCLI11OptionErrorV4KindO", "optionGroupMisuse"]
+- ["8SwiftCLI11OptionErrorV4KindO", "unrecognizedOption"]
+- ["8SwiftCLI11OptionErrorV4KindO", "validationError"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["SM", "compactMap"]
+- !private ["SM", "count"]
+- !private ["SM", "joined"]
+- !private ["SM", "last"]
+- !private ["10Foundation19MutableDataProtocolP", "compactMap"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "joined"]
+- !private ["10Foundation19MutableDataProtocolP", "last"]
+- !private ["Sj", "init"]
+- !private ["8SwiftCLI6OptionP", "names"]
+- ["8SwiftCLI11OptionErrorV", "CommandPath"]
+- ["8SwiftCLI11OptionErrorV", "Kind"]
+- ["8SwiftCLI11OptionErrorV", "OptionGroup"]
+- ["8SwiftCLI11OptionErrorV", "String"]
+- ["8SwiftCLI11OptionErrorV", "_code"]
+- ["8SwiftCLI11OptionErrorV", "_domain"]
+- ["8SwiftCLI11OptionErrorV", "_getEmbeddedNSError"]
+- ["8SwiftCLI11OptionErrorV", "_userInfo"]
+- ["8SwiftCLI11OptionErrorV", "command"]
+- ["8SwiftCLI11OptionErrorV", "deinit"]
+- ["8SwiftCLI11OptionErrorV", "init"]
+- ["8SwiftCLI11OptionErrorV", "kind"]
+- !private ["8SwiftCLI11OptionGroupC", "options"]
+- !private ["8SwiftCLI11OptionGroupC", "restriction"]
+- ["Sq", "none"]
+- ["Sq", "some"]
+- ["8SwiftCLI14ParameterErrorV", "CommandPath"]
+- ["8SwiftCLI14ParameterErrorV", "Int"]
+- ["8SwiftCLI14ParameterErrorV", "ParameterIterator"]
+- ["8SwiftCLI14ParameterErrorV", "String"]
+- ["8SwiftCLI14ParameterErrorV", "_code"]
+- ["8SwiftCLI14ParameterErrorV", "_domain"]
+- ["8SwiftCLI14ParameterErrorV", "_getEmbeddedNSError"]
+- ["8SwiftCLI14ParameterErrorV", "_userInfo"]
+- ["8SwiftCLI14ParameterErrorV", "command"]
+- ["8SwiftCLI14ParameterErrorV", "deinit"]
+- ["8SwiftCLI14ParameterErrorV", "init"]
+- ["8SwiftCLI14ParameterErrorV", "maxCount"]
+- ["8SwiftCLI14ParameterErrorV", "message"]
+- ["8SwiftCLI14ParameterErrorV", "minCount"]
+- !private ["8SwiftCLI17ParameterIteratorC", "maxCount"]
+- !private ["8SwiftCLI17ParameterIteratorC", "minCount"]
+- ["8SwiftCLI12ProcessErrorP", "Int32"]
+- ["8SwiftCLI12ProcessErrorP", "String"]
+- ["8SwiftCLI12ProcessErrorP", ""]
+- ["8SwiftCLI12ProcessErrorP", "_code"]
+- ["8SwiftCLI12ProcessErrorP", "_domain"]
+- ["8SwiftCLI12ProcessErrorP", "_getEmbeddedNSError"]
+- ["8SwiftCLI12ProcessErrorP", "_userInfo"]
+- ["8SwiftCLI12ProcessErrorP", "exitStatus"]
+- !private ["8SwiftCLI12ProcessErrorP", "init"]
+- ["8SwiftCLI12ProcessErrorP", "message"]
+- !private ["Sk", "compactMap"]
+- !private ["Sk", "count"]
+- !private ["Sk", "joined"]
+- !private ["Sk", "last"]
+- !private ["Sm", "compactMap"]
+- !private ["Sm", "count"]
+- !private ["Sm", "joined"]
+- !private ["Sm", "last"]
+- ["8SwiftCLI11OptionGroupC11RestrictionO", "atLeastOne"]
+- ["8SwiftCLI11OptionGroupC11RestrictionO", "atMostOne"]
+- ["8SwiftCLI11OptionGroupC11RestrictionO", "exactlyOne"]
+- !private ["8SwiftCLI8RoutableP", "Int32"]
+- ["8SwiftCLI10RouteErrorV", "CommandGroupPath"]
+- ["8SwiftCLI10RouteErrorV", "String"]
+- ["8SwiftCLI10RouteErrorV", "_code"]
+- ["8SwiftCLI10RouteErrorV", "_domain"]
+- ["8SwiftCLI10RouteErrorV", "_getEmbeddedNSError"]
+- ["8SwiftCLI10RouteErrorV", "_userInfo"]
+- ["8SwiftCLI10RouteErrorV", "deinit"]
+- ["8SwiftCLI10RouteErrorV", "init"]
+- ["8SwiftCLI10RouteErrorV", "notFound"]
+- ["8SwiftCLI10RouteErrorV", "partialPath"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["ST", "compactMap"]
+- !private ["ST", "count"]
+- !private ["ST", "joined"]
+- !private ["ST", "last"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s14_ArrayProtocolP", "compactMap"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "joined"]
+- !private ["s14_ArrayProtocolP", "last"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "compactMap"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "joined"]
+- !private ["s24_DestructorSafeContainerP", "last"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "compactMap"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "joined"]
+- !private ["s19_HasContiguousBytesP", "last"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "compactMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "joined"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "last"]
+- !private ["s21_ObjectiveCBridgeableP", "compactMap"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "joined"]
+- !private ["s21_ObjectiveCBridgeableP", "last"]
+- ["s21_ObjectiveCBridgeableP", "none"]
+- ["s21_ObjectiveCBridgeableP", "some"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "Sa"
+- !private "SK"
+- !private "Sz"
+- "8SwiftCLI0B0C"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "8SwiftCLI12CommandGroupP"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- "Se"
+- !private "s26DefaultStringInterpolationV"
+- "SE"
+- "SQ"
+- "8SwiftCLI0B0C5ErrorV"
+- "s5ErrorP"
+- "8SwiftCLI0B0C5ErrorV"
+- "s5ErrorP"
+- "8SwiftCLI0B0C5ErrorV"
+- "s5ErrorP"
+- "8SwiftCLI0B0C5ErrorV"
+- "s5ErrorP"
+- "8SwiftCLI0B0C5ErrorV"
+- "s5ErrorP"
+- "8SwiftCLI0B0C5ErrorV"
+- "s5ErrorP"
+- "8SwiftCLI0B0C5ErrorV"
+- "s5ErrorP"
+- "8SwiftCLI0B0C5ErrorV"
+- !private "s5ErrorP"
+- "8SwiftCLI0B0C5ErrorV"
+- "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "s23ExpressibleByNilLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "SH"
+- !private "s5Int32V"
+- "8SwiftCLI11OptionErrorV4KindO"
+- !private "s25LosslessStringConvertibleP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "Sj"
+- !private "8SwiftCLI6OptionP"
+- "8SwiftCLI11OptionErrorV"
+- !private "8SwiftCLI11OptionGroupC"
+- "Sq"
+- "8SwiftCLI14ParameterErrorV"
+- !private "8SwiftCLI17ParameterIteratorC"
+- "8SwiftCLI12ProcessErrorP"
+- !private "Sk"
+- !private "Sm"
+- "8SwiftCLI11OptionGroupC11RestrictionO"
+- !private "8SwiftCLI8RoutableP"
+- "8SwiftCLI10RouteErrorV"
+- !private "s10SIMDScalarP"
+- !private "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "b386736a776c94f78b92cee2e3716c3c"

@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "b64c51a2d053c388057834fa2716ed4d"
+build_time: [1584288806, 22626000]
+inputs:
+  "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SWXMLHash/Source/SWXMLHash.swift": [1584288782, 566257618]
+  "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SWXMLHash/Source/XMLIndexer+XMLIndexerDeserializable.swift": [1584288782, 566904029]
+  "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SWXMLHash/Source/shim.swift": [1584288782, 567524011]

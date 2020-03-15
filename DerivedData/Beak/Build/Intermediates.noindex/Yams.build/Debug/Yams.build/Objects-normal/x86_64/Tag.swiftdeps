@@ -1,0 +1,300 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Tag"
+- "TagResolvable"
+- "=="
+provides-nominal:
+- "4Yams3TagC"
+- "4Yams3TagC4NameV"
+- "4Yams13TagResolvableP"
+provides-member:
+- ["4Yams3TagC", ""]
+- ["4Yams3TagC4NameV", ""]
+- ["4Yams13TagResolvableP", ""]
+- ["4Yams3TagC4NameV", "implicit"]
+- ["4Yams3TagC4NameV", "nonSpecific"]
+- ["4Yams3TagC4NameV", "str"]
+- ["4Yams3TagC4NameV", "seq"]
+- ["4Yams3TagC4NameV", "map"]
+- ["4Yams3TagC4NameV", "bool"]
+- ["4Yams3TagC4NameV", "float"]
+- ["4Yams3TagC4NameV", "null"]
+- ["4Yams3TagC4NameV", "int"]
+- ["4Yams3TagC4NameV", "binary"]
+- ["4Yams3TagC4NameV", "merge"]
+- ["4Yams3TagC4NameV", "omap"]
+- ["4Yams3TagC4NameV", "pairs"]
+- ["4Yams3TagC4NameV", "set"]
+- ["4Yams3TagC4NameV", "timestamp"]
+- ["4Yams3TagC4NameV", "value"]
+- ["4Yams3TagC4NameV", "yaml"]
+- ["4Yams13TagResolvableP", "resolvedTag"]
+- ["4Yams13TagResolvableP", "resolveTag"]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- "Constructor"
+- "CustomStringConvertible"
+- "ExpressibleByStringLiteral"
+- "Hashable"
+- "Hasher"
+- "RawRepresentable"
+- "Resolver"
+- "String"
+- "StringLiteralType"
+- "Tag"
+- "TagResolvable"
+- "TernaryPrecedence"
+- "UnicodeScalarType"
+depends-member:
+- !private ["4Yams11ConstructorC", "default"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "Tag"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- !private ["s23CustomStringConvertibleP", "constructor"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "resolved"]
+- !private ["s23CustomStringConvertibleP", "resolver"]
+- ["SQ", "=="]
+- ["SQ", "ExtendedGraphemeClusterLiteralType"]
+- ["SQ", "Name"]
+- ["SQ", "RawValue"]
+- ["SQ", "StringLiteralType"]
+- !private ["SQ", "Tag"]
+- ["SQ", "UnicodeScalarLiteralType"]
+- ["SQ", ""]
+- ["SQ", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["SQ", "_Default_RawValue"]
+- ["SQ", "_Default_StringLiteralType"]
+- ["SQ", "_Default_UnicodeScalarLiteralType"]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "constructor"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "implicit"]
+- ["SQ", "init"]
+- !private ["SQ", "name"]
+- !private ["SQ", "nonSpecific"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "resolved"]
+- !private ["SQ", "resolver"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "=="]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "ExtendedGraphemeClusterLiteralType"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "RawValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "StringLiteralType"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "UnicodeScalarLiteralType"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_Default_RawValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_Default_StringLiteralType"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_Default_UnicodeScalarLiteralType"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_rawHashValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hash"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hashValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "implicit"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "nonSpecific"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "rawValue"]
+- ["s26ExpressibleByStringLiteralP", "=="]
+- ["s26ExpressibleByStringLiteralP", "ExtendedGraphemeClusterLiteralType"]
+- ["s26ExpressibleByStringLiteralP", "RawValue"]
+- ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
+- ["s26ExpressibleByStringLiteralP", "UnicodeScalarLiteralType"]
+- ["s26ExpressibleByStringLiteralP", ""]
+- ["s26ExpressibleByStringLiteralP", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["s26ExpressibleByStringLiteralP", "_Default_RawValue"]
+- ["s26ExpressibleByStringLiteralP", "_Default_StringLiteralType"]
+- ["s26ExpressibleByStringLiteralP", "_Default_UnicodeScalarLiteralType"]
+- ["s26ExpressibleByStringLiteralP", "_rawHashValue"]
+- ["s26ExpressibleByStringLiteralP", "hash"]
+- ["s26ExpressibleByStringLiteralP", "hashValue"]
+- !private ["s26ExpressibleByStringLiteralP", "implicit"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "nonSpecific"]
+- ["s26ExpressibleByStringLiteralP", "rawValue"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "=="]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "ExtendedGraphemeClusterLiteralType"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "RawValue"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "StringLiteralType"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "UnicodeScalarLiteralType"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_Default_RawValue"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_Default_StringLiteralType"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_Default_UnicodeScalarLiteralType"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_rawHashValue"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "hash"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "hashValue"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "implicit"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "nonSpecific"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "rawValue"]
+- ["SH", "=="]
+- ["SH", "ExtendedGraphemeClusterLiteralType"]
+- ["SH", "Name"]
+- ["SH", "RawValue"]
+- ["SH", "StringLiteralType"]
+- !private ["SH", "Tag"]
+- ["SH", "UnicodeScalarLiteralType"]
+- ["SH", ""]
+- ["SH", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["SH", "_Default_RawValue"]
+- ["SH", "_Default_StringLiteralType"]
+- ["SH", "_Default_UnicodeScalarLiteralType"]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "constructor"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "implicit"]
+- ["SH", "init"]
+- !private ["SH", "name"]
+- !private ["SH", "nonSpecific"]
+- ["SH", "rawValue"]
+- !private ["SH", "resolved"]
+- !private ["SH", "resolver"]
+- !private ["s6HasherV", "combine"]
+- ["4Yams3TagC4NameV", "=="]
+- ["4Yams3TagC4NameV", "ExtendedGraphemeClusterLiteralType"]
+- ["4Yams3TagC4NameV", "RawValue"]
+- ["4Yams3TagC4NameV", "String"]
+- ["4Yams3TagC4NameV", "StringLiteralType"]
+- ["4Yams3TagC4NameV", "Tag"]
+- ["4Yams3TagC4NameV", "UnicodeScalarLiteralType"]
+- ["4Yams3TagC4NameV", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["4Yams3TagC4NameV", "_Default_RawValue"]
+- ["4Yams3TagC4NameV", "_Default_StringLiteralType"]
+- ["4Yams3TagC4NameV", "_Default_UnicodeScalarLiteralType"]
+- ["4Yams3TagC4NameV", "_rawHashValue"]
+- ["4Yams3TagC4NameV", "binary"]
+- ["4Yams3TagC4NameV", "bool"]
+- ["4Yams3TagC4NameV", "deinit"]
+- ["4Yams3TagC4NameV", "float"]
+- ["4Yams3TagC4NameV", "hash"]
+- ["4Yams3TagC4NameV", "hashValue"]
+- ["4Yams3TagC4NameV", "implicit"]
+- ["4Yams3TagC4NameV", "init"]
+- ["4Yams3TagC4NameV", "int"]
+- ["4Yams3TagC4NameV", "map"]
+- ["4Yams3TagC4NameV", "merge"]
+- ["4Yams3TagC4NameV", "nonSpecific"]
+- ["4Yams3TagC4NameV", "null"]
+- ["4Yams3TagC4NameV", "omap"]
+- ["4Yams3TagC4NameV", "pairs"]
+- ["4Yams3TagC4NameV", "rawValue"]
+- ["4Yams3TagC4NameV", "seq"]
+- ["4Yams3TagC4NameV", "set"]
+- ["4Yams3TagC4NameV", "str"]
+- ["4Yams3TagC4NameV", "timestamp"]
+- ["4Yams3TagC4NameV", "value"]
+- ["4Yams3TagC4NameV", "yaml"]
+- ["SY", "=="]
+- ["SY", "ExtendedGraphemeClusterLiteralType"]
+- ["SY", "RawValue"]
+- ["SY", "StringLiteralType"]
+- ["SY", "UnicodeScalarLiteralType"]
+- ["SY", ""]
+- ["SY", "_Default_ExtendedGraphemeClusterLiteralType"]
+- ["SY", "_Default_RawValue"]
+- ["SY", "_Default_StringLiteralType"]
+- ["SY", "_Default_UnicodeScalarLiteralType"]
+- ["SY", "_rawHashValue"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- !private ["SY", "implicit"]
+- ["SY", "init"]
+- !private ["SY", "nonSpecific"]
+- ["SY", "rawValue"]
+- !private ["4Yams8ResolverC", "default"]
+- !private ["4Yams8ResolverC", "resolveTag"]
+- ["4Yams3TagC", "=="]
+- ["4Yams3TagC", "Bool"]
+- ["4Yams3TagC", "Constructor"]
+- ["4Yams3TagC", "Hasher"]
+- ["4Yams3TagC", "Name"]
+- ["4Yams3TagC", "RawRepresentable"]
+- ["4Yams3TagC", "Resolver"]
+- ["4Yams3TagC", "String"]
+- ["4Yams3TagC", "Tag"]
+- ["4Yams3TagC", "TagResolvable"]
+- ["4Yams3TagC", "_rawHashValue"]
+- ["4Yams3TagC", "constructor"]
+- ["4Yams3TagC", "copy"]
+- ["4Yams3TagC", "deinit"]
+- ["4Yams3TagC", "description"]
+- ["4Yams3TagC", "hash"]
+- ["4Yams3TagC", "hashValue"]
+- ["4Yams3TagC", "implicit"]
+- ["4Yams3TagC", "init"]
+- ["4Yams3TagC", "name"]
+- ["4Yams3TagC", "resolved"]
+- !private ["4Yams3TagC", "resolver"]
+- ["4Yams13TagResolvableP", "Resolver"]
+- ["4Yams13TagResolvableP", "Tag"]
+- ["4Yams13TagResolvableP", "defaultTagName"]
+- ["4Yams13TagResolvableP", "resolveTag"]
+- ["4Yams13TagResolvableP", "resolvedTag"]
+- ["4Yams13TagResolvableP", "tag"]
+depends-nominal:
+- !private "4Yams11ConstructorC"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s6HasherV"
+- "4Yams3TagC4NameV"
+- "SY"
+- !private "4Yams8ResolverC"
+- "4Yams3TagC"
+- "4Yams13TagResolvableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/Yams/Sources/CYaml/include/CYaml.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/Yams/Sources/CYaml/include/yaml.h"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/Build/Intermediates.noindex/GeneratedModuleMaps/macosx/Clang_C.modulemap"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/Build/Intermediates.noindex/GeneratedModuleMaps/macosx/CYaml.modulemap"
+- "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/Build/Intermediates.noindex/GeneratedModuleMaps/macosx/SourceKit.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "4f8ba4bb20a736ab6a54485080af5365"

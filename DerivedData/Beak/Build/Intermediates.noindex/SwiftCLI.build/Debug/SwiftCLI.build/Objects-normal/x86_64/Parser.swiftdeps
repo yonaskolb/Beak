@@ -1,0 +1,246 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Parser"
+provides-nominal:
+- "8SwiftCLI6ParserC"
+- "8SwiftCLI6ParserC13RouteBehaviorO"
+provides-member:
+- ["8SwiftCLI6ParserC", ""]
+- ["8SwiftCLI6ParserC13RouteBehaviorO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "=="
+- "ArgumentList"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CLI"
+- "CastingPrecedence"
+- "Command"
+- !private "CommandGroup"
+- "CommandGroupPath"
+- "CommandPath"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "OptionRegistry"
+- !private "ParameterError"
+- "ParameterIterator"
+- "Parser"
+- !private "Routable"
+- !private "RouteError"
+- !private "StringLiteralType"
+- !private "preconditionFailure"
+- !private "||"
+depends-member:
+- !private ["8SwiftCLI12AnyParameterP", "satisfied"]
+- !private ["8SwiftCLI12AnyParameterP", "update"]
+- !private ["8SwiftCLI11AnyValueBoxP", "satisfied"]
+- !private ["8SwiftCLI11AnyValueBoxP", "update"]
+- !private ["8SwiftCLI12ArgumentListC", "hasNext"]
+- !private ["8SwiftCLI12ArgumentListC", "manipulate"]
+- !private ["8SwiftCLI12ArgumentListC", "nextIsOption"]
+- !private ["8SwiftCLI12ArgumentListC", "peek"]
+- !private ["8SwiftCLI12ArgumentListC", "pop"]
+- !private ["Sa", "first"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "first"]
+- !private ["SK", "subscript"]
+- !private ["8SwiftCLI0B0C", "deinit"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "first"]
+- !private ["Sl", "subscript"]
+- !private ["8SwiftCLI12CommandGroupP", "aliases"]
+- !private ["8SwiftCLI12CommandGroupP", "children"]
+- !private ["8SwiftCLI16CommandGroupPathV", "appending"]
+- !private ["8SwiftCLI16CommandGroupPathV", "bottom"]
+- !private ["8SwiftCLI16CommandGroupPathV", "droppingLast"]
+- !private ["8SwiftCLI16CommandGroupPathV", "init"]
+- !private ["8SwiftCLI11CommandPathV", "ignoreName"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "appending"]
+- !private ["s23CustomStringConvertibleP", "bottom"]
+- !private ["s23CustomStringConvertibleP", "droppingLast"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "hasNext"]
+- !private ["s23CustomStringConvertibleP", "ignoreName"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "manipulate"]
+- !private ["s23CustomStringConvertibleP", "nextIsOption"]
+- !private ["s23CustomStringConvertibleP", "peek"]
+- !private ["s23CustomStringConvertibleP", "pop"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "first"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["SE", "first"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "first"]
+- !private ["SQ", "subscript"]
+- !private ["s5ErrorP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["SH", "first"]
+- !private ["SH", "subscript"]
+- !private ["8SwiftCLI14ParameterErrorV4KindO", "invalidValue"]
+- !private ["8SwiftCLI14ParameterErrorV4KindO", "wrongNumber"]
+- !private ["SM", "first"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["8SwiftCLI14NamedParameterV", "param"]
+- !private ["8SwiftCLI14OptionRegistryC", "checkGroups"]
+- !private ["8SwiftCLI14OptionRegistryC", "init"]
+- !private ["8SwiftCLI14OptionRegistryC", "parseOneOption"]
+- !private ["8SwiftCLI14OptionRegistryC", "recognizesOption"]
+- !private ["8SwiftCLI14OptionRegistryC", "register"]
+- !private ["8SwiftCLI14ParameterErrorV", "deinit"]
+- !private ["8SwiftCLI14ParameterErrorV", "init"]
+- !private ["8SwiftCLI17ParameterIteratorC", "init"]
+- !private ["8SwiftCLI17ParameterIteratorC", "maxCount"]
+- !private ["8SwiftCLI17ParameterIteratorC", "minCount"]
+- !private ["8SwiftCLI17ParameterIteratorC", "next"]
+- !private ["8SwiftCLI17ParameterIteratorC", "nextIsCollection"]
+- ["8SwiftCLI6ParserC", "ArgumentList"]
+- ["8SwiftCLI6ParserC", "Bool"]
+- ["8SwiftCLI6ParserC", "CLI"]
+- ["8SwiftCLI6ParserC", "Command"]
+- !private ["8SwiftCLI6ParserC", "CommandGroup"]
+- ["8SwiftCLI6ParserC", "CommandGroupPath"]
+- ["8SwiftCLI6ParserC", "CommandPath"]
+- ["8SwiftCLI6ParserC", "OptionRegistry"]
+- !private ["8SwiftCLI6ParserC", "ParameterError"]
+- ["8SwiftCLI6ParserC", "ParameterIterator"]
+- ["8SwiftCLI6ParserC", "Parser"]
+- !private ["8SwiftCLI6ParserC", "Routable"]
+- ["8SwiftCLI6ParserC", "RouteBehavior"]
+- !private ["8SwiftCLI6ParserC", "RouteError"]
+- ["8SwiftCLI6ParserC", "State"]
+- ["8SwiftCLI6ParserC", "init"]
+- ["8SwiftCLI6ParserC", "parse"]
+- ["8SwiftCLI6ParserC", "parseOptionsAfterCollectedParameter"]
+- !private ["8SwiftCLI6ParserC", "preconditionFailure"]
+- !private ["8SwiftCLI6ParserC", "route"]
+- ["8SwiftCLI6ParserC", "routeBehavior"]
+- !private ["8SwiftCLI6ParserC", "shouldParseOption"]
+- !private ["Sk", "first"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "first"]
+- !private ["Sm", "subscript"]
+- !private ["8SwiftCLI8RoutableP", "aliases"]
+- !private ["8SwiftCLI8RoutableP", "children"]
+- !private ["8SwiftCLI8RoutableP", "name"]
+- !private ["8SwiftCLI12RoutablePathP", "appending"]
+- !private ["8SwiftCLI12RoutablePathP", "bottom"]
+- !private ["8SwiftCLI12RoutablePathP", "droppingLast"]
+- !private ["8SwiftCLI12RoutablePathP", "ignoreName"]
+- !private ["8SwiftCLI12RoutablePathP", "init"]
+- ["8SwiftCLI6ParserC13RouteBehaviorO", "Command"]
+- ["8SwiftCLI6ParserC13RouteBehaviorO", "automatically"]
+- ["8SwiftCLI6ParserC13RouteBehaviorO", "fallback"]
+- ["8SwiftCLI6ParserC13RouteBehaviorO", "search"]
+- ["8SwiftCLI6ParserC13RouteBehaviorO", "searchWithFallback"]
+- !private ["8SwiftCLI10RouteErrorV", "deinit"]
+- !private ["8SwiftCLI10RouteErrorV", "init"]
+- !private ["ST", "first"]
+- !private ["ST", "subscript"]
+- ["8SwiftCLI12UpdateResultO", "failure"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- !private "8SwiftCLI12AnyParameterP"
+- !private "8SwiftCLI11AnyValueBoxP"
+- !private "8SwiftCLI12ArgumentListC"
+- !private "Sa"
+- !private "SK"
+- !private "8SwiftCLI0B0C"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "8SwiftCLI12CommandGroupP"
+- !private "8SwiftCLI16CommandGroupPathV"
+- !private "8SwiftCLI11CommandPathV"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "SH"
+- !private "8SwiftCLI14ParameterErrorV4KindO"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "8SwiftCLI14NamedParameterV"
+- !private "8SwiftCLI14OptionRegistryC"
+- !private "8SwiftCLI14ParameterErrorV"
+- !private "8SwiftCLI17ParameterIteratorC"
+- "8SwiftCLI6ParserC"
+- !private "Sk"
+- !private "Sm"
+- !private "8SwiftCLI8RoutableP"
+- !private "8SwiftCLI12RoutablePathP"
+- "8SwiftCLI6ParserC13RouteBehaviorO"
+- !private "8SwiftCLI10RouteErrorV"
+- !private "ST"
+- "8SwiftCLI12UpdateResultO"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "70896155d25f00de35370f8928b15968"

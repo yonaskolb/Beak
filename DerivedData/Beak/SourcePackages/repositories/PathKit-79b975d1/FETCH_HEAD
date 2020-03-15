@@ -1,0 +1,76 @@
+3c6a407d89ff6972bb7966a55d5de6421e95f436	not-for-merge	branch 'ks/bazel' of https://github.com/kylef/PathKit.git
+5616245e4d94c3809119213cbb3475978afa1721	not-for-merge	branch 'kylef/ci' of https://github.com/kylef/PathKit.git
+5ca369452bdd5f8fb5068ff8ae36819aee7b315d	not-for-merge	branch 'kylef/circleci' of https://github.com/kylef/PathKit.git
+80041723a3fe26cd0986b1b1dff75662542d8d95	not-for-merge	branch 'kylef/linux' of https://github.com/kylef/PathKit.git
+b4fe0ec86606842118411d6b8541cd27c558ae52	not-for-merge	branch 'kylef/swim' of https://github.com/kylef/PathKit.git
+22586bc7edcc5aedfd2f4a7ce21b951320077c7e	not-for-merge	branch 'kylef/travis' of https://github.com/kylef/PathKit.git
+c8f12353bca8c252713fd2e2fbc5789c39ff92f8	not-for-merge	branch 'master' of https://github.com/kylef/PathKit.git
+a71fd30c4fdb477c18daca5145857bcc905ea2f4	not-for-merge	branch 'swift-3.0' of https://github.com/kylef/PathKit.git
+65d5e3b63e57f1fb70399b7f3bd1df19350d7963	not-for-merge	'refs/pull/10/head' of https://github.com/kylef/PathKit.git
+db6d86c854adfa87c89c01518e4fa0ae7f82efa3	not-for-merge	'refs/pull/14/head' of https://github.com/kylef/PathKit.git
+8f74749e6b8522447f8db08ddd2aa3d1ca80db6c	not-for-merge	'refs/pull/14/merge' of https://github.com/kylef/PathKit.git
+25a2ff15938a96edbe16bf25a40ffb95a1993596	not-for-merge	'refs/pull/15/head' of https://github.com/kylef/PathKit.git
+813f53656a38fa24a5f42d4d2da7e8300674eb84	not-for-merge	'refs/pull/15/merge' of https://github.com/kylef/PathKit.git
+c420140859ae6b51e771ec5bc1b429a8671916c9	not-for-merge	'refs/pull/18/head' of https://github.com/kylef/PathKit.git
+0ade60a6bf4ea9b4fadcb260820076bd742b7c29	not-for-merge	'refs/pull/19/head' of https://github.com/kylef/PathKit.git
+f1c503d5f2912e71c1464e56db3ba579dff45f29	not-for-merge	'refs/pull/2/head' of https://github.com/kylef/PathKit.git
+9d4bef466607beee848d7a3c592a069ba11fc8db	not-for-merge	'refs/pull/21/head' of https://github.com/kylef/PathKit.git
+fd191c7816c7cd0d6526c5c8f98e3e1b9ac1e840	not-for-merge	'refs/pull/22/head' of https://github.com/kylef/PathKit.git
+760cf2f8798fcda7eb2967e20b4ad282fc8d96a0	not-for-merge	'refs/pull/23/head' of https://github.com/kylef/PathKit.git
+e756740530068e5be9404d6f5fc7728d94e9a307	not-for-merge	'refs/pull/25/head' of https://github.com/kylef/PathKit.git
+49da325a80c6975c48595ad49c0142e081e7963a	not-for-merge	'refs/pull/26/head' of https://github.com/kylef/PathKit.git
+8026c93bbe9cba98b4ca4cd87e247888d0fdb74c	not-for-merge	'refs/pull/27/head' of https://github.com/kylef/PathKit.git
+26296824ac23bf65215a5214f6fee930fc5cb242	not-for-merge	'refs/pull/28/head' of https://github.com/kylef/PathKit.git
+d114b9823279660ccbad0e7eb07657c8b32ec6f8	not-for-merge	'refs/pull/29/head' of https://github.com/kylef/PathKit.git
+0bb9e2a5ca5fb04eb44f48bc9a52921ef4c6c372	not-for-merge	'refs/pull/29/merge' of https://github.com/kylef/PathKit.git
+0d53af3b142fdc8593f03af73193230188b00d39	not-for-merge	'refs/pull/3/head' of https://github.com/kylef/PathKit.git
+b86c07e6c96a1c0c0d111679870d616864aa06bd	not-for-merge	'refs/pull/30/head' of https://github.com/kylef/PathKit.git
+a1895761bcd392ddc944bffffcbc6757ea9449b5	not-for-merge	'refs/pull/30/merge' of https://github.com/kylef/PathKit.git
+843eb2917d945fd3ab6993f121dc5cd3ff19ba59	not-for-merge	'refs/pull/31/head' of https://github.com/kylef/PathKit.git
+4c858dcaaca9bcce52d6a26bbd4fb3ffb5cf8e95	not-for-merge	'refs/pull/32/head' of https://github.com/kylef/PathKit.git
+a63bd01fa0700985a2330efe1f14581e76c43b5b	not-for-merge	'refs/pull/32/merge' of https://github.com/kylef/PathKit.git
+5a877e77cc970152d7bd092a9de89195164e02db	not-for-merge	'refs/pull/36/head' of https://github.com/kylef/PathKit.git
+f3cc681a46d47469f1612da9301a58de77fbf027	not-for-merge	'refs/pull/37/head' of https://github.com/kylef/PathKit.git
+99396690800a141fead06739bf1c3dd3df50c96d	not-for-merge	'refs/pull/37/merge' of https://github.com/kylef/PathKit.git
+0b109bc868e9a12bc5f23e9d61ec937c75900c40	not-for-merge	'refs/pull/38/head' of https://github.com/kylef/PathKit.git
+0fa5b25f284986ab3c67eb7badb01610d2e06c3b	not-for-merge	'refs/pull/38/merge' of https://github.com/kylef/PathKit.git
+0795bb93f065a7c109a64358c000ab9bf85d3ea6	not-for-merge	'refs/pull/39/head' of https://github.com/kylef/PathKit.git
+f2649ef53594c3edbbe888326bcc3334ad7f483e	not-for-merge	'refs/pull/4/head' of https://github.com/kylef/PathKit.git
+1d9494e91f37a145e1e06f34c206769441c85a9c	not-for-merge	'refs/pull/4/merge' of https://github.com/kylef/PathKit.git
+a0d19059fedf44e8dd70f635144b828f675c4d3e	not-for-merge	'refs/pull/41/head' of https://github.com/kylef/PathKit.git
+2211a813f8b20623bf81054fd1498b00dd5784b6	not-for-merge	'refs/pull/41/merge' of https://github.com/kylef/PathKit.git
+a2e15e303425ff623f85399f0286801843291072	not-for-merge	'refs/pull/42/head' of https://github.com/kylef/PathKit.git
+414ab8723328c43b1d80dafd7ad97dbe402d7ab0	not-for-merge	'refs/pull/42/merge' of https://github.com/kylef/PathKit.git
+9be2dd407432c035b89698d49659a4aa117ac8e0	not-for-merge	'refs/pull/43/head' of https://github.com/kylef/PathKit.git
+c6e19319b5b88c2961c1007bc27aa0c1e8ffd89f	not-for-merge	'refs/pull/43/merge' of https://github.com/kylef/PathKit.git
+c543a63333322652ecec21ee8bc9cc4b2fd81018	not-for-merge	'refs/pull/44/head' of https://github.com/kylef/PathKit.git
+dc59bf950dbb378cf8fb93fe6785505c6a93038a	not-for-merge	'refs/pull/45/head' of https://github.com/kylef/PathKit.git
+d836eeb0d9a61f015f1d7b4df1cdc961284cdbec	not-for-merge	'refs/pull/45/merge' of https://github.com/kylef/PathKit.git
+424595911fe02d4a05c6e87381549198203fb099	not-for-merge	'refs/pull/47/head' of https://github.com/kylef/PathKit.git
+98e7ce1a86dd31708a5c1a9e157fb5e828b4abe7	not-for-merge	'refs/pull/47/merge' of https://github.com/kylef/PathKit.git
+aedb9013f03248f4e09784d8251c10ac5a9fef18	not-for-merge	'refs/pull/48/head' of https://github.com/kylef/PathKit.git
+591d0d00d97f6f45117941e520d7854812ada507	not-for-merge	'refs/pull/49/head' of https://github.com/kylef/PathKit.git
+29668caf46d95d451876ca67d23d6d8a8bc56447	not-for-merge	'refs/pull/51/head' of https://github.com/kylef/PathKit.git
+6af79ab3fe482f477ea3e01bd3a3b0406bf9dd96	not-for-merge	'refs/pull/52/head' of https://github.com/kylef/PathKit.git
+97e9ef4bef42ef10766e1e3e655f43f531e250de	not-for-merge	'refs/pull/54/head' of https://github.com/kylef/PathKit.git
+eec83d26b805a18f48fca475587c28bc269ce11e	not-for-merge	'refs/pull/56/head' of https://github.com/kylef/PathKit.git
+bb4b3b00dc2d5127b2b4a355366640e6e8354571	not-for-merge	'refs/pull/57/head' of https://github.com/kylef/PathKit.git
+5fa2b80530d96792aa00c81d32582ced649ce720	not-for-merge	'refs/pull/58/head' of https://github.com/kylef/PathKit.git
+560a28a42464069a712d4eb366919b76b7fb3b29	not-for-merge	'refs/pull/59/head' of https://github.com/kylef/PathKit.git
+73ca5496df2396585298155f8393f50d9e39aff3	not-for-merge	'refs/pull/59/merge' of https://github.com/kylef/PathKit.git
+511a31014fe9879ed33009f6b09f7254d0dbae73	not-for-merge	'refs/pull/6/head' of https://github.com/kylef/PathKit.git
+e4288c502a309f56b6df4f9b3669cb3f97a9f11c	not-for-merge	'refs/pull/60/head' of https://github.com/kylef/PathKit.git
+50bad99bb1392382a48cb4ea1c464c32f88ba2b2	not-for-merge	'refs/pull/61/head' of https://github.com/kylef/PathKit.git
+ac429d24668f109b93a5939d5fa55e795121637e	not-for-merge	'refs/pull/62/head' of https://github.com/kylef/PathKit.git
+ddfe89af438b071ae1aa0eaf4b80b570175b3ffb	not-for-merge	'refs/pull/63/head' of https://github.com/kylef/PathKit.git
+f58181327a8ec504545bb56cebb6de040484f4d2	not-for-merge	'refs/pull/64/head' of https://github.com/kylef/PathKit.git
+e8de36dcfddca4f5a6dbd7708c1220166c3fd020	not-for-merge	'refs/pull/64/merge' of https://github.com/kylef/PathKit.git
+db7b1f459f270138e2b978982275f42abca1c1a9	not-for-merge	'refs/pull/65/head' of https://github.com/kylef/PathKit.git
+9dd954473bc998c15026263f91c55275238a87d2	not-for-merge	'refs/pull/66/head' of https://github.com/kylef/PathKit.git
+71fb55e584a7a9f77a8135314027d950350d20f2	not-for-merge	'refs/pull/67/head' of https://github.com/kylef/PathKit.git
+e300cd40882aeaeebfc71b4c1fb8852130a4a73b	not-for-merge	'refs/pull/68/head' of https://github.com/kylef/PathKit.git
+9e0a13c71d0aecd595e79be613ed4e68ff2559d1	not-for-merge	'refs/pull/69/head' of https://github.com/kylef/PathKit.git
+e4d96ab0f9a85f05541c2ff24b959056b0fcfd9c	not-for-merge	'refs/pull/71/head' of https://github.com/kylef/PathKit.git
+be977e7d08f24d377164677d41906b2536f561f7	not-for-merge	'refs/pull/72/head' of https://github.com/kylef/PathKit.git
+b3fa6eb45f08fdc04058a5d9b0b44fae0255ad1b	not-for-merge	'refs/pull/72/merge' of https://github.com/kylef/PathKit.git
+786c46e004a922a34d9f608d928f64cc78c31d48	not-for-merge	'refs/pull/9/head' of https://github.com/kylef/PathKit.git

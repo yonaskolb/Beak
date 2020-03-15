@@ -1,0 +1,203 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "XcodeReporter"
+provides-nominal:
+- "7Spectre13XcodeReporterC"
+provides-member:
+- ["So10XCTestCaseC", ""]
+- ["7Spectre13XcodeReporterC", ""]
+- ["So10XCTestCaseC", "describe"]
+- ["So10XCTestCaseC", "it"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "Case"
+- !private "Context"
+- "ContextReporter"
+- "ContextType"
+- "FailureType"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "String"
+- !private "StringLiteralType"
+- "Void"
+- "XCTestCase"
+- "XcodeReporter"
+depends-member:
+- !private ["s7CVarArgP", "Case"]
+- !private ["s7CVarArgP", "Context"]
+- !private ["s7CVarArgP", "XcodeReporter"]
+- !private ["s7CVarArgP", "recordFailure"]
+- !private ["7Spectre4CaseC", "deinit"]
+- !private ["7Spectre4CaseC", "init"]
+- !private ["7Spectre4CaseC", "run"]
+- !private ["7Spectre8CaseTypeP", "init"]
+- !private ["7Spectre8CaseTypeP", "run"]
+- !private ["7Spectre7ContextC", "deinit"]
+- !private ["7Spectre7ContextC", "init"]
+- !private ["7Spectre7ContextC", "run"]
+- ["7Spectre15ContextReporterP", ""]
+- ["7Spectre15ContextReporterP", "addDisabled"]
+- ["7Spectre15ContextReporterP", "addFailure"]
+- ["7Spectre15ContextReporterP", "addSuccess"]
+- !private ["7Spectre15ContextReporterP", "init"]
+- ["7Spectre15ContextReporterP", "report"]
+- !private ["7Spectre15ContextReporterP", "testCase"]
+- !private ["7Spectre11ContextTypeP", "init"]
+- !private ["7Spectre11ContextTypeP", "run"]
+- !private ["s28CustomDebugStringConvertibleP", "Case"]
+- !private ["s28CustomDebugStringConvertibleP", "Context"]
+- !private ["s28CustomDebugStringConvertibleP", "XcodeReporter"]
+- !private ["s28CustomDebugStringConvertibleP", "recordFailure"]
+- !private ["s23CustomStringConvertibleP", "Case"]
+- !private ["s23CustomStringConvertibleP", "Context"]
+- !private ["s23CustomStringConvertibleP", "XcodeReporter"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "recordFailure"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SQ", "Case"]
+- !private ["SQ", "Context"]
+- !private ["SQ", "XcodeReporter"]
+- !private ["SQ", "recordFailure"]
+- !private ["s5ErrorP", "file"]
+- !private ["s5ErrorP", "line"]
+- !private ["s5ErrorP", "reason"]
+- !private ["7Spectre11FailureTypeP", "file"]
+- !private ["7Spectre11FailureTypeP", "line"]
+- !private ["7Spectre11FailureTypeP", "reason"]
+- !private ["SH", "Case"]
+- !private ["SH", "Context"]
+- !private ["SH", "XcodeReporter"]
+- !private ["SH", "recordFailure"]
+- !private ["So8NSObjectC", "Case"]
+- !private ["So8NSObjectC", "Context"]
+- ["So8NSObjectC", "ContextType"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", "XcodeReporter"]
+- ["So8NSObjectC", "describe"]
+- ["So8NSObjectC", "it"]
+- !private ["So8NSObjectC", "recordFailure"]
+- !private ["So8NSObjectP", "Case"]
+- !private ["So8NSObjectP", "Context"]
+- !private ["So8NSObjectP", "XcodeReporter"]
+- !private ["So8NSObjectP", "recordFailure"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So11XCTActivityP", "Case"]
+- !private ["So11XCTActivityP", "Context"]
+- !private ["So11XCTActivityP", "XcodeReporter"]
+- !private ["So11XCTActivityP", "recordFailure"]
+- !private ["So17XCTWaiterDelegateP", "Case"]
+- !private ["So17XCTWaiterDelegateP", "Context"]
+- !private ["So17XCTWaiterDelegateP", "XcodeReporter"]
+- !private ["So17XCTWaiterDelegateP", "recordFailure"]
+- !private ["So6XCTestC", "Case"]
+- !private ["So6XCTestC", "Context"]
+- ["So6XCTestC", "ContextType"]
+- ["So6XCTestC", "String"]
+- ["So6XCTestC", "Void"]
+- !private ["So6XCTestC", "XcodeReporter"]
+- ["So6XCTestC", "describe"]
+- ["So6XCTestC", "it"]
+- !private ["So6XCTestC", "recordFailure"]
+- !private ["So10XCTestCaseC", "Case"]
+- !private ["So10XCTestCaseC", "Context"]
+- ["So10XCTestCaseC", "ContextType"]
+- ["So10XCTestCaseC", "String"]
+- ["So10XCTestCaseC", "Void"]
+- !private ["So10XCTestCaseC", "XcodeReporter"]
+- ["So10XCTestCaseC", "describe"]
+- ["So10XCTestCaseC", "it"]
+- !private ["So10XCTestCaseC", "recordFailure"]
+- ["7Spectre13XcodeReporterC", "ContextReporter"]
+- ["7Spectre13XcodeReporterC", "FailureType"]
+- ["7Spectre13XcodeReporterC", "String"]
+- ["7Spectre13XcodeReporterC", "Void"]
+- ["7Spectre13XcodeReporterC", "XCTestCase"]
+- ["7Spectre13XcodeReporterC", "addDisabled"]
+- ["7Spectre13XcodeReporterC", "addFailure"]
+- ["7Spectre13XcodeReporterC", "addSuccess"]
+- ["7Spectre13XcodeReporterC", "deinit"]
+- ["7Spectre13XcodeReporterC", "init"]
+- ["7Spectre13XcodeReporterC", "report"]
+- ["7Spectre13XcodeReporterC", "testCase"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Case"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Context"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "XcodeReporter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "recordFailure"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Case"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Context"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "XcodeReporter"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "recordFailure"]
+depends-nominal:
+- !private "s7CVarArgP"
+- !private "7Spectre4CaseC"
+- !private "7Spectre8CaseTypeP"
+- !private "7Spectre7ContextC"
+- "7Spectre15ContextReporterP"
+- !private "7Spectre11ContextTypeP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "s26DefaultStringInterpolationV"
+- !private "SQ"
+- !private "s5ErrorP"
+- !private "7Spectre11FailureTypeP"
+- !private "SH"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "So11XCTActivityP"
+- !private "So17XCTWaiterDelegateP"
+- "So6XCTestC"
+- "So10XCTestCaseC"
+- "7Spectre13XcodeReporterC"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "62a617ed7d5ea689540ae8974922abbf"

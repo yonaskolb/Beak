@@ -1,0 +1,253 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ContextType"
+- "Context"
+provides-nominal:
+- "7Spectre11ContextTypeP"
+- "7Spectre7ContextC"
+provides-member:
+- ["7Spectre11ContextTypeP", ""]
+- ["7Spectre7ContextC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- !private "Case"
+- "CaseType"
+- "Context"
+- "ContextReporter"
+- "ContextType"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "String"
+- !private "StringLiteralType"
+- "Void"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "forEach"]
+- ["Sa", "init"]
+- !private ["SK", "append"]
+- !private ["SK", "forEach"]
+- ["SK", "init"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "forEach"]
+- ["s7CVarArgP", "init"]
+- !private ["7Spectre4CaseC", "deinit"]
+- !private ["7Spectre4CaseC", "init"]
+- ["7Spectre8CaseTypeP", "After"]
+- ["7Spectre8CaseTypeP", "Before"]
+- !private ["7Spectre8CaseTypeP", "Case"]
+- ["7Spectre8CaseTypeP", "CaseType"]
+- !private ["7Spectre8CaseTypeP", "Context"]
+- ["7Spectre8CaseTypeP", ""]
+- ["7Spectre8CaseTypeP", "after"]
+- !private ["7Spectre8CaseTypeP", "afters"]
+- ["7Spectre8CaseTypeP", "before"]
+- !private ["7Spectre8CaseTypeP", "befores"]
+- !private ["7Spectre8CaseTypeP", "cases"]
+- ["7Spectre8CaseTypeP", "context"]
+- ["7Spectre8CaseTypeP", "describe"]
+- !private ["7Spectre8CaseTypeP", "disabled"]
+- !private ["7Spectre8CaseTypeP", "init"]
+- ["7Spectre8CaseTypeP", "it"]
+- !private ["7Spectre8CaseTypeP", "name"]
+- !private ["7Spectre8CaseTypeP", "parent"]
+- ["7Spectre8CaseTypeP", "run"]
+- !private ["7Spectre8CaseTypeP", "runAfters"]
+- !private ["7Spectre8CaseTypeP", "runBefores"]
+- ["7Spectre8CaseTypeP", "xcontext"]
+- ["7Spectre8CaseTypeP", "xdescribe"]
+- ["7Spectre8CaseTypeP", "xit"]
+- !private ["Sl", "append"]
+- !private ["Sl", "forEach"]
+- ["Sl", "init"]
+- ["7Spectre7ContextC", "After"]
+- ["7Spectre7ContextC", "Before"]
+- ["7Spectre7ContextC", "Bool"]
+- !private ["7Spectre7ContextC", "Case"]
+- ["7Spectre7ContextC", "CaseType"]
+- ["7Spectre7ContextC", "Context"]
+- ["7Spectre7ContextC", "ContextReporter"]
+- ["7Spectre7ContextC", "ContextType"]
+- ["7Spectre7ContextC", "String"]
+- ["7Spectre7ContextC", "Void"]
+- ["7Spectre7ContextC", "after"]
+- ["7Spectre7ContextC", "afters"]
+- ["7Spectre7ContextC", "before"]
+- ["7Spectre7ContextC", "befores"]
+- ["7Spectre7ContextC", "cases"]
+- ["7Spectre7ContextC", "context"]
+- ["7Spectre7ContextC", "deinit"]
+- ["7Spectre7ContextC", "describe"]
+- ["7Spectre7ContextC", "disabled"]
+- ["7Spectre7ContextC", "init"]
+- ["7Spectre7ContextC", "it"]
+- ["7Spectre7ContextC", "name"]
+- !private ["7Spectre7ContextC", "parent"]
+- ["7Spectre7ContextC", "run"]
+- ["7Spectre7ContextC", "runAfters"]
+- ["7Spectre7ContextC", "runBefores"]
+- ["7Spectre7ContextC", "xcontext"]
+- ["7Spectre7ContextC", "xdescribe"]
+- ["7Spectre7ContextC", "xit"]
+- !private ["7Spectre15ContextReporterP", "addDisabled"]
+- !private ["7Spectre15ContextReporterP", "report"]
+- ["7Spectre11ContextTypeP", "After"]
+- ["7Spectre11ContextTypeP", "Before"]
+- !private ["7Spectre11ContextTypeP", "Case"]
+- ["7Spectre11ContextTypeP", "CaseType"]
+- !private ["7Spectre11ContextTypeP", "Context"]
+- ["7Spectre11ContextTypeP", "ContextType"]
+- ["7Spectre11ContextTypeP", "String"]
+- ["7Spectre11ContextTypeP", "Void"]
+- ["7Spectre11ContextTypeP", ""]
+- ["7Spectre11ContextTypeP", "after"]
+- !private ["7Spectre11ContextTypeP", "afters"]
+- ["7Spectre11ContextTypeP", "before"]
+- !private ["7Spectre11ContextTypeP", "befores"]
+- !private ["7Spectre11ContextTypeP", "cases"]
+- ["7Spectre11ContextTypeP", "context"]
+- ["7Spectre11ContextTypeP", "describe"]
+- !private ["7Spectre11ContextTypeP", "disabled"]
+- !private ["7Spectre11ContextTypeP", "init"]
+- ["7Spectre11ContextTypeP", "it"]
+- !private ["7Spectre11ContextTypeP", "name"]
+- !private ["7Spectre11ContextTypeP", "parent"]
+- ["7Spectre11ContextTypeP", "run"]
+- !private ["7Spectre11ContextTypeP", "runAfters"]
+- !private ["7Spectre11ContextTypeP", "runBefores"]
+- ["7Spectre11ContextTypeP", "xcontext"]
+- ["7Spectre11ContextTypeP", "xdescribe"]
+- ["7Spectre11ContextTypeP", "xit"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "forEach"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "forEach"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "forEach"]
+- ["10Foundation12DataProtocolP", "init"]
+- !private ["Se", "append"]
+- !private ["Se", "forEach"]
+- ["Se", "init"]
+- !private ["SE", "append"]
+- !private ["SE", "forEach"]
+- ["SE", "init"]
+- !private ["SQ", "append"]
+- !private ["SQ", "forEach"]
+- ["SQ", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["SH", "append"]
+- !private ["SH", "forEach"]
+- ["SH", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "forEach"]
+- ["SM", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "forEach"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["Sk", "append"]
+- !private ["Sk", "forEach"]
+- ["Sk", "init"]
+- !private ["Sm", "append"]
+- !private ["Sm", "forEach"]
+- ["Sm", "init"]
+- !private ["ST", "append"]
+- !private ["ST", "forEach"]
+- ["ST", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "forEach"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "forEach"]
+- ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- "Sa"
+- "SK"
+- "s7CVarArgP"
+- !private "7Spectre4CaseC"
+- "7Spectre8CaseTypeP"
+- "Sl"
+- "7Spectre7ContextC"
+- !private "7Spectre15ContextReporterP"
+- "7Spectre11ContextTypeP"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
+- "Se"
+- "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- "SH"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- "Sk"
+- "Sm"
+- "ST"
+- "s14_ArrayProtocolP"
+- "s24_DestructorSafeContainerP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "4cae641eea2dc5637e7fd83d4a958e0a"

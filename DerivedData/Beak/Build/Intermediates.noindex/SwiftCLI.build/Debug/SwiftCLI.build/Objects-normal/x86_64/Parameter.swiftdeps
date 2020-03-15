@@ -1,0 +1,583 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AnyParameter"
+- "_Param"
+- "Param"
+- "AnyCollectedParameter"
+- "CollectedParam"
+- "Parameter"
+- "OptionalParameter"
+- "CollectedParameter"
+- "OptionalCollectedParameter"
+- "NamedParameter"
+- "ParameterIterator"
+provides-nominal:
+- "8SwiftCLI12AnyParameterP"
+- "8SwiftCLI6_ParamC"
+- "8SwiftCLI5ParamO"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI5ParamO8OptionalC"
+- "8SwiftCLI21AnyCollectedParameterP"
+- "8SwiftCLI14CollectedParamO"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI14NamedParameterV"
+- "8SwiftCLI17ParameterIteratorC"
+provides-member:
+- ["8SwiftCLI12AnyParameterP", ""]
+- ["8SwiftCLI6_ParamC", ""]
+- ["8SwiftCLI5ParamO", ""]
+- ["8SwiftCLI5ParamO8RequiredC", ""]
+- ["8SwiftCLI5ParamO8OptionalC", ""]
+- ["8SwiftCLI21AnyCollectedParameterP", ""]
+- ["8SwiftCLI14CollectedParamO", ""]
+- ["8SwiftCLI14CollectedParamO8RequiredC", ""]
+- ["8SwiftCLI14CollectedParamO8OptionalC", ""]
+- ["8SwiftCLI14NamedParameterV", ""]
+- ["8SwiftCLI17ParameterIteratorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&&"
+- !private "+="
+- !private "=="
+- !private ">="
+- !private "??"
+- "AnyCollectedParameter"
+- "AnyParameter"
+- "AnyValueBox"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CastingPrecedence"
+- "CollectedParam"
+- "CollectedParameter"
+- "CommandPath"
+- "ConvertibleFromString"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "NamedParameter"
+- "OptionalCollectedParameter"
+- "OptionalParameter"
+- "Param"
+- "Parameter"
+- "ParameterIterator"
+- "ShellCompletion"
+- "String"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
+- "Validation"
+- "ValueBox"
+- "_Param"
+- !private "assert"
+depends-member:
+- ["8SwiftCLI21AnyCollectedParameterP", "Value"]
+- ["8SwiftCLI21AnyCollectedParameterP", ""]
+- ["8SwiftCLI21AnyCollectedParameterP", "_Default_Value"]
+- ["8SwiftCLI21AnyCollectedParameterP", "completion"]
+- ["8SwiftCLI21AnyCollectedParameterP", "required"]
+- ["8SwiftCLI21AnyCollectedParameterP", "satisfied"]
+- ["8SwiftCLI21AnyCollectedParameterP", "update"]
+- ["8SwiftCLI21AnyCollectedParameterP", "validation"]
+- !private ["8SwiftCLI21AnyCollectedParameterP", "value"]
+- ["8SwiftCLI21AnyCollectedParameterP", "valueType"]
+- ["8SwiftCLI12AnyParameterP", "Bool"]
+- ["8SwiftCLI12AnyParameterP", "Value"]
+- ["8SwiftCLI12AnyParameterP", ""]
+- ["8SwiftCLI12AnyParameterP", "_Default_Value"]
+- ["8SwiftCLI12AnyParameterP", "completion"]
+- !private ["8SwiftCLI12AnyParameterP", "privateValue"]
+- ["8SwiftCLI12AnyParameterP", "required"]
+- ["8SwiftCLI12AnyParameterP", "satisfied"]
+- ["8SwiftCLI12AnyParameterP", "update"]
+- ["8SwiftCLI12AnyParameterP", "validation"]
+- !private ["8SwiftCLI12AnyParameterP", "value"]
+- ["8SwiftCLI12AnyParameterP", "valueType"]
+- ["8SwiftCLI11AnyValueBoxP", "Bool"]
+- ["8SwiftCLI11AnyValueBoxP", "Value"]
+- ["8SwiftCLI11AnyValueBoxP", ""]
+- ["8SwiftCLI11AnyValueBoxP", "_Default_Value"]
+- ["8SwiftCLI11AnyValueBoxP", "completion"]
+- !private ["8SwiftCLI11AnyValueBoxP", "privateValue"]
+- ["8SwiftCLI11AnyValueBoxP", "required"]
+- ["8SwiftCLI11AnyValueBoxP", "satisfied"]
+- ["8SwiftCLI11AnyValueBoxP", "update"]
+- ["8SwiftCLI11AnyValueBoxP", "validation"]
+- !private ["8SwiftCLI11AnyValueBoxP", "value"]
+- ["8SwiftCLI11AnyValueBoxP", "valueType"]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "filter"]
+- !private ["Sa", "first"]
+- !private ["Sa", "firstIndex"]
+- !private ["Sa", "isEmpty"]
+- !private ["Sa", "last"]
+- !private ["Sa", "removeFirst"]
+- !private ["Sa", "removeLast"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- !private ["SK", "filter"]
+- !private ["SK", "first"]
+- !private ["SK", "firstIndex"]
+- !private ["SK", "isEmpty"]
+- !private ["SK", "last"]
+- !private ["SK", "removeFirst"]
+- !private ["SK", "removeLast"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "filter"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "firstIndex"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "last"]
+- !private ["s7CVarArgP", "removeFirst"]
+- !private ["s7CVarArgP", "removeLast"]
+- ["8SwiftCLI14CollectedParamO", "AnyCollectedParameter"]
+- ["8SwiftCLI14CollectedParamO", "Bool"]
+- ["8SwiftCLI14CollectedParamO", "ConvertibleFromString"]
+- ["8SwiftCLI14CollectedParamO", "Optional"]
+- ["8SwiftCLI14CollectedParamO", "Required"]
+- ["8SwiftCLI14CollectedParamO", "ValueBox"]
+- ["8SwiftCLI14CollectedParamO", "_Param"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "first"]
+- !private ["Sl", "firstIndex"]
+- !private ["Sl", "isEmpty"]
+- !private ["Sl", "last"]
+- !private ["Sl", "removeFirst"]
+- !private ["Sl", "removeLast"]
+- !private ["8SwiftCLI7CommandP", "parameters"]
+- !private ["8SwiftCLI11CommandPathV", "command"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "filter"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["10Foundation15ContiguousBytesP", "firstIndex"]
+- !private ["10Foundation15ContiguousBytesP", "isEmpty"]
+- !private ["10Foundation15ContiguousBytesP", "last"]
+- !private ["10Foundation15ContiguousBytesP", "removeFirst"]
+- !private ["10Foundation15ContiguousBytesP", "removeLast"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "firstIndex"]
+- !private ["s28CustomDebugStringConvertibleP", "flatMap"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "last"]
+- !private ["s28CustomDebugStringConvertibleP", "removeFirst"]
+- !private ["s28CustomDebugStringConvertibleP", "removeLast"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "firstIndex"]
+- !private ["s17CustomReflectableP", "flatMap"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "last"]
+- !private ["s17CustomReflectableP", "removeFirst"]
+- !private ["s17CustomReflectableP", "removeLast"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "command"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "firstIndex"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "last"]
+- !private ["s23CustomStringConvertibleP", "removeFirst"]
+- !private ["s23CustomStringConvertibleP", "removeLast"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "filter"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["10Foundation12DataProtocolP", "firstIndex"]
+- !private ["10Foundation12DataProtocolP", "isEmpty"]
+- !private ["10Foundation12DataProtocolP", "last"]
+- !private ["10Foundation12DataProtocolP", "removeFirst"]
+- !private ["10Foundation12DataProtocolP", "removeLast"]
+- !private ["Se", "append"]
+- !private ["Se", "count"]
+- !private ["Se", "filter"]
+- !private ["Se", "first"]
+- !private ["Se", "firstIndex"]
+- !private ["Se", "flatMap"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "last"]
+- !private ["Se", "removeFirst"]
+- !private ["Se", "removeLast"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "append"]
+- !private ["SE", "count"]
+- !private ["SE", "filter"]
+- !private ["SE", "first"]
+- !private ["SE", "firstIndex"]
+- !private ["SE", "flatMap"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "last"]
+- !private ["SE", "removeFirst"]
+- !private ["SE", "removeLast"]
+- !private ["SQ", "append"]
+- !private ["SQ", "count"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "first"]
+- !private ["SQ", "firstIndex"]
+- !private ["SQ", "flatMap"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "last"]
+- !private ["SQ", "removeFirst"]
+- !private ["SQ", "removeLast"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "firstIndex"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "last"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeFirst"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeLast"]
+- !private ["s23ExpressibleByNilLiteralP", "flatMap"]
+- !private ["SH", "append"]
+- !private ["SH", "count"]
+- !private ["SH", "filter"]
+- !private ["SH", "first"]
+- !private ["SH", "firstIndex"]
+- !private ["SH", "flatMap"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "last"]
+- !private ["SH", "removeFirst"]
+- !private ["SH", "removeLast"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "filter"]
+- !private ["SM", "first"]
+- !private ["SM", "firstIndex"]
+- !private ["SM", "isEmpty"]
+- !private ["SM", "last"]
+- !private ["SM", "removeFirst"]
+- !private ["SM", "removeLast"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "filter"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "firstIndex"]
+- !private ["10Foundation19MutableDataProtocolP", "isEmpty"]
+- !private ["10Foundation19MutableDataProtocolP", "last"]
+- !private ["10Foundation19MutableDataProtocolP", "removeFirst"]
+- !private ["10Foundation19MutableDataProtocolP", "removeLast"]
+- !private ["8SwiftCLI14NamedParameterV", "AnyCollectedParameter"]
+- ["8SwiftCLI14NamedParameterV", "AnyParameter"]
+- ["8SwiftCLI14NamedParameterV", "String"]
+- ["8SwiftCLI14NamedParameterV", "init"]
+- ["8SwiftCLI14NamedParameterV", "name"]
+- ["8SwiftCLI14NamedParameterV", "param"]
+- ["8SwiftCLI14NamedParameterV", "signature"]
+- ["8SwiftCLI14CollectedParamO8OptionalC", "Value"]
+- ["8SwiftCLI5ParamO8OptionalC", "Value"]
+- ["8SwiftCLI14CollectedParamO8OptionalC", "_Default_Value"]
+- ["8SwiftCLI5ParamO8OptionalC", "_Default_Value"]
+- ["8SwiftCLI14CollectedParamO8OptionalC", "completion"]
+- ["8SwiftCLI5ParamO8OptionalC", "completion"]
+- ["8SwiftCLI14CollectedParamO8OptionalC", "deinit"]
+- ["8SwiftCLI5ParamO8OptionalC", "deinit"]
+- !private ["Sq", "flatMap"]
+- ["8SwiftCLI14CollectedParamO8OptionalC", "init"]
+- ["8SwiftCLI5ParamO8OptionalC", "init"]
+- ["8SwiftCLI14CollectedParamO8OptionalC", "required"]
+- ["8SwiftCLI5ParamO8OptionalC", "required"]
+- ["8SwiftCLI14CollectedParamO8OptionalC", "satisfied"]
+- ["8SwiftCLI5ParamO8OptionalC", "satisfied"]
+- ["8SwiftCLI14CollectedParamO8OptionalC", "update"]
+- ["8SwiftCLI5ParamO8OptionalC", "update"]
+- ["8SwiftCLI14CollectedParamO8OptionalC", "validation"]
+- ["8SwiftCLI5ParamO8OptionalC", "validation"]
+- ["8SwiftCLI14CollectedParamO8OptionalC", "value"]
+- ["8SwiftCLI5ParamO8OptionalC", "value"]
+- ["8SwiftCLI14CollectedParamO8OptionalC", "valueType"]
+- ["8SwiftCLI5ParamO8OptionalC", "valueType"]
+- ["8SwiftCLI5ParamO", "AnyParameter"]
+- ["8SwiftCLI5ParamO", "Bool"]
+- ["8SwiftCLI5ParamO", "ConvertibleFromString"]
+- ["8SwiftCLI5ParamO", "Optional"]
+- ["8SwiftCLI5ParamO", "Required"]
+- ["8SwiftCLI5ParamO", "ValueBox"]
+- ["8SwiftCLI5ParamO", "_Param"]
+- !private ["8SwiftCLI17ParameterIteratorC", "AnyCollectedParameter"]
+- ["8SwiftCLI17ParameterIteratorC", "Bool"]
+- ["8SwiftCLI17ParameterIteratorC", "CommandPath"]
+- ["8SwiftCLI17ParameterIteratorC", "Int"]
+- ["8SwiftCLI17ParameterIteratorC", "NamedParameter"]
+- !private ["8SwiftCLI17ParameterIteratorC", "OptionalParameter"]
+- !private ["8SwiftCLI17ParameterIteratorC", "assert"]
+- !private ["8SwiftCLI17ParameterIteratorC", "collected"]
+- ["8SwiftCLI17ParameterIteratorC", "init"]
+- ["8SwiftCLI17ParameterIteratorC", "maxCount"]
+- ["8SwiftCLI17ParameterIteratorC", "minCount"]
+- ["8SwiftCLI17ParameterIteratorC", "next"]
+- ["8SwiftCLI17ParameterIteratorC", "nextIsCollection"]
+- !private ["8SwiftCLI17ParameterIteratorC", "params"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "filter"]
+- !private ["Sk", "first"]
+- !private ["Sk", "firstIndex"]
+- !private ["Sk", "isEmpty"]
+- !private ["Sk", "last"]
+- !private ["Sk", "removeFirst"]
+- !private ["Sk", "removeLast"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- !private ["Sm", "filter"]
+- !private ["Sm", "first"]
+- !private ["Sm", "firstIndex"]
+- !private ["Sm", "isEmpty"]
+- !private ["Sm", "last"]
+- !private ["Sm", "removeFirst"]
+- !private ["Sm", "removeLast"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "Bool"]
+- ["8SwiftCLI5ParamO8RequiredC", "Bool"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "Value"]
+- ["8SwiftCLI5ParamO8RequiredC", "Value"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "_Default_Value"]
+- ["8SwiftCLI5ParamO8RequiredC", "_Default_Value"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "completion"]
+- ["8SwiftCLI5ParamO8RequiredC", "completion"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "deinit"]
+- ["8SwiftCLI5ParamO8RequiredC", "deinit"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "init"]
+- ["8SwiftCLI5ParamO8RequiredC", "init"]
+- !private ["8SwiftCLI5ParamO8RequiredC", "privateValue"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "required"]
+- ["8SwiftCLI5ParamO8RequiredC", "required"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "satisfied"]
+- ["8SwiftCLI5ParamO8RequiredC", "satisfied"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "update"]
+- ["8SwiftCLI5ParamO8RequiredC", "update"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "validation"]
+- ["8SwiftCLI5ParamO8RequiredC", "validation"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "value"]
+- ["8SwiftCLI5ParamO8RequiredC", "value"]
+- ["8SwiftCLI14CollectedParamO8RequiredC", "valueType"]
+- ["8SwiftCLI5ParamO8RequiredC", "valueType"]
+- !private ["8SwiftCLI8RoutableP", "parameters"]
+- !private ["8SwiftCLI12RoutablePathP", "command"]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
+- !private ["ST", "filter"]
+- !private ["ST", "first"]
+- !private ["ST", "firstIndex"]
+- !private ["ST", "isEmpty"]
+- !private ["ST", "last"]
+- !private ["ST", "removeFirst"]
+- !private ["ST", "removeLast"]
+- !private ["8SwiftCLI15ShellCompletionO", "filename"]
+- ["SS", "deinit"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- ["8SwiftCLI8ValueBoxP", "Value"]
+- ["8SwiftCLI8ValueBoxP", ""]
+- ["8SwiftCLI8ValueBoxP", "_Default_Value"]
+- ["8SwiftCLI8ValueBoxP", "completion"]
+- !private ["8SwiftCLI8ValueBoxP", "privateValue"]
+- ["8SwiftCLI8ValueBoxP", "required"]
+- ["8SwiftCLI8ValueBoxP", "satisfied"]
+- ["8SwiftCLI8ValueBoxP", "update"]
+- ["8SwiftCLI8ValueBoxP", "validation"]
+- !private ["8SwiftCLI8ValueBoxP", "value"]
+- ["8SwiftCLI8ValueBoxP", "valueType"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "firstIndex"]
+- !private ["s14_ArrayProtocolP", "isEmpty"]
+- !private ["s14_ArrayProtocolP", "last"]
+- !private ["s14_ArrayProtocolP", "removeFirst"]
+- !private ["s14_ArrayProtocolP", "removeLast"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "firstIndex"]
+- !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "last"]
+- !private ["s24_DestructorSafeContainerP", "removeFirst"]
+- !private ["s24_DestructorSafeContainerP", "removeLast"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "filter"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s19_HasContiguousBytesP", "firstIndex"]
+- !private ["s19_HasContiguousBytesP", "isEmpty"]
+- !private ["s19_HasContiguousBytesP", "last"]
+- !private ["s19_HasContiguousBytesP", "removeFirst"]
+- !private ["s19_HasContiguousBytesP", "removeLast"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "firstIndex"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "last"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeFirst"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeLast"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "firstIndex"]
+- !private ["s21_ObjectiveCBridgeableP", "flatMap"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "last"]
+- !private ["s21_ObjectiveCBridgeableP", "removeFirst"]
+- !private ["s21_ObjectiveCBridgeableP", "removeLast"]
+- ["8SwiftCLI6_ParamC", "Bool"]
+- ["8SwiftCLI6_ParamC", "ShellCompletion"]
+- ["8SwiftCLI6_ParamC", "Validation"]
+- ["8SwiftCLI6_ParamC", "Value"]
+- ["8SwiftCLI6_ParamC", ""]
+- ["8SwiftCLI6_ParamC", "_Default_Value"]
+- ["8SwiftCLI6_ParamC", "completion"]
+- ["8SwiftCLI6_ParamC", "init"]
+- !private ["8SwiftCLI6_ParamC", "init"]
+- ["8SwiftCLI6_ParamC", "privateValue"]
+- ["8SwiftCLI6_ParamC", "required"]
+- ["8SwiftCLI6_ParamC", "satisfied"]
+- ["8SwiftCLI6_ParamC", "update"]
+- ["8SwiftCLI6_ParamC", "validation"]
+- ["8SwiftCLI6_ParamC", "value"]
+- ["8SwiftCLI6_ParamC", "valueType"]
+depends-nominal:
+- "8SwiftCLI21AnyCollectedParameterP"
+- "8SwiftCLI12AnyParameterP"
+- "8SwiftCLI11AnyValueBoxP"
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- "8SwiftCLI14CollectedParamO"
+- !private "Sl"
+- !private "8SwiftCLI7CommandP"
+- !private "8SwiftCLI11CommandPathV"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "8SwiftCLI14NamedParameterV"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI5ParamO8OptionalC"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI5ParamO8OptionalC"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI5ParamO8OptionalC"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI5ParamO8OptionalC"
+- !private "Sq"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI5ParamO8OptionalC"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI5ParamO8OptionalC"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI5ParamO8OptionalC"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI5ParamO8OptionalC"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI5ParamO8OptionalC"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI5ParamO8OptionalC"
+- "8SwiftCLI14CollectedParamO8OptionalC"
+- "8SwiftCLI5ParamO8OptionalC"
+- "8SwiftCLI5ParamO"
+- "8SwiftCLI17ParameterIteratorC"
+- !private "Sk"
+- !private "Sm"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- "8SwiftCLI14CollectedParamO8RequiredC"
+- "8SwiftCLI5ParamO8RequiredC"
+- !private "8SwiftCLI8RoutableP"
+- !private "8SwiftCLI12RoutablePathP"
+- !private "ST"
+- !private "8SwiftCLI15ShellCompletionO"
+- "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- "8SwiftCLI8ValueBoxP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+- "8SwiftCLI6_ParamC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "cc252cc8ed7f9a6c102fe28a3db01736"
