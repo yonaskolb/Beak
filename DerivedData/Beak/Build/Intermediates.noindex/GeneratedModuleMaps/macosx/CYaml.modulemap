@@ -1,4 +1,0 @@
-module CYaml {
-umbrella "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/Yams/Sources/CYaml/include"
-export *
-}

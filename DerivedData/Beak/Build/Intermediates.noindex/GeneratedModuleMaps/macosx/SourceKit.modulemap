@@ -1,4 +1,0 @@
-module SourceKit {
-umbrella "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/SourceKit/include"
-export *
-}

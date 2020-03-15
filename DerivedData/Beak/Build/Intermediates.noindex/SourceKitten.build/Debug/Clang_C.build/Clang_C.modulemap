@@ -1,4 +1,0 @@
-module Clang_C {
-umbrella "/Users/cavellebenjamin/Development/toolbox/Beak/DerivedData/Beak/SourcePackages/checkouts/SourceKitten/Source/Clang_C/include"
-export *
-}
