@@ -35,7 +35,7 @@ class RunCommand: BeakCommand {
 
         // build package
         do {
-            _ = try capture("swift", arguments: ["build", "--disable-sandbox"], directory: packagePath.string)
+          _ = try Task.capture("swift", arguments: ["build", "--disable-sandbox"], directory: packagePath.string)
         } catch let error as CaptureError {
             stderr <<< error.captured.rawStdout
             stderr <<< error.captured.rawStderr

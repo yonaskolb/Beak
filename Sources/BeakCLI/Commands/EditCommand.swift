@@ -24,7 +24,7 @@ class EditCommand: BeakCommand {
 
         // generate project
         do {
-            _ = try capture("swift", arguments: ["package", "generate-xcodeproj"], directory: packagePath.string)
+          _ = try Task.capture("swift", arguments: ["package", "generate-xcodeproj"], directory: packagePath.string)
         } catch let error as CaptureError {
             stderr <<< error.captured.rawStdout
             stderr <<< error.captured.rawStderr
@@ -33,7 +33,7 @@ class EditCommand: BeakCommand {
         stdout <<< "Generating project..."
 
         // run package
-        try run("open", arguments: ["\(options.packageName).xcodeproj"], directory: packagePath.string)
+        try Task.run("open", arguments: ["\(options.packageName).xcodeproj"], directory: packagePath.string)
 
         stdout <<< "Edit the file \"Sources/\(options.packageName)/main.swift\""
         stdout <<< "When you're finished type \"c\" to commit the changes and copy the file back to \(path.string), otherwise type anything else"
