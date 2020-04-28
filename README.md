@@ -161,7 +161,7 @@ Some examples:
 
 import Foundation
 import Pathkit
-import Shellout
+import ShellOut
 import Utility
 ```
 
