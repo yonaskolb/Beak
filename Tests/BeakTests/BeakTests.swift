@@ -214,7 +214,8 @@ class BeakTests: XCTestCase {
                             throwing: true,
                             docsDescription: "Releases a new version of Beak"
                         ),
-                    ]
+                    ],
+                    includedFiles: []
                 )
 
                 try expect(beakFile) == expectedBeakFile
@@ -277,7 +278,7 @@ class BeakTests: XCTestCase {
                     .init(name: "repo3", package: "https://github.com/name2/repo3.git", requirement: ".exact(\"4.3.0\")", libraries: ["repo3"]),
                 ]
 
-                let beakFile = BeakFile(contents: "", dependencies: dependencies, functions: [])
+                let beakFile = BeakFile(contents: "", dependencies: dependencies, functions: [], includedFiles: [])
                 let package = PackageManager.createPackage(name: "Test", beakFile: beakFile)
 
                 let expectedPackage = """
